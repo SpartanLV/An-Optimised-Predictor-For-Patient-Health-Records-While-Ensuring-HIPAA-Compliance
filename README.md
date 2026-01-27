@@ -25,7 +25,10 @@ It also includes a minimal **Auth service** (JWT) and an HTTPS **Gateway** (TLS 
 ---
 ## Quickerstart if you do not want to manually do things
 
-### 1) Double click on "RUN_ME.bat"
+### 1) Prereqs
+- Docker Desktop
+
+### 2) Double click on "RUN_ME.bat"
 
 
 ## Quickstart (Secure Mode – recommended)
