@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>CSE400 Web Portal</h1>
+  <p class="muted">Web platform that orchestrates Stage 1 (OCR/NER) → Stage 2 (DB) → Stage 3 (Hybrid inference).</p>
+
+  {% if not user %}
+    <div class="card">
+      <p>You are not signed in.</p>
+      <p><a href="/login">Login</a> to access patient records.</p>
+    </div>
+  {% else %}
+    <div class="card">
+      <p><a href="/patients">Go to Patients</a></p>
+    </div>
+  {% endif %}
+{% endblock %}

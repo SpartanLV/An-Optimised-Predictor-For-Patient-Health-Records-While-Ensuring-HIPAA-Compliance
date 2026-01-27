@@ -1,0 +1,97 @@
+{
+  "bundle_id": "stage3_bundle_20260125T151132Z",
+  "created_utc": "2026-01-25T15:11:32.830447Z",
+  "task": "multilabel_active_conditions_at_index_date",
+  "labels": {
+    "num_labels": 25,
+    "label_names": [
+      "10509002",
+      "15777000",
+      "162573006",
+      "195662009",
+      "230690007",
+      "239873007",
+      "36971009",
+      "38341003",
+      "40055000",
+      "410429000",
+      "428251008",
+      "429007001",
+      "43878008",
+      "44054006",
+      "44465007",
+      "444814009",
+      "53741008",
+      "62106007",
+      "64859006",
+      "65363002",
+      "68496003",
+      "72892002",
+      "74400008",
+      "75498004",
+      "87433001"
+    ],
+    "top_k": 25,
+    "min_label_count": 200,
+    "uses_condition_stop": true,
+    "index_mode": "latest"
+  },
+  "tokenization": {
+    "include_index_day_events": true,
+    "lookback_days": 730,
+    "max_events_per_patient": 250,
+    "max_tokens_per_patient": 512,
+    "max_tokens_per_event": 10,
+    "event_sep_token": "evt_sep",
+    "obs_value_bins": [
+      -Infinity,
+      0,
+      1,
+      5,
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      Infinity
+    ],
+    "max_seq_len": 512,
+    "max_vocab": 60000
+  },
+  "models": {
+    "deep_model_path": "deep_cnn_bilstm_multilabel.keras",
+    "fusion_model_path": "fusion_mlp.keras",
+    "hmm_states": 8,
+    "hmm_n_iter": 40,
+    "fusion_hidden": 128,
+    "fusion_dropout": 0.25,
+    "fusion_lr": 0.001
+  },
+  "thresholds": {
+    "deep_best_val": {
+      "thr": 0.3,
+      "micro_f1": 0.5945908935296131,
+      "macro_f1": 0.49822655079220124,
+      "subset_acc": 0.24078275666477594
+    },
+    "fused_best_val": {
+      "thr": 0.3,
+      "micro_f1": 0.5932184950135992,
+      "macro_f1": 0.4928305659383684,
+      "subset_acc": 0.2558139534883721
+    },
+    "use_for_inference": {
+      "thr": 0.3,
+      "tuned_on": "val",
+      "metric": "micro_f1"
+    }
+  },
+  "metrics": {
+    "fused_test": {
+      "subset_acc": 0.2548213272830403,
+      "micro_f1": 0.5970850963798777,
+      "macro_f1": 0.4989491756457501
+    }
+  }
+}

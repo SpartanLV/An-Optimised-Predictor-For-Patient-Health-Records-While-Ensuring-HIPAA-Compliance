@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CSE400 Web Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
+    .nav a { margin-right: 1rem; }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border-bottom: 1px solid #eee; padding: 0.5rem; text-align: left; }
+    .muted { color: #666; font-size: 0.9rem; }
+    .error { color: #a00; }
+    .pill { display: inline-block; padding: 0.1rem 0.5rem; border: 1px solid #ddd; border-radius: 999px; margin-right: 0.5rem; }
+  </style>
+</head>
+<body>
+    <div class="nav">
+    <a href="/">Home</a>
+    <a href="/patients">Patients</a>
+    <span style="float:right">
+      {% if user %}
+        <span class="muted">Signed in as {{ user.username }}</span>
+        &nbsp;|&nbsp;<a href="/logout">Logout</a>
+      {% else %}
+        <a href="/login">Login</a>
+      {% endif %}
+    </span>
+  </div>
+
+  {% block content %}{% endblock %}
+</body>
+</html>

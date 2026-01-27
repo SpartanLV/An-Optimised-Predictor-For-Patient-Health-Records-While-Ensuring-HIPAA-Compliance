@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Login</h1>
+  <p class="muted">Demo auth for the CSE400 platform. Use the admin credentials from your .env (AUTH service).</p>
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% endif %}
+  <div class="card">
+    <form method="post" action="/login">
+      <label>Username<br><input name="username" required></label><br><br>
+      <label>Password<br><input name="password" type="password" required></label><br><br>
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+{% endblock %}

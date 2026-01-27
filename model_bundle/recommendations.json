@@ -1,0 +1,3082 @@
+{
+  "40055000": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 719
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 462
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 222
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 187
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 68
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 45
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 28
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 23
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 23
+      },
+      {
+        "item": "313782|Acetaminophen 325 MG Oral Tablet",
+        "count": 23
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 513
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 237
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 205
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 160
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 82
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 56
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 50
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 45
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 37
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 36
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 943
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 943
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 943
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 251
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 50
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 50
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 50
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 16
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 13
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 13
+      }
+    ]
+  },
+  "444814009": {
+    "medications": [
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 2121
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 39
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 34
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 27
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 8
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 8
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 6
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 5
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 5
+      },
+      {
+        "item": "748962|Camila 28 Day Pack",
+        "count": 3
+      }
+    ],
+    "procedures": [
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 341
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 115
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 58
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 56
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 47
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 29
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 17
+      },
+      {
+        "item": "228557008|Cognitive and behavioral therapy",
+        "count": 12
+      },
+      {
+        "item": "46706006|Replacement of contraceptive intrauterine device",
+        "count": 12
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 10
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 33
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 33
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 33
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 10
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 7
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 7
+      },
+      {
+        "item": "787301000000101|Surgery care management",
+        "count": 6
+      },
+      {
+        "item": "243077000|Recommendation to limit sexual activity",
+        "count": 6
+      },
+      {
+        "item": "326051000000105|Self care",
+        "count": 5
+      },
+      {
+        "item": "58332002|Allergy education",
+        "count": 5
+      }
+    ]
+  },
+  "10509002": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 3407
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 1078
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 19
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 17
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 11
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 4
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 4
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 3
+      },
+      {
+        "item": "309362|Clopidogrel 75 MG Oral Tablet",
+        "count": 2
+      },
+      {
+        "item": "896188|Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT [Advair]",
+        "count": 2
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 2258
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 872
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 214
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 205
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 65
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 34
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 23
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 23
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 14
+      },
+      {
+        "item": "311791003|Information gathering (procedure)",
+        "count": 7
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 4484
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 4484
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 4484
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 1083
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 4
+      },
+      {
+        "item": "787301000000101|Surgery care management",
+        "count": 3
+      },
+      {
+        "item": "243077000|Recommendation to limit sexual activity",
+        "count": 3
+      },
+      {
+        "item": "170836005|Allergic disorder monitoring",
+        "count": 3
+      },
+      {
+        "item": "764101000000108|Allergen immunotherapy drugs Band 1",
+        "count": 3
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 2
+      }
+    ]
+  },
+  "44054006": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 189
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 141
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 60
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 43
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 30
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 21
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 9
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 9
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 9
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 8
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 120
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 63
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 51
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 43
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 34
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 18
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 15
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 12
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 8
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 7
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 250
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 250
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 250
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 70
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 16
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 16
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 16
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 5
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 4
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 4
+      }
+    ]
+  },
+  "38341003": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 919
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 608
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 302
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 233
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 83
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 65
+      },
+      {
+        "item": "1648767|NITROFURANTOIN  MACROCRYSTALS 50 MG [Macrodantin]",
+        "count": 30
+      },
+      {
+        "item": "313782|Acetaminophen 325 MG Oral Tablet",
+        "count": 28
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 27
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 25
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 606
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 245
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 232
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 230
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 93
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 64
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 62
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 59
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 49
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 44
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 1220
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 1220
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 1220
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 344
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 45
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 45
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 45
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 16
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 16
+      },
+      {
+        "item": "698358001|Angina self management plan",
+        "count": 13
+      }
+    ]
+  },
+  "75498004": {
+    "medications": [
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 116
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 4
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 2
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "831533|Errin 28 Day Pack",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 28
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 9
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 4
+      },
+      {
+        "item": "112790001|Nasal sinus endoscopy (procedure)",
+        "count": 3
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 3
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 2
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 2
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 2
+      },
+      {
+        "item": "15081005|Pulmonary rehabilitation (regime/therapy)",
+        "count": 2
+      },
+      {
+        "item": "228557008|Cognitive and behavioral therapy",
+        "count": 2
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 6
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 6
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 6
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 2
+      }
+    ]
+  },
+  "15777000": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 1115
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 708
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 356
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 265
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 116
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 86
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 33
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 33
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 30
+      },
+      {
+        "item": "313782|Acetaminophen 325 MG Oral Tablet",
+        "count": 29
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 773
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 353
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 274
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 255
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 143
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 85
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 80
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 61
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 48
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 44
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 1472
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 1472
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 1472
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 432
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 81
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 81
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 81
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 17
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 14
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 13
+      }
+    ]
+  },
+  "43878008": {
+    "medications": [
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 788
+      },
+      {
+        "item": "834060|Penicillin V Potassium 250 MG",
+        "count": 349
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 1
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 1
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 1
+      },
+      {
+        "item": "807283|Mirena 52 MG Intrauterine System",
+        "count": 1
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 1
+      },
+      {
+        "item": "1373463|canagliflozin 100 MG Oral Tablet",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 699
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 64
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 21
+      },
+      {
+        "item": "228557008|Cognitive and behavioral therapy",
+        "count": 7
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 5
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 4
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 3
+      },
+      {
+        "item": "395142003|Allergy screening test",
+        "count": 2
+      },
+      {
+        "item": "65200003|Insertion of intrauterine contraceptive device",
+        "count": 2
+      },
+      {
+        "item": "252160004|Standard pregnancy test",
+        "count": 1
+      }
+    ],
+    "careplans": [
+      {
+        "item": "170836005|Allergic disorder monitoring",
+        "count": 2
+      },
+      {
+        "item": "764101000000108|Allergen immunotherapy drugs Band 1",
+        "count": 2
+      },
+      {
+        "item": "134435003|Routine antenatal care",
+        "count": 1
+      },
+      {
+        "item": "135892000|Antenatal education",
+        "count": 1
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 1
+      },
+      {
+        "item": "171054004|Pregnancy diet education",
+        "count": 1
+      },
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 1
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 1
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 1
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 1
+      }
+    ]
+  },
+  "65363002": {
+    "medications": [
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 16
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 9
+      },
+      {
+        "item": "727316|0.3 ML EPINEPHrine 0.5 MG/ML Auto-Injector",
+        "count": 6
+      },
+      {
+        "item": "834060|Penicillin V Potassium 250 MG",
+        "count": 5
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "1014676|cetirizine hydrochloride 5 MG Oral Tablet",
+        "count": 2
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 1
+      },
+      {
+        "item": "997488|Fexofenadine hydrochloride 30 MG Oral Tablet",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 109
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 17
+      },
+      {
+        "item": "395142003|Allergy screening test",
+        "count": 7
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 7
+      },
+      {
+        "item": "311791003|Information gathering (procedure)",
+        "count": 6
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 4
+      },
+      {
+        "item": "228557008|Cognitive and behavioral therapy",
+        "count": 3
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 3
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 2
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 2
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 10
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 10
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 10
+      },
+      {
+        "item": "326051000000105|Self care",
+        "count": 7
+      },
+      {
+        "item": "58332002|Allergy education",
+        "count": 7
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 2
+      },
+      {
+        "item": "134435003|Routine antenatal care",
+        "count": 1
+      },
+      {
+        "item": "135892000|Antenatal education",
+        "count": 1
+      },
+      {
+        "item": "171054004|Pregnancy diet education",
+        "count": 1
+      },
+      {
+        "item": "409002|Food allergy diet",
+        "count": 1
+      }
+    ]
+  },
+  "239873007": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 132
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 90
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 50
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 25
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 9
+      },
+      {
+        "item": "313782|Acetaminophen 325 MG Oral Tablet",
+        "count": 7
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 6
+      },
+      {
+        "item": "857005|Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet",
+        "count": 5
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 5
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 5
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 86
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 42
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 37
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 26
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 12
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 10
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 9
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 6
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 6
+      },
+      {
+        "item": "15081005|Pulmonary rehabilitation (regime/therapy)",
+        "count": 4
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 182
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 182
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 182
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 59
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 3
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 3
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 3
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 2
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 2
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 2
+      }
+    ]
+  },
+  "410429000": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 103
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 81
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 36
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 32
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 7
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 6
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 6
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 6
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 3
+      },
+      {
+        "item": "310965|Ibuprofen 200 MG Oral Tablet",
+        "count": 3
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 65
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 36
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 33
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 32
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 12
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 7
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 6
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 6
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 6
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 6
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 139
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 139
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 139
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 50
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 8
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 8
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 8
+      },
+      {
+        "item": "698358001|Angina self management plan",
+        "count": 8
+      },
+      {
+        "item": "229065009|Exercise therapy",
+        "count": 8
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 8
+      }
+    ]
+  },
+  "428251008": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 162
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 115
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 62
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 41
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 25
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 21
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 10
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 8
+      },
+      {
+        "item": "310965|Ibuprofen 200 MG Oral Tablet",
+        "count": 6
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 6
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 101
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 54
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 51
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 46
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 28
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 16
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 15
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 13
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 13
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 11
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 224
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 224
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 224
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 73
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 13
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 13
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 13
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 6
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 5
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 5
+      }
+    ]
+  },
+  "429007001": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 103
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 81
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 36
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 32
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 7
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 6
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 6
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 6
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 3
+      },
+      {
+        "item": "310965|Ibuprofen 200 MG Oral Tablet",
+        "count": 3
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 65
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 36
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 33
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 32
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 12
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 7
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 6
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 6
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 6
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 6
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 139
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 139
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 139
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 50
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 8
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 8
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 8
+      },
+      {
+        "item": "698358001|Angina self management plan",
+        "count": 8
+      },
+      {
+        "item": "229065009|Exercise therapy",
+        "count": 8
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 8
+      }
+    ]
+  },
+  "74400008": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 162
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 115
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 62
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 41
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 25
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 21
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 10
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 8
+      },
+      {
+        "item": "310965|Ibuprofen 200 MG Oral Tablet",
+        "count": 6
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 6
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 101
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 54
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 51
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 46
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 28
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 16
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 15
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 13
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 13
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 11
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 224
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 224
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 224
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 73
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 13
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 13
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 13
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 6
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 5
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 5
+      }
+    ]
+  },
+  "68496003": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 92
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 70
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 37
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 37
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 29
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 21
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 10
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 10
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 7
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 4
+      }
+    ],
+    "procedures": [
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 135
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 65
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 52
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 37
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 26
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 21
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 20
+      },
+      {
+        "item": "301807007|Removal of subcutaneous contraceptive",
+        "count": 10
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 10
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 10
+      }
+    ],
+    "careplans": [
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 135
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 135
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 135
+      },
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 121
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 121
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 121
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 38
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 2
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 2
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 2
+      }
+    ]
+  },
+  "87433001": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 63
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 51
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 27
+      },
+      {
+        "item": "896188|Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT [Advair]",
+        "count": 23
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 16
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 15
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 12
+      },
+      {
+        "item": "1648767|NITROFURANTOIN  MACROCRYSTALS 50 MG [Macrodantin]",
+        "count": 4
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 4
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 3
+      }
+    ],
+    "procedures": [
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 47
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 44
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 21
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 17
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 15
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 14
+      },
+      {
+        "item": "15081005|Pulmonary rehabilitation (regime/therapy)",
+        "count": 14
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 5
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 4
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 4
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 90
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 90
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 90
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 73
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 2
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 2
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 2
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 2
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 2
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 2
+      }
+    ]
+  },
+  "64859006": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 117
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 77
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 35
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 28
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 8
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 5
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 5
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 5
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 3
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 3
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 78
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 43
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 28
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 25
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 18
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 16
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 12
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 9
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 5
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 3
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 152
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 152
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 152
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 45
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 16
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 16
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 16
+      }
+    ]
+  },
+  "162573006": {
+    "medications": [
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 236
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 171
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 65
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 17
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 10
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 5
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 3
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 3
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 2
+      },
+      {
+        "item": "849437|Naproxen sodium 550 MG [Anaprox]",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 236
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 14
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 7
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 5
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 3
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 2
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 2
+      },
+      {
+        "item": "418891003|Computed tomography of chest and abdomen",
+        "count": 1
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 1
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 24
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 24
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 24
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 24
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 2
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 2
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 2
+      }
+    ]
+  },
+  "53741008": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 160
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 104
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 49
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 30
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 21
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 17
+      },
+      {
+        "item": "310965|Ibuprofen 200 MG Oral Tablet",
+        "count": 5
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 4
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 4
+      },
+      {
+        "item": "564666|Nitroglycerin 0.4 MG/ACTUAT [Nitrolingual]",
+        "count": 4
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 107
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 47
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 41
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 35
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 24
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 18
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 10
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 9
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 7
+      },
+      {
+        "item": "312681000|Bone density scan (procedure)",
+        "count": 5
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 208
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 208
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 208
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 80
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 9
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 9
+      },
+      {
+        "item": "103744005|Administration of intravenous fluids",
+        "count": 9
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 6
+      },
+      {
+        "item": "385691007|Fracture care",
+        "count": 5
+      },
+      {
+        "item": "408580007|Physical activity target light exercise",
+        "count": 5
+      }
+    ]
+  },
+  "230690007": {
+    "medications": [
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 148
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 91
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 48
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 35
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 11
+      },
+      {
+        "item": "849574|Naproxen sodium 220 MG Oral Tablet",
+        "count": 7
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 7
+      },
+      {
+        "item": "313782|Acetaminophen 325 MG Oral Tablet",
+        "count": 6
+      },
+      {
+        "item": "861467|Meperidine Hydrochloride 50 MG Oral Tablet",
+        "count": 6
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 5
+      }
+    ],
+    "procedures": [
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 107
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 64
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 38
+      },
+      {
+        "item": "269911007|Sputum examination (procedure)",
+        "count": 38
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 16
+      },
+      {
+        "item": "43075005|Partial resection of colon",
+        "count": 15
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 15
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 10
+      },
+      {
+        "item": "312681000|Bone density scan (procedure)",
+        "count": 7
+      },
+      {
+        "item": "699253003|Surgical manipulation of joint of knee",
+        "count": 4
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 196
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 196
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 196
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 85
+      },
+      {
+        "item": "698358001|Angina self management plan",
+        "count": 18
+      },
+      {
+        "item": "229065009|Exercise therapy",
+        "count": 18
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 18
+      },
+      {
+        "item": "226234005|Healthy diet",
+        "count": 18
+      },
+      {
+        "item": "781831000000109|Major surgery care management",
+        "count": 15
+      },
+      {
+        "item": "10888001|Liquid diet",
+        "count": 15
+      }
+    ]
+  },
+  "72892002": {
+    "medications": [
+      {
+        "item": "757594|Jolivette 28 Day Pack",
+        "count": 34
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 23
+      },
+      {
+        "item": "748962|Camila 28 Day Pack",
+        "count": 20
+      },
+      {
+        "item": "831533|Errin 28 Day Pack",
+        "count": 18
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 17
+      },
+      {
+        "item": "1111011|Nexplanon 68 MG Drug Implant",
+        "count": 13
+      },
+      {
+        "item": "749762|Seasonique 91 Day Pack",
+        "count": 10
+      },
+      {
+        "item": "807283|Mirena 52 MG Intrauterine System",
+        "count": 9
+      },
+      {
+        "item": "1000128|1 ML Depo-Provera 150 MG/ML Injection",
+        "count": 9
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 8
+      }
+    ],
+    "procedures": [
+      {
+        "item": "714812005|Induced termination of pregnancy",
+        "count": 101
+      },
+      {
+        "item": "68254000|Removal of intrauterine device",
+        "count": 52
+      },
+      {
+        "item": "66348005|Childbirth",
+        "count": 34
+      },
+      {
+        "item": "445912000|Excision of fallopian tube and surgical removal of ectopic pregnancy",
+        "count": 32
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 28
+      },
+      {
+        "item": "65588006|Premature birth of newborn",
+        "count": 23
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 18
+      },
+      {
+        "item": "252160004|Standard pregnancy test",
+        "count": 16
+      },
+      {
+        "item": "301807007|Removal of subcutaneous contraceptive",
+        "count": 16
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 15
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 29
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 29
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 29
+      },
+      {
+        "item": "134435003|Routine antenatal care",
+        "count": 12
+      },
+      {
+        "item": "135892000|Antenatal education",
+        "count": 12
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 12
+      },
+      {
+        "item": "171054004|Pregnancy diet education",
+        "count": 12
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 6
+      },
+      {
+        "item": "787301000000101|Surgery care management",
+        "count": 5
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 5
+      }
+    ]
+  },
+  "36971009": {
+    "medications": [
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 84
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 4
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "748962|Camila 28 Day Pack",
+        "count": 1
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 1
+      },
+      {
+        "item": "1734340|Etoposide 100 MG Injection",
+        "count": 1
+      },
+      {
+        "item": "807283|Mirena 52 MG Intrauterine System",
+        "count": 1
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 1
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 1
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 33
+      },
+      {
+        "item": "112790001|Nasal sinus endoscopy (procedure)",
+        "count": 9
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 6
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 4
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 3
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 3
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 2
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 2
+      },
+      {
+        "item": "66348005|Childbirth",
+        "count": 2
+      },
+      {
+        "item": "228557008|Cognitive and behavioral therapy",
+        "count": 2
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 5
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 5
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 5
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 1
+      }
+    ]
+  },
+  "195662009": {
+    "medications": [
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 17
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 16
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 11
+      },
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 10
+      },
+      {
+        "item": "1803932|Leucovorin 100 MG Injection",
+        "count": 5
+      },
+      {
+        "item": "575971|oxaliplatin 5 MG/ML [Eloxatin]",
+        "count": 5
+      },
+      {
+        "item": "834060|Penicillin V Potassium 250 MG",
+        "count": 5
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 4
+      },
+      {
+        "item": "807283|Mirena 52 MG Intrauterine System",
+        "count": 3
+      },
+      {
+        "item": "1602593|Donepezil hydrochloride 10 MG / Memantine hydrochloride 28 MG [Namzaric]",
+        "count": 2
+      }
+    ],
+    "procedures": [
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 443
+      },
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 189
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 69
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 30
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 23
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 22
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 13
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 8
+      },
+      {
+        "item": "311791003|Information gathering (procedure)",
+        "count": 6
+      },
+      {
+        "item": "15081005|Pulmonary rehabilitation (regime/therapy)",
+        "count": 5
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 15
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 15
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 15
+      },
+      {
+        "item": "787301000000101|Surgery care management",
+        "count": 4
+      },
+      {
+        "item": "183051005|Recommendation to rest",
+        "count": 4
+      },
+      {
+        "item": "243077000|Recommendation to limit sexual activity",
+        "count": 4
+      },
+      {
+        "item": "170836005|Allergic disorder monitoring",
+        "count": 3
+      },
+      {
+        "item": "764101000000108|Allergen immunotherapy drugs Band 1",
+        "count": 3
+      },
+      {
+        "item": "226060000|Stress management",
+        "count": 3
+      },
+      {
+        "item": "326051000000105|Self care",
+        "count": 2
+      }
+    ]
+  },
+  "62106007": {
+    "medications": [
+      {
+        "item": "824184|Amoxicillin 250 MG / Clavulanate 125 MG [Augmentin]",
+        "count": 4
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 4
+      },
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 2
+      },
+      {
+        "item": "106258|Hydrocortisone 10 MG/ML Topical Cream",
+        "count": 1
+      },
+      {
+        "item": "311372|Loratadine 10 MG Oral Tablet",
+        "count": 1
+      },
+      {
+        "item": "727316|0.3 ML EPINEPHrine 0.5 MG/ML Auto-Injector",
+        "count": 1
+      },
+      {
+        "item": "896188|Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT [Advair]",
+        "count": 1
+      },
+      {
+        "item": "748879|Levora 0.15/30 28 Day Pack",
+        "count": 1
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 17
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 15
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 3
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 3
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 2
+      },
+      {
+        "item": "395142003|Allergy screening test",
+        "count": 2
+      },
+      {
+        "item": "127783003|Spirometry (procedure)",
+        "count": 2
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 2
+      },
+      {
+        "item": "399208008|Plain chest X-ray (procedure)",
+        "count": 2
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 2
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 5
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 5
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 5
+      },
+      {
+        "item": "710081004|Smoking cessation therapy",
+        "count": 2
+      },
+      {
+        "item": "326051000000105|Self care",
+        "count": 1
+      },
+      {
+        "item": "58332002|Allergy education",
+        "count": 1
+      },
+      {
+        "item": "170836005|Allergic disorder monitoring",
+        "count": 1
+      },
+      {
+        "item": "764101000000108|Allergen immunotherapy drugs Band 1",
+        "count": 1
+      },
+      {
+        "item": "134435003|Routine antenatal care",
+        "count": 1
+      },
+      {
+        "item": "135892000|Antenatal education",
+        "count": 1
+      }
+    ]
+  },
+  "44465007": {
+    "medications": [
+      {
+        "item": "1736854|Cisplatin 50 MG Injection",
+        "count": 3
+      },
+      {
+        "item": "583214|PACLitaxel 100 MG Injection",
+        "count": 3
+      },
+      {
+        "item": "608680|Acetaminophen 160 MG",
+        "count": 2
+      },
+      {
+        "item": "1020137|Dextromethorphan Hydrobromide 1 MG/ML",
+        "count": 2
+      },
+      {
+        "item": "834101|Penicillin V Potassium 500 MG",
+        "count": 2
+      },
+      {
+        "item": "834060|Penicillin V Potassium 250 MG",
+        "count": 2
+      },
+      {
+        "item": "749762|Seasonique 91 Day Pack",
+        "count": 1
+      },
+      {
+        "item": "1536586|Xulane 150/35 MCG/Day Weekly Transdermal System",
+        "count": 1
+      },
+      {
+        "item": "564666|Nitroglycerin 0.4 MG/ACTUAT [Nitrolingual]",
+        "count": 1
+      },
+      {
+        "item": "997488|Fexofenadine hydrochloride 30 MG Oral Tablet",
+        "count": 1
+      }
+    ],
+    "procedures": [
+      {
+        "item": "428191000124101|Documentation of current medications",
+        "count": 40
+      },
+      {
+        "item": "180256009|Subcutaneous immunotherapy",
+        "count": 20
+      },
+      {
+        "item": "76601001|Intramuscular injection",
+        "count": 9
+      },
+      {
+        "item": "73761001|Colonoscopy",
+        "count": 7
+      },
+      {
+        "item": "703423002|Combined chemotherapy and radiation therapy (procedure)",
+        "count": 3
+      },
+      {
+        "item": "714812005|Induced termination of pregnancy",
+        "count": 2
+      },
+      {
+        "item": "117015009|Throat culture (procedure)",
+        "count": 2
+      },
+      {
+        "item": "228557008|Cognitive and behavioral therapy",
+        "count": 2
+      },
+      {
+        "item": "755621000000101|Replacement of subcutaneous contraceptive",
+        "count": 1
+      },
+      {
+        "item": "23426006|Measurement of respiratory function (procedure)",
+        "count": 1
+      }
+    ],
+    "careplans": [
+      {
+        "item": "53950000|Respiratory therapy",
+        "count": 4
+      },
+      {
+        "item": "304510005|Recommendation to avoid exercise",
+        "count": 4
+      },
+      {
+        "item": "371605008|Deep breathing and coughing exercises",
+        "count": 4
+      },
+      {
+        "item": "326051000000105|Self care",
+        "count": 2
+      },
+      {
+        "item": "58332002|Allergy education",
+        "count": 2
+      },
+      {
+        "item": "409002|Food allergy diet",
+        "count": 1
+      }
+    ]
+  }
+}

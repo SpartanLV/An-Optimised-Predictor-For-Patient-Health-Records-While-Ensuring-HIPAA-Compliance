@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password_hash": "$2b$12$REPLACE_WITH_BCRYPT_HASH",
+      "roles": [
+        "admin",
+        "clinician"
+      ]
+    }
+  ]
+}

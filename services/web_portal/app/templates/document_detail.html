@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Document</h1>
+
+  <p><a href="/patients/{{patient.id}}">← Back to patient</a></p>
+
+  <div class="card">
+    <div><span class="pill">Document ID</span> {{document.id}}</div>
+    <div><span class="pill">Filename</span> {{document.filename or ""}}</div>
+  </div>
+
+  <div class="card">
+    <h2>Extracted Entities</h2>
+    {% if entities and entities|length > 0 %}
+      <ul>
+      {% for e in entities %}
+        <li><b>{{e.label}}</b>: {{e.text}}</li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p class="muted">No entities stored.</p>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Patients</h1>
+
+  <div class="card">
+    <h2>Create patient</h2>
+    <form method="post" action="/patients">
+      <div><label>MRN <input name="mrn" /></label></div>
+      <div><label>First name <input name="first_name" /></label></div>
+      <div><label>Last name <input name="last_name" /></label></div>
+      <div><label>DOB <input name="dob" placeholder="YYYY-MM-DD" /></label></div>
+      <div><label>Gender <input name="gender" /></label></div>
+      <div style="margin-top: 0.5rem;"><button type="submit">Create</button></div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Existing patients</h2>
+    <table>
+      <thead>
+        <tr><th>ID</th><th>MRN</th><th>Name</th><th>Created</th></tr>
+      </thead>
+      <tbody>
+        {% for p in patients %}
+          <tr>
+            <td><a href="/patients/{{p.id}}">{{p.id}}</a></td>
+            <td>{{p.mrn or ""}}</td>
+            <td>{{(p.first_name or "")}} {{(p.last_name or "")}}</td>
+            <td class="muted">{{p.created_at_utc}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

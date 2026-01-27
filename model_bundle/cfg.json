@@ -1,0 +1,162 @@
+{
+  "synthea_csv_dir": "D:\\CSE400 Final Defence Draft\\SyntheaMass Data",
+  "output_dir": "output_stage3",
+  "use_chunks": true,
+  "chunksize": 200000,
+  "max_patients": 50000,
+  "run_tfidf_baseline": false,
+  "index_mode": "latest",
+  "target_top_k": 25,
+  "min_label_count": 200,
+  "use_condition_stop": true,
+  "include_index_day_events": true,
+  "lookback_days": 730,
+  "max_events_per_patient": 250,
+  "max_tokens_per_event": 10,
+  "max_tokens_per_patient": 512,
+  "event_sep_token": "evt_sep",
+  "feature_tables": {
+    "encounters": {
+      "date_cols": [
+        "START",
+        "DATE"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION",
+        "REASONCODE",
+        "REASONDESCRIPTION",
+        "TYPE"
+      ],
+      "prefix": "enc"
+    },
+    "observations": {
+      "date_cols": [
+        "DATE"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION",
+        "VALUE",
+        "UNITS",
+        "TYPE"
+      ],
+      "prefix": "obs"
+    },
+    "medications": {
+      "date_cols": [
+        "START",
+        "DATE"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION",
+        "REASONCODE",
+        "REASONDESCRIPTION"
+      ],
+      "prefix": "med"
+    },
+    "procedures": {
+      "date_cols": [
+        "DATE",
+        "START"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION",
+        "REASONCODE",
+        "REASONDESCRIPTION"
+      ],
+      "prefix": "proc"
+    },
+    "careplans": {
+      "date_cols": [
+        "START",
+        "DATE"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION",
+        "REASONCODE",
+        "REASONDESCRIPTION"
+      ],
+      "prefix": "cp"
+    },
+    "immunizations": {
+      "date_cols": [
+        "DATE"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION"
+      ],
+      "prefix": "imm"
+    },
+    "allergies": {
+      "date_cols": [
+        "START",
+        "DATE"
+      ],
+      "token_cols": [
+        "CODE",
+        "DESCRIPTION"
+      ],
+      "prefix": "alg"
+    }
+  },
+  "obs_value_bins": [
+    -Infinity,
+    0,
+    1,
+    5,
+    10,
+    20,
+    50,
+    100,
+    200,
+    500,
+    Infinity
+  ],
+  "max_vocab": 60000,
+  "max_seq_len": 512,
+  "embedding_dim": 192,
+  "batch_size": 64,
+  "epochs": 12,
+  "lr": 0.0003,
+  "label_smoothing": 0.01,
+  "hmm_states": 8,
+  "hmm_n_iter": 40,
+  "hmm_min_seq_len": 25,
+  "hmm_train_max_sequences": null,
+  "hmm_train_max_len": 256,
+  "hmm_feat_max_len": 512,
+  "hmm_feat_use_length": true,
+  "fusion_hidden": 128,
+  "fusion_dropout": 0.25,
+  "fusion_epochs": 10,
+  "fusion_lr": 0.001,
+  "threshold_grid": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "rec_window_days": 30,
+  "rec_top_n": 10,
+  "test_size": 0.15,
+  "val_size": 0.15,
+  "random_seed": 42
+}

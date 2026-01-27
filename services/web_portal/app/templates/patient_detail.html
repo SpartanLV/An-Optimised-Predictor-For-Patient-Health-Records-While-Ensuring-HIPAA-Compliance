@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Patient</h1>
+
+  {% if message %}
+    <p class="error">{{message}}</p>
+  {% endif %}
+
+  <div class="card">
+    <div><span class="pill">ID</span> {{patient.id}}</div>
+    <div><span class="pill">MRN</span> {{patient.mrn or ""}}</div>
+    <div><span class="pill">Name</span> {{(patient.first_name or "")}} {{(patient.last_name or "")}}</div>
+    <div><span class="pill">DOB</span> {{patient.dob or ""}}</div>
+    <div><span class="pill">Gender</span> {{patient.gender or ""}}</div>
+  </div>
+
+  <div class="card">
+    <h2>Upload document (Stage 1 → 2) + Predict (Stage 3)</h2>
+    <form method="post" action="/patients/{{patient.id}}/upload" enctype="multipart/form-data">
+      <div><input type="file" name="file" required /></div>
+      <div><label>Document date (optional) <input name="document_date" placeholder="YYYY-MM-DD or ISO" /></label></div>
+      <div style="margin-top: 0.5rem;"><button type="submit">Upload & Run</button></div>
+    </form>
+    <form method="post" action="/patients/{{patient.id}}/predict" style="margin-top: 1rem;">
+      <button type="submit">Run Prediction Only</button>
+    </form>
+  </div>
+
+  {% if stored_doc or extraction %}
+  <div class="card">
+    <h2>Latest extraction output (Stage 1)</h2>
+    {% if stored_doc %}
+      <p class="muted">Stored as document <b>{{stored_doc.filename or ""}}</b> (id {{stored_doc.id}})
+      {% if stored_doc.sha256 %}— SHA-256 {{stored_doc.sha256[:12]}}…{% endif %}</p>
+    {% endif %}
+
+    {% if extraction %}
+      <details open>
+        <summary>View OCR/NER output</summary>
+        {% if extraction.text %}
+          <h3>OCR text (snippet)</h3>
+          <pre style="white-space: pre-wrap;">{{ extraction.text[:1200] }}{% if extraction.text|length > 1200 %}…{% endif %}</pre>
+        {% endif %}
+
+        <h3>NER entities</h3>
+        {% if extraction.entities and extraction.entities|length > 0 %}
+          <table>
+            <thead><tr><th>Label</th><th>Text</th><th>Confidence</th></tr></thead>
+            <tbody>
+              {% for ent in extraction.entities[:50] %}
+                <tr>
+                  <td class="muted">{{ent.label}}</td>
+                  <td>{{ent.text}}</td>
+                  <td class="muted">{% if ent.confidence %}{{"%.2f"|format(ent.confidence)}}{% endif %}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% if extraction.entities|length > 50 %}<p class="muted">Showing first 50 entities.</p>{% endif %}
+        {% else %}
+          <p class="muted">No entities extracted.</p>
+        {% endif %}
+
+        <h3>Extracted events (to be stored)</h3>
+        {% if extraction.events and extraction.events|length > 0 %}
+          <table>
+            <thead><tr><th>Date</th><th>Source</th><th>Code</th><th>Description</th><th>Value</th></tr></thead>
+            <tbody>
+              {% for ev in extraction.events[:50] %}
+                <tr>
+                  <td class="muted">{{ev.event_date}}</td>
+                  <td>{{ev.source}}</td>
+                  <td class="muted">{{ev.code or ""}}</td>
+                  <td>{{ev.description or ""}}</td>
+                  <td class="muted">{% if ev.value %}{{ev.value}} {{ev.units or ""}}{% endif %}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% if extraction.events|length > 50 %}<p class="muted">Showing first 50 events.</p>{% endif %}
+        {% else %}
+          <p class="muted">No events extracted by heuristics.</p>
+        {% endif %}
+      </details>
+    {% else %}
+      <p class="muted">Upload a document to view extraction output here.</p>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="card">
+    <h2>Documents</h2>
+    {% if documents and documents|length > 0 %}
+      <table>
+        <thead>
+          <tr><th>Created</th><th>Filename</th><th>SHA-256</th><th></th></tr>
+        </thead>
+        <tbody>
+          {% for d in documents %}
+            <tr>
+              <td class="muted">{{d.created_at_utc}}</td>
+              <td>{{d.filename or ""}}</td>
+              <td class="muted">{% if d.sha256 %}{{d.sha256[:12]}}…{% endif %}</td>
+              <td><a href="/patients/{{patient.id}}/documents/{{d.id}}">View</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p class="muted">No documents uploaded yet.</p>
+    {% endif %}
+  </div>
+
+  <div class="card">
+    <h2>Recent events (Stage 2)</h2>
+    {% if events|length == 0 %}
+      <p class="muted">No events stored yet.</p>
+    {% else %}
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Source</th><th>Code</th><th>Description</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+          {% for e in events %}
+            <tr>
+              <td class="muted">{{e.event_date}}</td>
+              <td>{{e.source}}</td>
+              <td class="muted">{{e.code or ""}}</td>
+              <td>{{e.description or ""}}</td>
+              <td class="muted">{% if e.value %}{{e.value}} {{e.units or ""}}{% endif %}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </div>
+
+  <div class="card">
+    <h2>Predictions + Recommendations (Stage 3)</h2>
+    {% if not predictions %}
+      <p class="muted">No prediction run yet.</p>
+    {% else %}
+      <p class="muted">Threshold used: {{predictions.threshold}}</p>
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Description</th><th>Probability</th><th>Recommendations</th></tr>
+        </thead>
+        <tbody>
+          {% for p in predictions.predictions %}
+            <tr>
+              <td>{{p.code}}</td>
+              <td>{{p.description or ""}}</td>
+              <td>{{"%.3f"|format(p.probability)}}</td>
+              <td>
+                {% if p.recommendations %}
+                  <div><b>Meds</b>:
+                    {% for m in p.recommendations.medications %}
+                      <div class="muted">{{m.item}} ({{m.count}})</div>
+                    {% endfor %}
+                  </div>
+                  <div><b>Procedures</b>:
+                    {% for m in p.recommendations.procedures %}
+                      <div class="muted">{{m.item}} ({{m.count}})</div>
+                    {% endfor %}
+                  </div>
+                  <div><b>Careplans</b>:
+                    {% for m in p.recommendations.careplans %}
+                      <div class="muted">{{m.item}} ({{m.count}})</div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </div>
+{% endblock %}

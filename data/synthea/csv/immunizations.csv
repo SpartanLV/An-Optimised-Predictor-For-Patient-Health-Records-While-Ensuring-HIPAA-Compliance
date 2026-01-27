@@ -1,0 +1,1000 @@
+DATE,PATIENT,ENCOUNTER,CODE,DESCRIPTION
+02/07/2011,33f33990-ae8b-4be8-938f-e47ad473abfe,673daa98-67e9-4e80-be46-a0b547533653,140,Influenza  seasonal  injectable  preservative free
+02/07/2011,33f33990-ae8b-4be8-938f-e47ad473abfe,673daa98-67e9-4e80-be46-a0b547533653,114,meningococcal MCV4P
+12/03/2011,36d131ee-dd5b-4acb-acbe-19961c32c099,bac018de-114a-481d-b4f9-87980d7ef8b8,140,Influenza  seasonal  injectable  preservative free
+12/03/2011,36d131ee-dd5b-4acb-acbe-19961c32c099,bac018de-114a-481d-b4f9-87980d7ef8b8,62,HPV  quadrivalent
+17/06/2012,33f33990-ae8b-4be8-938f-e47ad473abfe,be0aa510-645e-421b-ad21-8a1ab442ca48,140,Influenza  seasonal  injectable  preservative free
+26/03/2012,36d131ee-dd5b-4acb-acbe-19961c32c099,296a1fd4-56de-451c-a5fe-b50f9a18472d,140,Influenza  seasonal  injectable  preservative free
+14/07/2013,33f33990-ae8b-4be8-938f-e47ad473abfe,a88f1e8d-da51-41e2-ac25-952f69c635fa,140,Influenza  seasonal  injectable  preservative free
+17/04/2013,36d131ee-dd5b-4acb-acbe-19961c32c099,c34c60b3-c7f4-4651-b02c-6e3eec08aa58,140,Influenza  seasonal  injectable  preservative free
+18/08/2014,33f33990-ae8b-4be8-938f-e47ad473abfe,23e07532-8b96-4d05-b14e-d4c5a5288ed2,140,Influenza  seasonal  injectable  preservative free
+30/04/2014,36d131ee-dd5b-4acb-acbe-19961c32c099,c42dc337-5525-466d-9ec0-f18380e80338,140,Influenza  seasonal  injectable  preservative free
+30/04/2014,36d131ee-dd5b-4acb-acbe-19961c32c099,c42dc337-5525-466d-9ec0-f18380e80338,114,meningococcal MCV4P
+17/09/2015,33f33990-ae8b-4be8-938f-e47ad473abfe,85601b75-7745-4af8-bbab-86566ebdfb51,140,Influenza  seasonal  injectable  preservative free
+16/06/2015,36d131ee-dd5b-4acb-acbe-19961c32c099,10659f76-74cd-4ce1-9e5f-2cb829371a7f,140,Influenza  seasonal  injectable  preservative free
+25/05/2016,36d131ee-dd5b-4acb-acbe-19961c32c099,352d1693-591a-4615-9b1b-f145648f49cc,140,Influenza  seasonal  injectable  preservative free
+22/11/2010,660bec03-9e58-47f2-98b9-2f1c564f3838,67ec5c2d-f41e-4538-adbe-8c06c71ddc35,140,Influenza  seasonal  injectable  preservative free
+15/12/2011,660bec03-9e58-47f2-98b9-2f1c564f3838,1bc722b5-5895-4990-8cc9-85a068b75eb6,140,Influenza  seasonal  injectable  preservative free
+19/01/2013,660bec03-9e58-47f2-98b9-2f1c564f3838,f9972916-4ec4-4b04-8de2-5b08f17de56b,140,Influenza  seasonal  injectable  preservative free
+19/01/2013,660bec03-9e58-47f2-98b9-2f1c564f3838,f9972916-4ec4-4b04-8de2-5b08f17de56b,114,meningococcal MCV4P
+12/02/2014,660bec03-9e58-47f2-98b9-2f1c564f3838,7277d53c-8ea1-478c-b735-92725d61fcfb,140,Influenza  seasonal  injectable  preservative free
+17/03/2015,660bec03-9e58-47f2-98b9-2f1c564f3838,10e90c4f-9a1a-4692-a552-50578a096184,140,Influenza  seasonal  injectable  preservative free
+17/04/2016,660bec03-9e58-47f2-98b9-2f1c564f3838,93d7346c-6838-47bc-8ab6-9fde5c5fd876,140,Influenza  seasonal  injectable  preservative free
+12/04/2017,660bec03-9e58-47f2-98b9-2f1c564f3838,e94546cc-2cdb-4963-8341-b47761570eb9,140,Influenza  seasonal  injectable  preservative free
+04/07/2010,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,521fb0c4-6af2-4998-aec9-02b52a1953a1,140,Influenza  seasonal  injectable  preservative free
+04/07/2010,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,521fb0c4-6af2-4998-aec9-02b52a1953a1,62,HPV  quadrivalent
+06/09/2011,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,77d1024b-58e4-4f3e-84a8-e4d5151f6cab,140,Influenza  seasonal  injectable  preservative free
+07/11/2012,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,066ea1d0-d9f9-4b9e-bc68-25649a20fe6a,140,Influenza  seasonal  injectable  preservative free
+07/11/2012,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,066ea1d0-d9f9-4b9e-bc68-25649a20fe6a,114,meningococcal MCV4P
+29/12/2013,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,ef2986df-ed4e-4208-950d-2f340d88dd16,140,Influenza  seasonal  injectable  preservative free
+15/01/2015,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,7e9acefb-82ba-41af-b65f-d38a4d03ec9f,140,Influenza  seasonal  injectable  preservative free
+25/02/2016,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,c713de1d-5149-44df-9066-81275087fc43,140,Influenza  seasonal  injectable  preservative free
+16/02/2017,5125d2b2-3aef-4ae2-aa5c-335f7e206b92,015943e7-969f-49d4-b01e-f6c58059dbe5,140,Influenza  seasonal  injectable  preservative free
+07/12/2010,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,5862a8a5-fa2a-46b7-8709-f06354cc29d2,133,Pneumococcal conjugate PCV 13
+07/12/2010,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,5862a8a5-fa2a-46b7-8709-f06354cc29d2,140,Influenza  seasonal  injectable  preservative free
+07/12/2010,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,5862a8a5-fa2a-46b7-8709-f06354cc29d2,33,pneumococcal polysaccharide vaccine  23 valent
+06/11/2011,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,a789fe18-2494-4b4b-894e-3a5255bca1de,140,Influenza  seasonal  injectable  preservative free
+13/10/2012,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,72e2fd41-9faf-442d-a914-ff85ff475b53,140,Influenza  seasonal  injectable  preservative free
+04/10/2013,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,f032f618-b1a8-4b0d-a692-ef99fac88976,140,Influenza  seasonal  injectable  preservative free
+20/09/2014,26626faf-cbd5-48d5-a3bf-a7b21ae08e4b,e53b88c3-486f-4ae0-a555-2abc768cb203,140,Influenza  seasonal  injectable  preservative free
+14/06/2012,eed62b4a-1099-47ec-a2ac-d953830b44d6,a6ddb4be-55d2-405f-8694-27c05a6b0dea,140,Influenza  seasonal  injectable  preservative free
+14/08/2014,eed62b4a-1099-47ec-a2ac-d953830b44d6,4e726f24-5f82-4639-913b-5907bdbfd476,140,Influenza  seasonal  injectable  preservative free
+22/11/2016,eed62b4a-1099-47ec-a2ac-d953830b44d6,446ab762-bb65-40d8-81ec-767952c9f44b,140,Influenza  seasonal  injectable  preservative free
+22/11/2016,eed62b4a-1099-47ec-a2ac-d953830b44d6,446ab762-bb65-40d8-81ec-767952c9f44b,113,Td (adult) preservative free
+13/05/2012,6e9f8b3e-5a21-401e-868d-2d62e0e7f452,65f98dac-56c8-4eb2-a950-8a36432dcfba,140,Influenza  seasonal  injectable  preservative free
+13/05/2012,6e9f8b3e-5a21-401e-868d-2d62e0e7f452,65f98dac-56c8-4eb2-a950-8a36432dcfba,113,Td (adult) preservative free
+04/05/2015,6e9f8b3e-5a21-401e-868d-2d62e0e7f452,e41a6ea8-0b77-4abc-a186-54ade6ad3565,140,Influenza  seasonal  injectable  preservative free
+24/04/2013,7fcadc56-5964-418c-9e15-889c62f5df0b,e445e0f4-4b57-48c3-8263-4923c3571a17,140,Influenza  seasonal  injectable  preservative free
+24/04/2013,7fcadc56-5964-418c-9e15-889c62f5df0b,e445e0f4-4b57-48c3-8263-4923c3571a17,113,Td (adult) preservative free
+10/06/2015,7fcadc56-5964-418c-9e15-889c62f5df0b,b5531007-de62-40a9-9ddf-08412b25d4e2,140,Influenza  seasonal  injectable  preservative free
+29/02/2012,27deaf6b-21a5-4622-9db3-b4c754c4002d,b0db2771-8f40-4650-91cb-923501895bb1,140,Influenza  seasonal  injectable  preservative free
+07/05/2014,27deaf6b-21a5-4622-9db3-b4c754c4002d,33d776bf-f01d-4c52-bc85-ee7be8b26281,140,Influenza  seasonal  injectable  preservative free
+26/03/2016,27deaf6b-21a5-4622-9db3-b4c754c4002d,cf0e8723-2367-4e34-8262-97a47ef91829,140,Influenza  seasonal  injectable  preservative free
+04/09/2010,3235f125-eadc-47a4-a639-fa764dcb803c,688b07f9-8257-46cb-ba72-2a901724f7cd,140,Influenza  seasonal  injectable  preservative free
+17/06/2013,3235f125-eadc-47a4-a639-fa764dcb803c,f999fb79-b5fb-4b3a-8f54-9bd5a5b0c836,140,Influenza  seasonal  injectable  preservative free
+19/01/2016,3235f125-eadc-47a4-a639-fa764dcb803c,4eeacf87-4b61-4241-8717-f5a0c0025464,140,Influenza  seasonal  injectable  preservative free
+27/06/2010,30a43f2a-351b-4647-a7cf-69d39b17b5ca,15a1f86a-a4bb-49a4-9c6b-b4e2ee86b334,140,Influenza  seasonal  injectable  preservative free
+27/06/2010,30a43f2a-351b-4647-a7cf-69d39b17b5ca,15a1f86a-a4bb-49a4-9c6b-b4e2ee86b334,114,meningococcal MCV4P
+27/06/2010,30a43f2a-351b-4647-a7cf-69d39b17b5ca,15a1f86a-a4bb-49a4-9c6b-b4e2ee86b334,115,Tdap
+27/06/2010,30a43f2a-351b-4647-a7cf-69d39b17b5ca,15a1f86a-a4bb-49a4-9c6b-b4e2ee86b334,62,HPV  quadrivalent
+06/06/2011,30a43f2a-351b-4647-a7cf-69d39b17b5ca,b3beccef-70a3-412d-8ec1-bb1a1910435c,140,Influenza  seasonal  injectable  preservative free
+06/06/2011,30a43f2a-351b-4647-a7cf-69d39b17b5ca,b3beccef-70a3-412d-8ec1-bb1a1910435c,62,HPV  quadrivalent
+03/06/2012,30a43f2a-351b-4647-a7cf-69d39b17b5ca,058183e3-fef3-4d0d-9fee-e24471755b15,140,Influenza  seasonal  injectable  preservative free
+03/06/2012,30a43f2a-351b-4647-a7cf-69d39b17b5ca,058183e3-fef3-4d0d-9fee-e24471755b15,62,HPV  quadrivalent
+20/04/2013,30a43f2a-351b-4647-a7cf-69d39b17b5ca,8f77ad98-5b29-4c33-885a-7c9efaed3058,140,Influenza  seasonal  injectable  preservative free
+06/04/2014,30a43f2a-351b-4647-a7cf-69d39b17b5ca,968e8aba-07f0-4eec-ab81-eec240ce8012,140,Influenza  seasonal  injectable  preservative free
+10/04/2015,30a43f2a-351b-4647-a7cf-69d39b17b5ca,0a8509ff-4d32-482e-b28f-abd57eec9152,140,Influenza  seasonal  injectable  preservative free
+10/04/2015,30a43f2a-351b-4647-a7cf-69d39b17b5ca,0a8509ff-4d32-482e-b28f-abd57eec9152,114,meningococcal MCV4P
+11/04/2016,30a43f2a-351b-4647-a7cf-69d39b17b5ca,bd3c9cfc-a18f-4f3b-9279-776edde0e77b,140,Influenza  seasonal  injectable  preservative free
+21/03/2017,30a43f2a-351b-4647-a7cf-69d39b17b5ca,4f8bd58a-99dc-49ef-8f91-4e910e61071f,140,Influenza  seasonal  injectable  preservative free
+10/03/2011,d8de9d90-3a96-4ee5-a750-d406ee10e18a,2846076f-cd55-47a2-b68f-3fe9a0ee78b8,20,DTaP
+10/03/2011,d8de9d90-3a96-4ee5-a750-d406ee10e18a,2846076f-cd55-47a2-b68f-3fe9a0ee78b8,133,Pneumococcal conjugate PCV 13
+10/03/2011,d8de9d90-3a96-4ee5-a750-d406ee10e18a,2846076f-cd55-47a2-b68f-3fe9a0ee78b8,10,IPV
+10/03/2011,d8de9d90-3a96-4ee5-a750-d406ee10e18a,2846076f-cd55-47a2-b68f-3fe9a0ee78b8,140,Influenza  seasonal  injectable  preservative free
+10/03/2011,d8de9d90-3a96-4ee5-a750-d406ee10e18a,2846076f-cd55-47a2-b68f-3fe9a0ee78b8,03,MMR
+10/03/2011,d8de9d90-3a96-4ee5-a750-d406ee10e18a,2846076f-cd55-47a2-b68f-3fe9a0ee78b8,21,varicella
+28/03/2012,d8de9d90-3a96-4ee5-a750-d406ee10e18a,cfdf228b-9fba-4222-80f1-37afe5e33aba,140,Influenza  seasonal  injectable  preservative free
+27/02/2013,d8de9d90-3a96-4ee5-a750-d406ee10e18a,b31746a0-604c-45c5-91b3-aa9730b43ba9,140,Influenza  seasonal  injectable  preservative free
+13/02/2014,d8de9d90-3a96-4ee5-a750-d406ee10e18a,d2c59ae2-c283-4838-b963-f6618ca413cb,140,Influenza  seasonal  injectable  preservative free
+10/03/2015,d8de9d90-3a96-4ee5-a750-d406ee10e18a,fa5e4457-6828-40ed-8c46-0a796a115f69,140,Influenza  seasonal  injectable  preservative free
+31/01/2016,d8de9d90-3a96-4ee5-a750-d406ee10e18a,b1c58ae6-2c87-46cc-9d9e-92675281e21e,140,Influenza  seasonal  injectable  preservative free
+07/12/2016,d8de9d90-3a96-4ee5-a750-d406ee10e18a,38e83000-7c65-4bb5-978f-09ab867de731,140,Influenza  seasonal  injectable  preservative free
+22/01/2011,4a3f4ce1-5396-49b4-8e52-78ed3923d838,3ca8e5bf-984c-4cf2-b43c-757d1b0841a2,133,Pneumococcal conjugate PCV 13
+22/01/2011,4a3f4ce1-5396-49b4-8e52-78ed3923d838,3ca8e5bf-984c-4cf2-b43c-757d1b0841a2,140,Influenza  seasonal  injectable  preservative free
+18/03/2012,4a3f4ce1-5396-49b4-8e52-78ed3923d838,63b52ac4-4722-467a-875e-7796ea3e48e8,140,Influenza  seasonal  injectable  preservative free
+08/04/2013,4a3f4ce1-5396-49b4-8e52-78ed3923d838,a980f49c-9a1b-4016-bbbe-882897a7cded,140,Influenza  seasonal  injectable  preservative free
+14/03/2014,4a3f4ce1-5396-49b4-8e52-78ed3923d838,d93cc158-e2fa-4c7f-9c73-267340119de5,140,Influenza  seasonal  injectable  preservative free
+05/03/2015,4a3f4ce1-5396-49b4-8e52-78ed3923d838,af9a2064-d56f-4c95-b841-fe9aae19f489,140,Influenza  seasonal  injectable  preservative free
+05/03/2015,4a3f4ce1-5396-49b4-8e52-78ed3923d838,af9a2064-d56f-4c95-b841-fe9aae19f489,113,Td (adult) preservative free
+23/02/2016,4a3f4ce1-5396-49b4-8e52-78ed3923d838,abf88169-9072-4212-899d-e87e0e42db9e,140,Influenza  seasonal  injectable  preservative free
+22/04/2017,4a3f4ce1-5396-49b4-8e52-78ed3923d838,629a1360-586a-44dc-aa7a-3322d0e58194,140,Influenza  seasonal  injectable  preservative free
+13/10/2011,8fb96675-9205-4334-96fc-ea4a1158252e,98eeb59a-4e07-412d-b604-825222828d51,140,Influenza  seasonal  injectable  preservative free
+26/08/2013,8fb96675-9205-4334-96fc-ea4a1158252e,50df3625-b448-4afb-97de-42ae368a8212,140,Influenza  seasonal  injectable  preservative free
+21/06/2015,8fb96675-9205-4334-96fc-ea4a1158252e,7643f957-f81a-442f-ae40-ba9d33b866e6,140,Influenza  seasonal  injectable  preservative free
+03/05/2017,8fb96675-9205-4334-96fc-ea4a1158252e,535c3d88-f334-465f-9106-085c01b99945,140,Influenza  seasonal  injectable  preservative free
+03/01/2011,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,7b414387-6021-47c3-8a32-6c4dddab0c6b,140,Influenza  seasonal  injectable  preservative free
+27/12/2011,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,a8262734-9e0e-4f73-b4ef-e658e9f213e2,140,Influenza  seasonal  injectable  preservative free
+07/03/2012,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,e816270f-cd9c-46dd-b143-8050bf6ca9a4,140,Influenza  seasonal  injectable  preservative free
+25/11/2012,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,6e3c7aa2-cca3-4c55-8143-15cd08d71387,140,Influenza  seasonal  injectable  preservative free
+23/10/2013,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,280e392a-e02f-4fc0-9e8c-5f9163bf0ddf,140,Influenza  seasonal  injectable  preservative free
+17/12/2014,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,98236344-23f9-43fe-aa5f-c2a6f547a734,140,Influenza  seasonal  injectable  preservative free
+15/12/2015,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,e4d3b889-e0e4-4ea8-a8cd-1e29fa3ca31e,140,Influenza  seasonal  injectable  preservative free
+05/01/2017,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,4d89c0eb-f6c1-4ba5-9071-7d242cb2210b,140,Influenza  seasonal  injectable  preservative free
+05/01/2017,755cdf65-0d6d-4d54-8f2a-b03df82d0d40,4d89c0eb-f6c1-4ba5-9071-7d242cb2210b,121,zoster
+06/08/2010,a9ab78d8-9615-4cb6-8659-0576137640b4,ad254447-201b-44de-8e54-272e5801f3f2,140,Influenza  seasonal  injectable  preservative free
+07/10/2012,a9ab78d8-9615-4cb6-8659-0576137640b4,7ac47bfa-f31b-4922-932a-087951b5ef8b,140,Influenza  seasonal  injectable  preservative free
+10/08/2014,a9ab78d8-9615-4cb6-8659-0576137640b4,a97184e5-51cb-4852-8086-14d2beb6754e,140,Influenza  seasonal  injectable  preservative free
+12/07/2016,a9ab78d8-9615-4cb6-8659-0576137640b4,14765bff-3ba0-47a1-9470-3f4e26a1177f,140,Influenza  seasonal  injectable  preservative free
+12/07/2016,a9ab78d8-9615-4cb6-8659-0576137640b4,14765bff-3ba0-47a1-9470-3f4e26a1177f,113,Td (adult) preservative free
+31/07/2010,946ece55-1dd0-4b15-9532-55b9e59f1f91,e623bbc2-fb4e-4074-8c34-ee06ea749d6e,140,Influenza  seasonal  injectable  preservative free
+17/09/2011,946ece55-1dd0-4b15-9532-55b9e59f1f91,396860ef-acc3-4d0f-b8a9-367b1fd6a9a2,140,Influenza  seasonal  injectable  preservative free
+20/08/2012,946ece55-1dd0-4b15-9532-55b9e59f1f91,2440fd4c-e8c7-449c-a0e7-d6165e5eea49,140,Influenza  seasonal  injectable  preservative free
+20/08/2012,946ece55-1dd0-4b15-9532-55b9e59f1f91,2440fd4c-e8c7-449c-a0e7-d6165e5eea49,121,zoster
+11/07/2013,946ece55-1dd0-4b15-9532-55b9e59f1f91,5c1f096d-a915-4619-b73f-c682444a90e1,140,Influenza  seasonal  injectable  preservative free
+11/07/2013,946ece55-1dd0-4b15-9532-55b9e59f1f91,5c1f096d-a915-4619-b73f-c682444a90e1,113,Td (adult) preservative free
+28/06/2014,946ece55-1dd0-4b15-9532-55b9e59f1f91,f118b64f-f62b-42dc-9392-a8a0de199967,140,Influenza  seasonal  injectable  preservative free
+21/08/2015,946ece55-1dd0-4b15-9532-55b9e59f1f91,fe0b86d4-1979-4efd-ad2b-cdd09cdf548a,140,Influenza  seasonal  injectable  preservative free
+20/08/2016,946ece55-1dd0-4b15-9532-55b9e59f1f91,b2fbe58d-ec8c-442b-9f1e-9a9d09e1e40c,140,Influenza  seasonal  injectable  preservative free
+06/08/2011,5c636b19-8730-4f6f-b178-5d67c03cb234,38fa87c7-5981-4a68-8f95-c554ab97a64a,140,Influenza  seasonal  injectable  preservative free
+05/08/2013,5c636b19-8730-4f6f-b178-5d67c03cb234,0c4ec7e5-3180-46cd-8f63-9f2c9189bea4,140,Influenza  seasonal  injectable  preservative free
+22/06/2015,5c636b19-8730-4f6f-b178-5d67c03cb234,0f30ba48-6390-46b7-b671-44be925c6349,140,Influenza  seasonal  injectable  preservative free
+08/06/2016,5c636b19-8730-4f6f-b178-5d67c03cb234,03cfe386-a885-4bad-92b2-f6d9fa7c21e4,140,Influenza  seasonal  injectable  preservative free
+08/06/2016,5c636b19-8730-4f6f-b178-5d67c03cb234,03cfe386-a885-4bad-92b2-f6d9fa7c21e4,113,Td (adult) preservative free
+05/12/2011,121fefcc-167d-4dd1-919c-0563b96354e6,6ccde597-523a-4a1b-97f2-fcdf65f9beb4,140,Influenza  seasonal  injectable  preservative free
+01/03/2014,121fefcc-167d-4dd1-919c-0563b96354e6,e263ed9d-08c8-4e92-9988-323745764633,140,Influenza  seasonal  injectable  preservative free
+24/01/2016,121fefcc-167d-4dd1-919c-0563b96354e6,00d112a2-8e6e-4d56-baab-1b9a52f2d40e,140,Influenza  seasonal  injectable  preservative free
+24/01/2016,121fefcc-167d-4dd1-919c-0563b96354e6,00d112a2-8e6e-4d56-baab-1b9a52f2d40e,113,Td (adult) preservative free
+22/12/2016,121fefcc-167d-4dd1-919c-0563b96354e6,4e4e20f9-070f-4abc-99b3-bb2185f003af,140,Influenza  seasonal  injectable  preservative free
+09/04/2011,2a628f42-a134-429c-8adb-db10d02bd104,680fc039-2771-4784-b054-0914f7c7fe85,140,Influenza  seasonal  injectable  preservative free
+07/03/2013,2a628f42-a134-429c-8adb-db10d02bd104,d814b79f-ca24-47f8-82e4-ecefde4b3768,140,Influenza  seasonal  injectable  preservative free
+31/01/2015,2a628f42-a134-429c-8adb-db10d02bd104,7d4b0e1a-9c29-49ca-a970-9c825de33205,140,Influenza  seasonal  injectable  preservative free
+31/01/2015,2a628f42-a134-429c-8adb-db10d02bd104,7d4b0e1a-9c29-49ca-a970-9c825de33205,113,Td (adult) preservative free
+19/12/2015,2a628f42-a134-429c-8adb-db10d02bd104,e3dcb3fa-0c8d-4f98-b5c1-57643433a899,140,Influenza  seasonal  injectable  preservative free
+08/11/2016,2a628f42-a134-429c-8adb-db10d02bd104,8b4f66ae-cbee-4449-956f-249f5b824e74,140,Influenza  seasonal  injectable  preservative free
+02/06/2010,29c2f206-8def-428d-8568-5d86a4554fde,99b08bc5-5b18-4caa-b2ed-8d855fcbbf59,140,Influenza  seasonal  injectable  preservative free
+15/06/2011,29c2f206-8def-428d-8568-5d86a4554fde,51dbf07c-f964-46c6-9ef2-d412131b40ae,140,Influenza  seasonal  injectable  preservative free
+20/05/2012,29c2f206-8def-428d-8568-5d86a4554fde,bbddcebe-446c-436f-95fe-6a22918503c2,140,Influenza  seasonal  injectable  preservative free
+14/05/2013,29c2f206-8def-428d-8568-5d86a4554fde,67f096b2-db83-4b34-b9d2-ff30198d7a87,140,Influenza  seasonal  injectable  preservative free
+10/05/2014,29c2f206-8def-428d-8568-5d86a4554fde,2781d150-92bf-4fcb-922c-6862b06e6a3b,133,Pneumococcal conjugate PCV 13
+10/05/2014,29c2f206-8def-428d-8568-5d86a4554fde,2781d150-92bf-4fcb-922c-6862b06e6a3b,140,Influenza  seasonal  injectable  preservative free
+11/04/2015,29c2f206-8def-428d-8568-5d86a4554fde,3bcad207-2c48-45f4-bacd-8a0d499de31b,140,Influenza  seasonal  injectable  preservative free
+11/04/2015,29c2f206-8def-428d-8568-5d86a4554fde,3bcad207-2c48-45f4-bacd-8a0d499de31b,33,pneumococcal polysaccharide vaccine  23 valent
+24/02/2016,29c2f206-8def-428d-8568-5d86a4554fde,976b3f63-edac-4ff9-a309-46b4132ee6c8,140,Influenza  seasonal  injectable  preservative free
+18/02/2017,29c2f206-8def-428d-8568-5d86a4554fde,bef653ff-9604-4c30-9892-26cc01da8874,140,Influenza  seasonal  injectable  preservative free
+28/03/2011,367867a9-9534-42de-a4cd-701155203122,c59bf55e-17ee-4aee-826b-bceb194a6567,140,Influenza  seasonal  injectable  preservative free
+20/04/2012,367867a9-9534-42de-a4cd-701155203122,f3e24749-0e0b-494b-8798-cf2af5fbd333,133,Pneumococcal conjugate PCV 13
+20/04/2012,367867a9-9534-42de-a4cd-701155203122,f3e24749-0e0b-494b-8798-cf2af5fbd333,140,Influenza  seasonal  injectable  preservative free
+15/04/2013,367867a9-9534-42de-a4cd-701155203122,761c9c12-0321-439a-9926-a25c3336dd12,140,Influenza  seasonal  injectable  preservative free
+15/04/2013,367867a9-9534-42de-a4cd-701155203122,761c9c12-0321-439a-9926-a25c3336dd12,33,pneumococcal polysaccharide vaccine  23 valent
+16/03/2014,367867a9-9534-42de-a4cd-701155203122,97c20ef0-fcad-4591-a425-bc11914fc650,140,Influenza  seasonal  injectable  preservative free
+03/04/2015,367867a9-9534-42de-a4cd-701155203122,adad9072-0424-4be2-84d1-12ad037594af,140,Influenza  seasonal  injectable  preservative free
+19/06/2010,bc8becc4-0218-406f-8851-56a6edeebc3d,378c4032-ada5-4db6-b2f1-16ebc0461b0f,140,Influenza  seasonal  injectable  preservative free
+19/06/2010,bc8becc4-0218-406f-8851-56a6edeebc3d,378c4032-ada5-4db6-b2f1-16ebc0461b0f,113,Td (adult) preservative free
+28/06/2011,bc8becc4-0218-406f-8851-56a6edeebc3d,9eb8d0b6-64ad-499e-aacb-0c15b8cd30f3,140,Influenza  seasonal  injectable  preservative free
+06/06/2012,bc8becc4-0218-406f-8851-56a6edeebc3d,a4c7c911-c024-4cbb-bd88-18419bae0b6b,140,Influenza  seasonal  injectable  preservative free
+09/06/2013,bc8becc4-0218-406f-8851-56a6edeebc3d,d71bf68d-3953-4049-9ada-c263f85ae769,140,Influenza  seasonal  injectable  preservative free
+09/06/2014,bc8becc4-0218-406f-8851-56a6edeebc3d,c33326ea-b46f-44f3-b25d-241ca21963eb,133,Pneumococcal conjugate PCV 13
+09/06/2014,bc8becc4-0218-406f-8851-56a6edeebc3d,c33326ea-b46f-44f3-b25d-241ca21963eb,140,Influenza  seasonal  injectable  preservative free
+14/06/2015,bc8becc4-0218-406f-8851-56a6edeebc3d,fb78a236-4186-46a0-9e3b-a11b58cfd66e,140,Influenza  seasonal  injectable  preservative free
+14/06/2015,bc8becc4-0218-406f-8851-56a6edeebc3d,fb78a236-4186-46a0-9e3b-a11b58cfd66e,33,pneumococcal polysaccharide vaccine  23 valent
+11/07/2016,bc8becc4-0218-406f-8851-56a6edeebc3d,6c8882dd-fa5c-46c1-89db-1a613239ad95,140,Influenza  seasonal  injectable  preservative free
+25/01/2011,111230c1-dd22-48bb-a432-52116b69dd55,e1488e28-9a54-4e7d-86c7-9b52fa431bcf,140,Influenza  seasonal  injectable  preservative free
+01/02/2012,111230c1-dd22-48bb-a432-52116b69dd55,2bea7d3a-b79f-4c21-beb7-0ceac1ab3d25,133,Pneumococcal conjugate PCV 13
+01/02/2012,111230c1-dd22-48bb-a432-52116b69dd55,2bea7d3a-b79f-4c21-beb7-0ceac1ab3d25,140,Influenza  seasonal  injectable  preservative free
+26/02/2013,111230c1-dd22-48bb-a432-52116b69dd55,8f6abcc5-4a20-4b21-98cc-215c6f2e5d67,140,Influenza  seasonal  injectable  preservative free
+26/02/2013,111230c1-dd22-48bb-a432-52116b69dd55,8f6abcc5-4a20-4b21-98cc-215c6f2e5d67,33,pneumococcal polysaccharide vaccine  23 valent
+24/02/2014,111230c1-dd22-48bb-a432-52116b69dd55,57e19f43-09c2-4d97-8cbd-3f8bcea5b02e,140,Influenza  seasonal  injectable  preservative free
+21/03/2015,111230c1-dd22-48bb-a432-52116b69dd55,249256d5-5701-49ac-ac16-131a6390dcf0,140,Influenza  seasonal  injectable  preservative free
+06/02/2016,111230c1-dd22-48bb-a432-52116b69dd55,5e9600dd-9ad2-490f-b9e9-5980e33a856d,140,Influenza  seasonal  injectable  preservative free
+18/11/2010,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,904b9e7f-047d-41c2-87f1-7140b84fa4f2,140,Influenza  seasonal  injectable  preservative free
+01/03/2012,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,cc2a4424-44e7-4beb-b7a7-5ecf4efe66c1,140,Influenza  seasonal  injectable  preservative free
+10/09/2012,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,cc2a4424-44e7-4beb-b7a7-5ecf4efe66c1,140,Influenza  seasonal  injectable  preservative free
+01/11/2013,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,cc2a4424-44e7-4beb-b7a7-5ecf4efe66c1,140,Influenza  seasonal  injectable  preservative free
+01/11/2013,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,cc2a4424-44e7-4beb-b7a7-5ecf4efe66c1,113,Td (adult) preservative free
+19/10/2014,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,cc2a4424-44e7-4beb-b7a7-5ecf4efe66c1,140,Influenza  seasonal  injectable  preservative free
+06/08/2015,e166a6d2-34e3-4005-abd4-bfdaa9428fbd,cc2a4424-44e7-4beb-b7a7-5ecf4efe66c1,140,Influenza  seasonal  injectable  preservative free
+03/08/2010,fc3c9158-2a28-49bf-852b-ad71a8fdbac0,7c29b692-0e60-48c2-baae-3a189eb23c58,140,Influenza  seasonal  injectable  preservative free
+03/08/2010,fc3c9158-2a28-49bf-852b-ad71a8fdbac0,7c29b692-0e60-48c2-baae-3a189eb23c58,121,zoster
+11/04/2011,fc3c9158-2a28-49bf-852b-ad71a8fdbac0,7c29b692-0e60-48c2-baae-3a189eb23c58,140,Influenza  seasonal  injectable  preservative free
+11/04/2011,fc3c9158-2a28-49bf-852b-ad71a8fdbac0,7c29b692-0e60-48c2-baae-3a189eb23c58,113,Td (adult) preservative free
+29/10/2010,b2e7d419-d24d-414d-a85d-61bee78c29f7,886ab493-c6e7-43bd-ab03-00029ff77763,140,Influenza  seasonal  injectable  preservative free
+14/09/2011,b2e7d419-d24d-414d-a85d-61bee78c29f7,0e468441-18ac-4e7b-b05c-48a7cb27b911,140,Influenza  seasonal  injectable  preservative free
+10/09/2012,b2e7d419-d24d-414d-a85d-61bee78c29f7,dedac8e1-e822-4846-9dfe-8d9bb5629ac1,140,Influenza  seasonal  injectable  preservative free
+27/09/2013,b2e7d419-d24d-414d-a85d-61bee78c29f7,a2510dac-3111-4be1-83da-5abf3c91cb17,140,Influenza  seasonal  injectable  preservative free
+20/10/2014,b2e7d419-d24d-414d-a85d-61bee78c29f7,aa08d735-b824-486f-bdf0-b9ea57bbaaba,140,Influenza  seasonal  injectable  preservative free
+13/12/2015,b2e7d419-d24d-414d-a85d-61bee78c29f7,ceec569b-222b-48af-bc25-f40fa268696e,140,Influenza  seasonal  injectable  preservative free
+13/10/2016,b2e7d419-d24d-414d-a85d-61bee78c29f7,7b39dd10-8aff-491b-86ce-f819c05ad0df,140,Influenza  seasonal  injectable  preservative free
+16/12/2011,25a3de57-c371-438c-9a83-4ba79d5df2a8,f065cf1f-a195-4909-8442-881c473b1533,140,Influenza  seasonal  injectable  preservative free
+21/05/2014,25a3de57-c371-438c-9a83-4ba79d5df2a8,d42fe55f-f698-48e1-b197-bd69cc82d94d,140,Influenza  seasonal  injectable  preservative free
+02/08/2016,25a3de57-c371-438c-9a83-4ba79d5df2a8,79802097-1291-4349-8244-fdef7991488b,140,Influenza  seasonal  injectable  preservative free
+10/02/2012,683abd1c-43be-4e96-95dd-75059699b89e,5a677ae9-a83c-4b98-b1e3-617a3275d1ac,140,Influenza  seasonal  injectable  preservative free
+10/02/2012,683abd1c-43be-4e96-95dd-75059699b89e,5a677ae9-a83c-4b98-b1e3-617a3275d1ac,113,Td (adult) preservative free
+15/01/2015,683abd1c-43be-4e96-95dd-75059699b89e,bf838036-b55c-44b9-923b-d6c1bbb118f8,140,Influenza  seasonal  injectable  preservative free
+12/04/2011,ede350e5-0ec6-4527-ae52-b436aa73ec3b,d9e5eaef-ca9f-4c06-9ef6-c1cdff54d2f0,140,Influenza  seasonal  injectable  preservative free
+12/04/2011,ede350e5-0ec6-4527-ae52-b436aa73ec3b,d9e5eaef-ca9f-4c06-9ef6-c1cdff54d2f0,33,pneumococcal polysaccharide vaccine  23 valent
+11/03/2012,ede350e5-0ec6-4527-ae52-b436aa73ec3b,7d7f4f75-1022-41ef-815c-a85e2e28895c,140,Influenza  seasonal  injectable  preservative free
+27/11/2012,ede350e5-0ec6-4527-ae52-b436aa73ec3b,c9451488-4d1a-450c-a726-9cdf7271b82d,140,Influenza  seasonal  injectable  preservative free
+23/09/2013,ede350e5-0ec6-4527-ae52-b436aa73ec3b,6fab49c6-a19f-4143-83c1-b6160d7fe26f,140,Influenza  seasonal  injectable  preservative free
+18/09/2014,ede350e5-0ec6-4527-ae52-b436aa73ec3b,795cb402-f8ed-4f2e-80d7-252102bc930f,140,Influenza  seasonal  injectable  preservative free
+06/09/2015,ede350e5-0ec6-4527-ae52-b436aa73ec3b,2cf4ab43-23c6-438f-be45-b93023b89ab6,140,Influenza  seasonal  injectable  preservative free
+19/07/2016,ede350e5-0ec6-4527-ae52-b436aa73ec3b,ac0831fd-82f5-41de-82e5-0631d4de988b,140,Influenza  seasonal  injectable  preservative free
+19/07/2016,ede350e5-0ec6-4527-ae52-b436aa73ec3b,ac0831fd-82f5-41de-82e5-0631d4de988b,113,Td (adult) preservative free
+01/07/2010,d3f0304c-4a0c-4131-8368-63262e1ee1a8,aec9ed3f-8b17-415a-819b-8aa1966d8ad8,140,Influenza  seasonal  injectable  preservative free
+21/06/2011,d3f0304c-4a0c-4131-8368-63262e1ee1a8,d4876b28-5b46-44df-b518-c676206fd2e6,140,Influenza  seasonal  injectable  preservative free
+23/06/2012,d3f0304c-4a0c-4131-8368-63262e1ee1a8,21b3a15f-1306-45dc-9ece-0938f6af4d2c,140,Influenza  seasonal  injectable  preservative free
+10/05/2013,d3f0304c-4a0c-4131-8368-63262e1ee1a8,21b3a15f-1306-45dc-9ece-0938f6af4d2c,140,Influenza  seasonal  injectable  preservative free
+09/02/2014,d3f0304c-4a0c-4131-8368-63262e1ee1a8,385c0fdb-513e-456a-9f79-82aec4f0e01d,140,Influenza  seasonal  injectable  preservative free
+11/02/2015,d3f0304c-4a0c-4131-8368-63262e1ee1a8,ba6b6320-92d7-44e6-938d-771a9aedfcb8,140,Influenza  seasonal  injectable  preservative free
+11/02/2015,d3f0304c-4a0c-4131-8368-63262e1ee1a8,ba6b6320-92d7-44e6-938d-771a9aedfcb8,113,Td (adult) preservative free
+19/01/2016,d3f0304c-4a0c-4131-8368-63262e1ee1a8,90d84ec1-8b6b-4af8-bf06-cadf06fb8e3e,140,Influenza  seasonal  injectable  preservative free
+02/08/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,b2236aba-6d05-444f-bad0-f11fc28be2f1,08,Hep B  adolescent or pediatric
+07/09/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,9e8408b6-a814-4bde-8eab-6b2e9b01e777,08,Hep B  adolescent or pediatric
+13/10/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,024a2b13-58d1-4e46-8ffc-f2ec83789365,119,rotavirus  monovalent
+13/10/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,024a2b13-58d1-4e46-8ffc-f2ec83789365,20,DTaP
+13/10/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,024a2b13-58d1-4e46-8ffc-f2ec83789365,49,Hib (PRP-OMP)
+13/10/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,024a2b13-58d1-4e46-8ffc-f2ec83789365,133,Pneumococcal conjugate PCV 13
+13/10/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,024a2b13-58d1-4e46-8ffc-f2ec83789365,10,IPV
+11/12/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,17bbc914-093f-480c-95d7-7b3dc97a633e,119,rotavirus  monovalent
+11/12/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,17bbc914-093f-480c-95d7-7b3dc97a633e,20,DTaP
+11/12/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,17bbc914-093f-480c-95d7-7b3dc97a633e,49,Hib (PRP-OMP)
+11/12/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,17bbc914-093f-480c-95d7-7b3dc97a633e,133,Pneumococcal conjugate PCV 13
+11/12/2010,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,17bbc914-093f-480c-95d7-7b3dc97a633e,10,IPV
+06/02/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,48764b9d-7d18-4198-8a71-9e25cbac817e,08,Hep B  adolescent or pediatric
+06/02/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,48764b9d-7d18-4198-8a71-9e25cbac817e,20,DTaP
+06/02/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,48764b9d-7d18-4198-8a71-9e25cbac817e,133,Pneumococcal conjugate PCV 13
+06/02/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,48764b9d-7d18-4198-8a71-9e25cbac817e,10,IPV
+06/02/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,48764b9d-7d18-4198-8a71-9e25cbac817e,140,Influenza  seasonal  injectable  preservative free
+07/08/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,5344a94f-deec-4c3e-ab04-4d2b0c767274,49,Hib (PRP-OMP)
+07/08/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,5344a94f-deec-4c3e-ab04-4d2b0c767274,133,Pneumococcal conjugate PCV 13
+07/08/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,5344a94f-deec-4c3e-ab04-4d2b0c767274,03,MMR
+07/08/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,5344a94f-deec-4c3e-ab04-4d2b0c767274,21,varicella
+07/08/2011,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,5344a94f-deec-4c3e-ab04-4d2b0c767274,83,Hep A  ped/adol  2 dose
+10/01/2012,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,77626e11-4e5c-4cff-a451-4c55906379cf,20,DTaP
+07/04/2012,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,fe44a1d6-a7c6-4f5d-b463-90346fc34bf0,140,Influenza  seasonal  injectable  preservative free
+13/09/2012,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,3a37c31b-562e-4452-9111-7bb5519085bd,83,Hep A  ped/adol  2 dose
+09/03/2013,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,df8da6ef-13a2-48c2-b43e-34bf1615a2c5,140,Influenza  seasonal  injectable  preservative free
+06/09/2014,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,d7a7c1e9-389f-49da-8f50-b42dda87c6c0,20,DTaP
+06/09/2014,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,d7a7c1e9-389f-49da-8f50-b42dda87c6c0,10,IPV
+06/09/2014,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,d7a7c1e9-389f-49da-8f50-b42dda87c6c0,140,Influenza  seasonal  injectable  preservative free
+06/09/2014,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,d7a7c1e9-389f-49da-8f50-b42dda87c6c0,03,MMR
+06/09/2014,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,d7a7c1e9-389f-49da-8f50-b42dda87c6c0,21,varicella
+02/07/2015,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,baed4cca-eb57-4cf0-b5e3-9099f33af0d4,140,Influenza  seasonal  injectable  preservative free
+28/04/2016,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,97a32ace-d69a-48ed-9e9e-31d45546b327,140,Influenza  seasonal  injectable  preservative free
+14/04/2017,46a690fd-0e49-4e79-a7ea-aaa3d93de82d,1a347dd1-4b44-4168-bc17-59e4e4a5b533,140,Influenza  seasonal  injectable  preservative free
+22/09/2011,fdcc0376-2b51-4aae-ab01-1f967fd920c8,5c2ca57f-e37c-4fd2-9179-b647c108acf8,140,Influenza  seasonal  injectable  preservative free
+03/05/2015,fdcc0376-2b51-4aae-ab01-1f967fd920c8,d8ef362e-65ef-4844-a1dd-8d0031607fdf,140,Influenza  seasonal  injectable  preservative free
+05/09/2010,857e9420-cc4f-4854-b773-261e7e45289f,653b852e-7671-4401-b1a0-057375d306fe,140,Influenza  seasonal  injectable  preservative free
+03/10/2012,857e9420-cc4f-4854-b773-261e7e45289f,33e43883-5964-4787-94b3-63f2b895926f,140,Influenza  seasonal  injectable  preservative free
+08/02/2015,857e9420-cc4f-4854-b773-261e7e45289f,981a3103-5320-4563-8db0-d29e38218e27,140,Influenza  seasonal  injectable  preservative free
+23/02/2016,857e9420-cc4f-4854-b773-261e7e45289f,34e87b48-2d2e-45c3-839e-7846321722dd,140,Influenza  seasonal  injectable  preservative free
+23/02/2016,857e9420-cc4f-4854-b773-261e7e45289f,34e87b48-2d2e-45c3-839e-7846321722dd,113,Td (adult) preservative free
+23/04/2017,857e9420-cc4f-4854-b773-261e7e45289f,65106403-1120-4756-882b-fe70450abaa5,140,Influenza  seasonal  injectable  preservative free
+07/09/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,90c63d99-344e-4e5e-bb2c-5f5413fd31e7,08,Hep B  adolescent or pediatric
+19/10/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,f3b8c887-1f8e-4000-b84e-beeba839686c,08,Hep B  adolescent or pediatric
+27/11/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,72758f3b-5323-4a9d-b8bf-2f9f7a5737cd,119,rotavirus  monovalent
+27/11/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,72758f3b-5323-4a9d-b8bf-2f9f7a5737cd,20,DTaP
+27/11/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,72758f3b-5323-4a9d-b8bf-2f9f7a5737cd,49,Hib (PRP-OMP)
+27/11/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,72758f3b-5323-4a9d-b8bf-2f9f7a5737cd,133,Pneumococcal conjugate PCV 13
+27/11/2013,a9373433-9505-4f7d-9e9f-a3b2407e8b86,72758f3b-5323-4a9d-b8bf-2f9f7a5737cd,10,IPV
+30/01/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,b151f751-c1c5-482f-b8e4-efd48b17cee9,119,rotavirus  monovalent
+30/01/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,b151f751-c1c5-482f-b8e4-efd48b17cee9,20,DTaP
+30/01/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,b151f751-c1c5-482f-b8e4-efd48b17cee9,49,Hib (PRP-OMP)
+30/01/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,b151f751-c1c5-482f-b8e4-efd48b17cee9,133,Pneumococcal conjugate PCV 13
+30/01/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,b151f751-c1c5-482f-b8e4-efd48b17cee9,10,IPV
+09/04/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,5fe2b22e-4377-4fb1-af11-af18fa074d12,08,Hep B  adolescent or pediatric
+09/04/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,5fe2b22e-4377-4fb1-af11-af18fa074d12,20,DTaP
+09/04/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,5fe2b22e-4377-4fb1-af11-af18fa074d12,133,Pneumococcal conjugate PCV 13
+09/04/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,5fe2b22e-4377-4fb1-af11-af18fa074d12,10,IPV
+09/04/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,5fe2b22e-4377-4fb1-af11-af18fa074d12,140,Influenza  seasonal  injectable  preservative free
+24/10/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,9a655bb9-5ea6-4226-8fc6-fdfb56427352,49,Hib (PRP-OMP)
+24/10/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,9a655bb9-5ea6-4226-8fc6-fdfb56427352,133,Pneumococcal conjugate PCV 13
+24/10/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,9a655bb9-5ea6-4226-8fc6-fdfb56427352,03,MMR
+24/10/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,9a655bb9-5ea6-4226-8fc6-fdfb56427352,21,varicella
+24/10/2014,a9373433-9505-4f7d-9e9f-a3b2407e8b86,9a655bb9-5ea6-4226-8fc6-fdfb56427352,83,Hep A  ped/adol  2 dose
+25/01/2015,a9373433-9505-4f7d-9e9f-a3b2407e8b86,05572443-c9ee-4da8-bf3e-0a701ffa3bf5,20,DTaP
+03/05/2015,a9373433-9505-4f7d-9e9f-a3b2407e8b86,654bfee4-c01d-4a32-9871-68f1734e99a5,140,Influenza  seasonal  injectable  preservative free
+06/11/2015,a9373433-9505-4f7d-9e9f-a3b2407e8b86,642cf65a-6c87-41e8-b6c3-a4b8f38055e4,83,Hep A  ped/adol  2 dose
+18/06/2016,a9373433-9505-4f7d-9e9f-a3b2407e8b86,b82933af-8a5f-446d-b094-6b712209c267,140,Influenza  seasonal  injectable  preservative free
+07/01/2011,e2929825-7fae-4afa-b994-de647715767f,50a4a34c-3121-4c5a-af60-3d5651a8d9be,140,Influenza  seasonal  injectable  preservative free
+22/02/2013,e2929825-7fae-4afa-b994-de647715767f,7e5010d3-145d-45bb-b0aa-9905077f44b0,140,Influenza  seasonal  injectable  preservative free
+08/03/2014,e2929825-7fae-4afa-b994-de647715767f,ff21817b-cd69-4230-8881-03aaf1aa10a7,140,Influenza  seasonal  injectable  preservative free
+08/03/2014,e2929825-7fae-4afa-b994-de647715767f,ff21817b-cd69-4230-8881-03aaf1aa10a7,113,Td (adult) preservative free
+17/03/2015,e2929825-7fae-4afa-b994-de647715767f,3995ec70-8be1-49dd-9a53-b7e1d20d0f27,140,Influenza  seasonal  injectable  preservative free
+16/04/2016,e2929825-7fae-4afa-b994-de647715767f,1d0e2c04-0990-478f-89a6-25cc80e6d2e0,140,Influenza  seasonal  injectable  preservative free
+18/05/2017,e2929825-7fae-4afa-b994-de647715767f,917d2141-a9f7-4f5d-ab04-3e060faf8cbf,140,Influenza  seasonal  injectable  preservative free
+27/10/2010,964dc70c-55c4-402a-8f6b-05d0c2d5adc8,196b26b5-7be8-4083-aa54-3d3f7e19682c,140,Influenza  seasonal  injectable  preservative free
+03/11/2011,964dc70c-55c4-402a-8f6b-05d0c2d5adc8,f498f410-8026-445f-9a88-a4f640b32fa1,140,Influenza  seasonal  injectable  preservative free
+06/09/2010,5f1763ae-6097-42fc-b8fe-fb4f9cc77fb6,ccb67109-0823-438d-ada6-ae30815f5edc,140,Influenza  seasonal  injectable  preservative free
+28/10/2012,5f1763ae-6097-42fc-b8fe-fb4f9cc77fb6,281464b4-a418-444b-8596-e3104a1a0178,140,Influenza  seasonal  injectable  preservative free
+26/11/2014,5f1763ae-6097-42fc-b8fe-fb4f9cc77fb6,fd68fb81-a84f-4926-8dc5-f4a6e730fa82,140,Influenza  seasonal  injectable  preservative free
+06/12/2016,5f1763ae-6097-42fc-b8fe-fb4f9cc77fb6,4238c7d7-c9b5-4dc8-9e5c-b40544d1c3ac,140,Influenza  seasonal  injectable  preservative free
+20/02/2012,e02adeae-0239-4ab9-aa63-7a966101e8ad,34220ae8-7547-4948-b823-c289875dd36a,140,Influenza  seasonal  injectable  preservative free
+29/03/2014,e02adeae-0239-4ab9-aa63-7a966101e8ad,1ded6e21-92d3-42f5-a122-1344f53e62e1,140,Influenza  seasonal  injectable  preservative free
+28/03/2016,e02adeae-0239-4ab9-aa63-7a966101e8ad,849c2bda-20cb-440a-8370-cd80fb2e8582,140,Influenza  seasonal  injectable  preservative free
+23/04/2011,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,41decbc5-1608-41cd-bcf5-cc131fad6973,140,Influenza  seasonal  injectable  preservative free
+13/06/2012,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,aad4aa06-8448-439a-8ab3-5b7fb185c10d,140,Influenza  seasonal  injectable  preservative free
+15/06/2013,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,363c1a64-beb9-45a1-96af-65064a47e2b1,140,Influenza  seasonal  injectable  preservative free
+15/06/2013,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,363c1a64-beb9-45a1-96af-65064a47e2b1,121,zoster
+18/06/2014,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,c3e56515-ff61-4a51-a138-9f793bea2ce8,140,Influenza  seasonal  injectable  preservative free
+18/06/2014,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,c3e56515-ff61-4a51-a138-9f793bea2ce8,113,Td (adult) preservative free
+27/06/2015,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,f0f44d41-72bd-4d1f-b7c1-d832bbceb009,140,Influenza  seasonal  injectable  preservative free
+03/07/2016,7f9a990b-7585-4681-bd78-3ef5e2b2ebee,fd0d9e01-5c4a-45b3-a13d-d4e84196e0b3,140,Influenza  seasonal  injectable  preservative free
+07/07/2010,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,f44269d0-b0ed-41ef-9002-453d099c936a,140,Influenza  seasonal  injectable  preservative free
+07/07/2010,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,f44269d0-b0ed-41ef-9002-453d099c936a,62,HPV  quadrivalent
+12/07/2011,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,97f3ea6d-eb68-465e-b000-ce72d002598a,140,Influenza  seasonal  injectable  preservative free
+17/07/2012,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,1ad58139-10ec-4a7d-9c53-6555a1158340,140,Influenza  seasonal  injectable  preservative free
+09/09/2013,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,e29e63ce-a0e6-4c28-adbc-c04eda9d60fb,140,Influenza  seasonal  injectable  preservative free
+09/09/2013,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,e29e63ce-a0e6-4c28-adbc-c04eda9d60fb,114,meningococcal MCV4P
+15/09/2014,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,b77f341d-27f7-46fe-abe1-3f8d31741510,140,Influenza  seasonal  injectable  preservative free
+21/09/2015,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,9199f9ae-bfaf-4c24-8378-aa90e31a5a63,140,Influenza  seasonal  injectable  preservative free
+07/10/2016,9fc520fc-7eaa-46a9-b253-4f9f8b1867a6,9d9b0a76-ee75-4bcc-95e0-bc7952c3eaad,140,Influenza  seasonal  injectable  preservative free
+12/04/2011,691538c5-4e35-45a2-9646-cdcc50fd241e,3aa7514e-e3f7-4dc6-b64b-169383075ca1,140,Influenza  seasonal  injectable  preservative free
+23/04/2012,691538c5-4e35-45a2-9646-cdcc50fd241e,15dc7901-adaa-4371-ad91-d53d5cc73526,140,Influenza  seasonal  injectable  preservative free
+23/04/2012,691538c5-4e35-45a2-9646-cdcc50fd241e,15dc7901-adaa-4371-ad91-d53d5cc73526,121,zoster
+26/04/2013,691538c5-4e35-45a2-9646-cdcc50fd241e,36a208a6-b1cc-4d70-9384-675f4abd85ee,140,Influenza  seasonal  injectable  preservative free
+26/04/2013,691538c5-4e35-45a2-9646-cdcc50fd241e,36a208a6-b1cc-4d70-9384-675f4abd85ee,113,Td (adult) preservative free
+11/05/2014,691538c5-4e35-45a2-9646-cdcc50fd241e,e957c884-f3a7-499a-8ac0-df18c3408b47,140,Influenza  seasonal  injectable  preservative free
+18/05/2015,691538c5-4e35-45a2-9646-cdcc50fd241e,9094db16-35ee-4043-95b9-3bde15973bb8,140,Influenza  seasonal  injectable  preservative free
+21/05/2016,691538c5-4e35-45a2-9646-cdcc50fd241e,ffdeab6a-e2e6-43b6-9f26-289796cee294,140,Influenza  seasonal  injectable  preservative free
+21/05/2017,691538c5-4e35-45a2-9646-cdcc50fd241e,efb55d6c-2973-47d6-bbe1-6cdf2654615e,133,Pneumococcal conjugate PCV 13
+21/05/2017,691538c5-4e35-45a2-9646-cdcc50fd241e,efb55d6c-2973-47d6-bbe1-6cdf2654615e,140,Influenza  seasonal  injectable  preservative free
+10/12/2010,bf31ca5d-9762-4e65-87a1-b0731cd89364,ae653bef-5d34-45eb-aabf-d1704988a7d5,20,DTaP
+10/12/2010,bf31ca5d-9762-4e65-87a1-b0731cd89364,ae653bef-5d34-45eb-aabf-d1704988a7d5,133,Pneumococcal conjugate PCV 13
+10/12/2010,bf31ca5d-9762-4e65-87a1-b0731cd89364,ae653bef-5d34-45eb-aabf-d1704988a7d5,10,IPV
+10/12/2010,bf31ca5d-9762-4e65-87a1-b0731cd89364,ae653bef-5d34-45eb-aabf-d1704988a7d5,140,Influenza  seasonal  injectable  preservative free
+10/12/2010,bf31ca5d-9762-4e65-87a1-b0731cd89364,ae653bef-5d34-45eb-aabf-d1704988a7d5,03,MMR
+10/12/2010,bf31ca5d-9762-4e65-87a1-b0731cd89364,ae653bef-5d34-45eb-aabf-d1704988a7d5,21,varicella
+13/12/2011,bf31ca5d-9762-4e65-87a1-b0731cd89364,ab9eefd7-4b52-4fb9-a12d-5629990009e2,140,Influenza  seasonal  injectable  preservative free
+20/12/2012,bf31ca5d-9762-4e65-87a1-b0731cd89364,8d6285f4-0ee8-45e7-ba7a-0567fd16da86,140,Influenza  seasonal  injectable  preservative free
+15/12/2013,bf31ca5d-9762-4e65-87a1-b0731cd89364,3bc1676b-67db-4311-9eed-8c0032811020,140,Influenza  seasonal  injectable  preservative free
+12/10/2014,bf31ca5d-9762-4e65-87a1-b0731cd89364,22cb5d33-a348-46e0-bc0d-72b02eff6d07,140,Influenza  seasonal  injectable  preservative free
+08/10/2015,bf31ca5d-9762-4e65-87a1-b0731cd89364,eed46371-400f-4335-b9f9-f928a9a605f4,140,Influenza  seasonal  injectable  preservative free
+16/09/2016,bf31ca5d-9762-4e65-87a1-b0731cd89364,9e72a87d-8ad1-40b4-9220-a61132c34061,140,Influenza  seasonal  injectable  preservative free
+24/07/2010,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,9b735506-e4ec-474f-bddc-aa9722f3ebac,133,Pneumococcal conjugate PCV 13
+24/07/2010,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,9b735506-e4ec-474f-bddc-aa9722f3ebac,140,Influenza  seasonal  injectable  preservative free
+28/01/2011,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,9765dd53-61ed-44b7-b34b-6f421494dcfb,133,Pneumococcal conjugate PCV 13
+30/11/2011,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,04507886-9121-4ea4-a3f4-05404cfd8e6c,133,Pneumococcal conjugate PCV 13
+30/11/2011,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,04507886-9121-4ea4-a3f4-05404cfd8e6c,140,Influenza  seasonal  injectable  preservative free
+28/11/2012,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,95a9858d-70d7-4e61-9c58-24431dae34d7,20,DTaP
+28/11/2012,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,95a9858d-70d7-4e61-9c58-24431dae34d7,10,IPV
+28/11/2012,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,95a9858d-70d7-4e61-9c58-24431dae34d7,140,Influenza  seasonal  injectable  preservative free
+28/11/2012,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,95a9858d-70d7-4e61-9c58-24431dae34d7,03,MMR
+28/11/2012,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,95a9858d-70d7-4e61-9c58-24431dae34d7,21,varicella
+17/11/2013,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,d227586b-5a82-40c5-a855-a52e130a4fc4,140,Influenza  seasonal  injectable  preservative free
+12/10/2014,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,aaf07a71-b811-4f74-8e5f-4d3125080613,140,Influenza  seasonal  injectable  preservative free
+14/09/2015,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,d25d0883-3833-4381-a6fb-f808d2ebdb17,140,Influenza  seasonal  injectable  preservative free
+20/07/2016,f557d7b4-8dac-4d10-9ff8-c53f32e64d63,1a62f640-94ef-4580-84c4-5cb3e042367d,140,Influenza  seasonal  injectable  preservative free
+10/06/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,cf1f14ff-6d31-4954-a2e0-d32bd7154136,08,Hep B  adolescent or pediatric
+16/07/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,b31c4bce-b438-40d7-b299-62a351beeeb3,08,Hep B  adolescent or pediatric
+19/08/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,c234767c-8045-4db3-bad0-3c4e24967b3c,119,rotavirus  monovalent
+19/08/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,c234767c-8045-4db3-bad0-3c4e24967b3c,20,DTaP
+19/08/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,c234767c-8045-4db3-bad0-3c4e24967b3c,49,Hib (PRP-OMP)
+19/08/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,c234767c-8045-4db3-bad0-3c4e24967b3c,133,Pneumococcal conjugate PCV 13
+19/08/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,c234767c-8045-4db3-bad0-3c4e24967b3c,10,IPV
+19/10/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,a2d6ae3e-ec7b-4f33-aaad-211a3ff5fa2c,119,rotavirus  monovalent
+19/10/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,a2d6ae3e-ec7b-4f33-aaad-211a3ff5fa2c,20,DTaP
+19/10/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,a2d6ae3e-ec7b-4f33-aaad-211a3ff5fa2c,49,Hib (PRP-OMP)
+19/10/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,a2d6ae3e-ec7b-4f33-aaad-211a3ff5fa2c,133,Pneumococcal conjugate PCV 13
+19/10/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,a2d6ae3e-ec7b-4f33-aaad-211a3ff5fa2c,10,IPV
+15/12/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,2552e9a8-f2b0-4515-9c99-9b4d582e50f2,08,Hep B  adolescent or pediatric
+15/12/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,2552e9a8-f2b0-4515-9c99-9b4d582e50f2,20,DTaP
+15/12/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,2552e9a8-f2b0-4515-9c99-9b4d582e50f2,133,Pneumococcal conjugate PCV 13
+15/12/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,2552e9a8-f2b0-4515-9c99-9b4d582e50f2,10,IPV
+15/12/2015,10a2769c-a205-4a63-a013-75e9a45f4dd9,2552e9a8-f2b0-4515-9c99-9b4d582e50f2,140,Influenza  seasonal  injectable  preservative free
+16/08/2016,10a2769c-a205-4a63-a013-75e9a45f4dd9,24a3de1c-ba37-4631-b061-d14f601f63a8,49,Hib (PRP-OMP)
+16/08/2016,10a2769c-a205-4a63-a013-75e9a45f4dd9,24a3de1c-ba37-4631-b061-d14f601f63a8,133,Pneumococcal conjugate PCV 13
+16/08/2016,10a2769c-a205-4a63-a013-75e9a45f4dd9,24a3de1c-ba37-4631-b061-d14f601f63a8,03,MMR
+16/08/2016,10a2769c-a205-4a63-a013-75e9a45f4dd9,24a3de1c-ba37-4631-b061-d14f601f63a8,21,varicella
+16/08/2016,10a2769c-a205-4a63-a013-75e9a45f4dd9,24a3de1c-ba37-4631-b061-d14f601f63a8,83,Hep A  ped/adol  2 dose
+08/11/2016,10a2769c-a205-4a63-a013-75e9a45f4dd9,98b3294d-2527-4081-ad06-2d5fa5aa49fc,20,DTaP
+10/02/2017,10a2769c-a205-4a63-a013-75e9a45f4dd9,751224d2-516e-4711-a770-b7394c591dcc,140,Influenza  seasonal  injectable  preservative free
+18/03/2011,21078fa3-043b-4ec0-b13b-eb631818ebdd,ac2791ff-7136-4b55-9f43-b96105867259,140,Influenza  seasonal  injectable  preservative free
+14/03/2012,21078fa3-043b-4ec0-b13b-eb631818ebdd,ea5a80cd-a40a-4b84-aa67-8b7284e90450,140,Influenza  seasonal  injectable  preservative free
+14/03/2012,21078fa3-043b-4ec0-b13b-eb631818ebdd,ea5a80cd-a40a-4b84-aa67-8b7284e90450,114,meningococcal MCV4P
+14/03/2012,21078fa3-043b-4ec0-b13b-eb631818ebdd,ea5a80cd-a40a-4b84-aa67-8b7284e90450,115,Tdap
+14/03/2012,21078fa3-043b-4ec0-b13b-eb631818ebdd,ea5a80cd-a40a-4b84-aa67-8b7284e90450,62,HPV  quadrivalent
+02/03/2013,21078fa3-043b-4ec0-b13b-eb631818ebdd,54534f6e-afa6-4efe-807e-9997ceb98566,140,Influenza  seasonal  injectable  preservative free
+02/03/2013,21078fa3-043b-4ec0-b13b-eb631818ebdd,54534f6e-afa6-4efe-807e-9997ceb98566,62,HPV  quadrivalent
+30/12/2013,21078fa3-043b-4ec0-b13b-eb631818ebdd,dbca89b0-817b-4708-9480-f1b29e304c4b,140,Influenza  seasonal  injectable  preservative free
+30/12/2013,21078fa3-043b-4ec0-b13b-eb631818ebdd,dbca89b0-817b-4708-9480-f1b29e304c4b,62,HPV  quadrivalent
+02/12/2014,21078fa3-043b-4ec0-b13b-eb631818ebdd,e39e714e-5b1f-4aab-adf5-a1dbd9f7672e,140,Influenza  seasonal  injectable  preservative free
+16/11/2015,21078fa3-043b-4ec0-b13b-eb631818ebdd,b0e44c16-4410-4783-98d4-44100a427c96,140,Influenza  seasonal  injectable  preservative free
+24/09/2016,21078fa3-043b-4ec0-b13b-eb631818ebdd,e0f0a5b2-4fc2-42b8-aee4-8af954804e92,140,Influenza  seasonal  injectable  preservative free
+19/06/2010,bbfa6679-9148-473c-adfa-1446a34303d3,c15b3a0c-c860-456e-bded-826cabdf6d1c,140,Influenza  seasonal  injectable  preservative free
+22/04/2012,bbfa6679-9148-473c-adfa-1446a34303d3,73a62b3f-e621-4468-ad0e-9213fcb6a528,140,Influenza  seasonal  injectable  preservative free
+08/03/2014,bbfa6679-9148-473c-adfa-1446a34303d3,c3cabbb1-8323-45fb-86e7-a5f1a3a94574,140,Influenza  seasonal  injectable  preservative free
+15/01/2015,bbfa6679-9148-473c-adfa-1446a34303d3,0433fcfc-efea-4da5-9c76-9ff0da6b8bbd,140,Influenza  seasonal  injectable  preservative free
+15/01/2015,bbfa6679-9148-473c-adfa-1446a34303d3,0433fcfc-efea-4da5-9c76-9ff0da6b8bbd,113,Td (adult) preservative free
+27/12/2015,bbfa6679-9148-473c-adfa-1446a34303d3,b6ef81c8-7b42-4716-abda-be7afcafb76a,140,Influenza  seasonal  injectable  preservative free
+31/12/2016,bbfa6679-9148-473c-adfa-1446a34303d3,e943e8ad-bd48-4eb1-822b-17daa4d476b5,140,Influenza  seasonal  injectable  preservative free
+15/01/2012,41fa6765-89e9-4326-8674-62d3e73132ed,bb418e66-af3d-4170-a563-a0a5f6f57ae6,133,Pneumococcal conjugate PCV 13
+15/01/2012,41fa6765-89e9-4326-8674-62d3e73132ed,bb418e66-af3d-4170-a563-a0a5f6f57ae6,140,Influenza  seasonal  injectable  preservative free
+05/12/2012,41fa6765-89e9-4326-8674-62d3e73132ed,41b318da-29c1-43f1-853d-1d4561b36307,140,Influenza  seasonal  injectable  preservative free
+05/12/2012,41fa6765-89e9-4326-8674-62d3e73132ed,41b318da-29c1-43f1-853d-1d4561b36307,33,pneumococcal polysaccharide vaccine  23 valent
+22/11/2013,41fa6765-89e9-4326-8674-62d3e73132ed,844caf1f-de7c-41f1-be7c-c2ccfb26be84,140,Influenza  seasonal  injectable  preservative free
+30/10/2014,41fa6765-89e9-4326-8674-62d3e73132ed,d169837b-8be5-4d96-9e24-99fcdb70f90c,140,Influenza  seasonal  injectable  preservative free
+16/09/2015,41fa6765-89e9-4326-8674-62d3e73132ed,e9bfd45e-463c-499e-89e4-bcf6ac15381e,140,Influenza  seasonal  injectable  preservative free
+27/08/2016,41fa6765-89e9-4326-8674-62d3e73132ed,918b6753-e948-4805-a92d-757c8e08f41b,140,Influenza  seasonal  injectable  preservative free
+31/10/2011,c6352495-b731-4cb7-8050-df96bab48632,fa4b97d2-482f-4865-addd-a011da90e846,140,Influenza  seasonal  injectable  preservative free
+31/08/2013,c6352495-b731-4cb7-8050-df96bab48632,14844ad4-cc2d-4cb5-b95c-287ce2963afa,140,Influenza  seasonal  injectable  preservative free
+07/05/2015,c6352495-b731-4cb7-8050-df96bab48632,7df2f6a3-97bd-4978-ae89-5cfd8ba9e383,140,Influenza  seasonal  injectable  preservative free
+27/12/2016,c6352495-b731-4cb7-8050-df96bab48632,2417f696-cd59-4d19-92ce-aaccb89bb2c4,140,Influenza  seasonal  injectable  preservative free
+18/07/2010,3489af9e-9999-455c-839f-52bd59c59407,a1ae0461-73bb-4aae-af0b-0819baa469a1,20,DTaP
+18/07/2010,3489af9e-9999-455c-839f-52bd59c59407,a1ae0461-73bb-4aae-af0b-0819baa469a1,133,Pneumococcal conjugate PCV 13
+09/10/2010,3489af9e-9999-455c-839f-52bd59c59407,00edfc05-7786-4cf8-a5d9-d472f0722deb,133,Pneumococcal conjugate PCV 13
+09/10/2010,3489af9e-9999-455c-839f-52bd59c59407,00edfc05-7786-4cf8-a5d9-d472f0722deb,140,Influenza  seasonal  injectable  preservative free
+05/04/2011,3489af9e-9999-455c-839f-52bd59c59407,b446f10f-fd00-4f07-aa94-46ea147d3fd5,83,Hep A  ped/adol  2 dose
+06/10/2011,3489af9e-9999-455c-839f-52bd59c59407,32906983-c810-47b2-9684-d7d905bb153e,140,Influenza  seasonal  injectable  preservative free
+19/07/2010,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,d8f9999f-bc7d-4a3a-8671-b1b11a780c6b,140,Influenza  seasonal  injectable  preservative free
+19/07/2010,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,d8f9999f-bc7d-4a3a-8671-b1b11a780c6b,121,zoster
+24/06/2011,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,3396b622-bd8b-4626-80dc-1c063505bcf0,140,Influenza  seasonal  injectable  preservative free
+24/06/2011,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,3396b622-bd8b-4626-80dc-1c063505bcf0,113,Td (adult) preservative free
+14/05/2012,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,35de737f-5b12-4187-a620-ec74b335b52c,140,Influenza  seasonal  injectable  preservative free
+06/05/2013,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,0aa36011-c074-4118-b2c7-f6de15d7478b,140,Influenza  seasonal  injectable  preservative free
+29/04/2014,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,97cd5362-6d72-4629-87c1-f2de65555b1c,140,Influenza  seasonal  injectable  preservative free
+31/03/2015,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,1ef55cae-6fef-4fbf-90a1-dc09dcdc9ae6,140,Influenza  seasonal  injectable  preservative free
+21/03/2016,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,b04d7df2-c382-4d05-a3b2-d902c9e3f6f6,133,Pneumococcal conjugate PCV 13
+21/03/2016,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,b04d7df2-c382-4d05-a3b2-d902c9e3f6f6,140,Influenza  seasonal  injectable  preservative free
+16/03/2017,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,9bd8bb05-fd9a-4ef2-8ec2-d4c88463952c,140,Influenza  seasonal  injectable  preservative free
+16/03/2017,8dc0a71a-940e-42f9-8fae-eabcf8d9e449,9bd8bb05-fd9a-4ef2-8ec2-d4c88463952c,33,pneumococcal polysaccharide vaccine  23 valent
+20/10/2010,80cbc83a-f24a-4204-b296-dd2de8269833,a30cf68f-3ae7-462d-8d12-079169caa427,140,Influenza  seasonal  injectable  preservative free
+18/09/2011,80cbc83a-f24a-4204-b296-dd2de8269833,4ae105dd-23ac-49e7-bab7-abd401af381e,140,Influenza  seasonal  injectable  preservative free
+02/09/2012,80cbc83a-f24a-4204-b296-dd2de8269833,f29f7a59-e96c-465d-96ca-9b6f3828ae8b,140,Influenza  seasonal  injectable  preservative free
+02/09/2012,80cbc83a-f24a-4204-b296-dd2de8269833,f29f7a59-e96c-465d-96ca-9b6f3828ae8b,114,meningococcal MCV4P
+02/09/2012,80cbc83a-f24a-4204-b296-dd2de8269833,f29f7a59-e96c-465d-96ca-9b6f3828ae8b,115,Tdap
+02/09/2012,80cbc83a-f24a-4204-b296-dd2de8269833,f29f7a59-e96c-465d-96ca-9b6f3828ae8b,62,HPV  quadrivalent
+31/08/2013,80cbc83a-f24a-4204-b296-dd2de8269833,d6917143-3829-454a-b4a5-e63a39b0bb38,140,Influenza  seasonal  injectable  preservative free
+31/08/2013,80cbc83a-f24a-4204-b296-dd2de8269833,d6917143-3829-454a-b4a5-e63a39b0bb38,62,HPV  quadrivalent
+12/07/2014,80cbc83a-f24a-4204-b296-dd2de8269833,fc4b56b1-caa8-4773-b421-12476c060366,140,Influenza  seasonal  injectable  preservative free
+12/07/2014,80cbc83a-f24a-4204-b296-dd2de8269833,fc4b56b1-caa8-4773-b421-12476c060366,62,HPV  quadrivalent
+03/08/2015,80cbc83a-f24a-4204-b296-dd2de8269833,d761cb79-b51d-48f3-ab02-4b6d54ca4a46,140,Influenza  seasonal  injectable  preservative free
+18/06/2016,80cbc83a-f24a-4204-b296-dd2de8269833,89bf8631-b383-4564-97fe-22e7873ea3ca,140,Influenza  seasonal  injectable  preservative free
+25/02/2011,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,75e36d4c-6532-4b5e-8678-ab7dbba4d750,140,Influenza  seasonal  injectable  preservative free
+30/12/2011,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,c9e48857-c522-4dcd-9036-8b6d4a5a5190,133,Pneumococcal conjugate PCV 13
+30/12/2011,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,c9e48857-c522-4dcd-9036-8b6d4a5a5190,140,Influenza  seasonal  injectable  preservative free
+24/12/2012,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,37ed1081-78e6-426a-8c00-d83b18184a47,140,Influenza  seasonal  injectable  preservative free
+24/12/2012,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,37ed1081-78e6-426a-8c00-d83b18184a47,33,pneumococcal polysaccharide vaccine  23 valent
+01/12/2013,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,bc8c246b-9821-4433-bae5-6a6f6d2dbd72,140,Influenza  seasonal  injectable  preservative free
+11/10/2015,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,d5f4fa43-c18a-4d43-b2d3-6638635fef7f,140,Influenza  seasonal  injectable  preservative free
+18/09/2016,3aa98c8d-0c75-4bbc-883e-ee0c8f4f9990,20db9211-45d0-4910-a83c-f146d90aeecb,140,Influenza  seasonal  injectable  preservative free
+31/07/2010,908782f6-4e69-40f4-a2b2-118164ea1df6,ad0ea12c-eb27-4f7c-9ccd-739355146aa5,62,HPV  quadrivalent
+09/06/2011,908782f6-4e69-40f4-a2b2-118164ea1df6,78261860-c2a7-4413-827a-95ac60f549ba,140,Influenza  seasonal  injectable  preservative free
+09/06/2011,908782f6-4e69-40f4-a2b2-118164ea1df6,78261860-c2a7-4413-827a-95ac60f549ba,62,HPV  quadrivalent
+07/05/2012,908782f6-4e69-40f4-a2b2-118164ea1df6,7916f80f-301b-4352-b313-a5c17e7bb79c,140,Influenza  seasonal  injectable  preservative free
+25/04/2013,908782f6-4e69-40f4-a2b2-118164ea1df6,7a27ba82-a51e-4bba-9fad-4e80431fa895,140,Influenza  seasonal  injectable  preservative free
+05/03/2014,908782f6-4e69-40f4-a2b2-118164ea1df6,bdb342a6-3fa4-4e48-89b9-04e306fb47b0,140,Influenza  seasonal  injectable  preservative free
+17/03/2015,908782f6-4e69-40f4-a2b2-118164ea1df6,3f90169b-dcab-426a-a791-3f2a659343bf,140,Influenza  seasonal  injectable  preservative free
+17/03/2015,908782f6-4e69-40f4-a2b2-118164ea1df6,3f90169b-dcab-426a-a791-3f2a659343bf,114,meningococcal MCV4P
+27/03/2016,908782f6-4e69-40f4-a2b2-118164ea1df6,e9d1d86c-08b7-4fbf-aecc-3da7c6afebb7,140,Influenza  seasonal  injectable  preservative free
+25/04/2017,908782f6-4e69-40f4-a2b2-118164ea1df6,08520402-270b-4e7f-8afd-f2947feaf7a8,140,Influenza  seasonal  injectable  preservative free
+08/10/2010,218a1736-2f06-417e-80e9-b5f5ee1612e2,f291097c-af92-49ce-8e5a-e304039df9e5,133,Pneumococcal conjugate PCV 13
+08/10/2010,218a1736-2f06-417e-80e9-b5f5ee1612e2,f291097c-af92-49ce-8e5a-e304039df9e5,83,Hep A  ped/adol  2 dose
+19/04/2011,218a1736-2f06-417e-80e9-b5f5ee1612e2,7fab067a-a689-4b24-80c5-9a517641fa06,133,Pneumococcal conjugate PCV 13
+19/04/2011,218a1736-2f06-417e-80e9-b5f5ee1612e2,7fab067a-a689-4b24-80c5-9a517641fa06,140,Influenza  seasonal  injectable  preservative free
+30/10/2011,218a1736-2f06-417e-80e9-b5f5ee1612e2,a315cd39-2406-4c6a-bb85-47b89432b7ad,133,Pneumococcal conjugate PCV 13
+09/11/2012,218a1736-2f06-417e-80e9-b5f5ee1612e2,589098d3-72d7-4d52-adb7-13d8efa465d6,20,DTaP
+09/11/2012,218a1736-2f06-417e-80e9-b5f5ee1612e2,589098d3-72d7-4d52-adb7-13d8efa465d6,10,IPV
+09/11/2012,218a1736-2f06-417e-80e9-b5f5ee1612e2,589098d3-72d7-4d52-adb7-13d8efa465d6,140,Influenza  seasonal  injectable  preservative free
+09/11/2012,218a1736-2f06-417e-80e9-b5f5ee1612e2,589098d3-72d7-4d52-adb7-13d8efa465d6,03,MMR
+09/11/2012,218a1736-2f06-417e-80e9-b5f5ee1612e2,589098d3-72d7-4d52-adb7-13d8efa465d6,21,varicella
+08/11/2013,218a1736-2f06-417e-80e9-b5f5ee1612e2,da09e7e2-ec85-443e-95e3-a0dfba1d0744,140,Influenza  seasonal  injectable  preservative free
+16/11/2014,218a1736-2f06-417e-80e9-b5f5ee1612e2,ff9b1999-582d-4c2e-9559-ec5f9c901cbf,140,Influenza  seasonal  injectable  preservative free
+23/11/2015,218a1736-2f06-417e-80e9-b5f5ee1612e2,da8d2a96-af1f-43f4-8375-468e6f37dc66,140,Influenza  seasonal  injectable  preservative free
+05/12/2016,218a1736-2f06-417e-80e9-b5f5ee1612e2,febbaf7c-9886-4164-896d-adc8c5f66d01,140,Influenza  seasonal  injectable  preservative free
+12/01/2011,4382c78e-3180-4132-be82-2ed1aa948ca5,0e6627e9-1b19-425e-89a3-f9ca3dd62157,140,Influenza  seasonal  injectable  preservative free
+24/08/2012,4382c78e-3180-4132-be82-2ed1aa948ca5,0ff74f9a-196e-47da-ae28-b836a85ad739,133,Pneumococcal conjugate PCV 13
+24/08/2012,4382c78e-3180-4132-be82-2ed1aa948ca5,0ff74f9a-196e-47da-ae28-b836a85ad739,140,Influenza  seasonal  injectable  preservative free
+30/08/2013,4382c78e-3180-4132-be82-2ed1aa948ca5,f6001c1e-3c40-4300-8dad-a28fae88cca9,140,Influenza  seasonal  injectable  preservative free
+30/08/2013,4382c78e-3180-4132-be82-2ed1aa948ca5,f6001c1e-3c40-4300-8dad-a28fae88cca9,33,pneumococcal polysaccharide vaccine  23 valent
+30/08/2014,4382c78e-3180-4132-be82-2ed1aa948ca5,fd27b6d2-2ab2-43bd-ad13-7f6b59aaa52a,140,Influenza  seasonal  injectable  preservative free
+26/08/2015,4382c78e-3180-4132-be82-2ed1aa948ca5,e4790b99-4b33-418d-94d3-a65fff55848b,140,Influenza  seasonal  injectable  preservative free
+25/05/2016,4382c78e-3180-4132-be82-2ed1aa948ca5,30039e7e-f89f-41f8-93b9-1fde6050cb69,140,Influenza  seasonal  injectable  preservative free
+23/05/2017,4382c78e-3180-4132-be82-2ed1aa948ca5,936e52fd-eb93-45ae-983b-11dd27bd9011,140,Influenza  seasonal  injectable  preservative free
+27/10/2012,baf98c87-9c35-4332-88ca-da8c782bfb56,09c0b2df-4255-4a59-a1a7-f76c66169f23,140,Influenza  seasonal  injectable  preservative free
+31/07/2015,baf98c87-9c35-4332-88ca-da8c782bfb56,a5a0b817-e531-47a0-9565-c6140eb98781,140,Influenza  seasonal  injectable  preservative free
+06/01/2011,1d983e7b-da09-496e-a0a7-5f6eb1aab6bf,3766f2d9-2fd9-4f69-b663-4423ee16cb44,140,Influenza  seasonal  injectable  preservative free
+06/01/2011,1d983e7b-da09-496e-a0a7-5f6eb1aab6bf,3766f2d9-2fd9-4f69-b663-4423ee16cb44,113,Td (adult) preservative free
+24/12/2013,1d983e7b-da09-496e-a0a7-5f6eb1aab6bf,a627bdd7-7fc8-4517-aeb6-81f2292e947e,140,Influenza  seasonal  injectable  preservative free
+29/01/2017,1d983e7b-da09-496e-a0a7-5f6eb1aab6bf,a91ea01a-9a33-479c-97aa-7f9996df42f1,140,Influenza  seasonal  injectable  preservative free
+07/08/2013,c49d458e-2a0a-45c4-9366-61a11b4f5ab9,c256a600-9dcd-46e8-ab47-0495c129228f,140,Influenza  seasonal  injectable  preservative free
+17/02/2017,c49d458e-2a0a-45c4-9366-61a11b4f5ab9,72cec4c5-475e-478b-8621-a6f3d45afe91,140,Influenza  seasonal  injectable  preservative free
+17/02/2017,c49d458e-2a0a-45c4-9366-61a11b4f5ab9,72cec4c5-475e-478b-8621-a6f3d45afe91,113,Td (adult) preservative free
+05/01/2011,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,c7518cab-1dbb-4e64-8b5e-b6fa11f78cf2,140,Influenza  seasonal  injectable  preservative free
+10/02/2012,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,57189fab-0c93-412f-a239-46383d07b480,140,Influenza  seasonal  injectable  preservative free
+14/04/2013,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,8a5bbb8d-669a-42a8-a10d-6c026bb03797,140,Influenza  seasonal  injectable  preservative free
+26/04/2014,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,d9f63bb4-98d7-4801-859a-11ce527663a5,140,Influenza  seasonal  injectable  preservative free
+13/05/2015,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,ef516f07-411c-445b-9044-ed5521e539e6,140,Influenza  seasonal  injectable  preservative free
+13/05/2015,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,ef516f07-411c-445b-9044-ed5521e539e6,113,Td (adult) preservative free
+21/05/2016,ea5c2e05-36fa-40dc-8add-b49a78bad6d0,f9908f8f-480a-4f51-bc1b-b748fb6d9d1a,140,Influenza  seasonal  injectable  preservative free
+06/07/2011,6a5dc39d-b575-43d4-b07b-5cee25044dbb,4303afd0-9a5e-4e77-8b96-4027a28f4db2,140,Influenza  seasonal  injectable  preservative free
+16/09/2012,6a5dc39d-b575-43d4-b07b-5cee25044dbb,f530b528-7dc9-486e-a87e-28e65fd383d6,140,Influenza  seasonal  injectable  preservative free
+18/10/2013,6a5dc39d-b575-43d4-b07b-5cee25044dbb,b30bf65f-0baf-492a-ae2d-57956e8813c9,140,Influenza  seasonal  injectable  preservative free
+18/10/2013,6a5dc39d-b575-43d4-b07b-5cee25044dbb,b30bf65f-0baf-492a-ae2d-57956e8813c9,114,meningococcal MCV4P
+18/10/2013,6a5dc39d-b575-43d4-b07b-5cee25044dbb,b30bf65f-0baf-492a-ae2d-57956e8813c9,115,Tdap
+18/10/2013,6a5dc39d-b575-43d4-b07b-5cee25044dbb,b30bf65f-0baf-492a-ae2d-57956e8813c9,62,HPV  quadrivalent
+04/11/2014,6a5dc39d-b575-43d4-b07b-5cee25044dbb,b213cd90-a6c4-408d-b380-cfc5344bcbea,140,Influenza  seasonal  injectable  preservative free
+04/11/2014,6a5dc39d-b575-43d4-b07b-5cee25044dbb,b213cd90-a6c4-408d-b380-cfc5344bcbea,62,HPV  quadrivalent
+17/11/2015,6a5dc39d-b575-43d4-b07b-5cee25044dbb,ce358cd5-dad0-409b-96ce-84f835e2eb49,140,Influenza  seasonal  injectable  preservative free
+17/11/2015,6a5dc39d-b575-43d4-b07b-5cee25044dbb,ce358cd5-dad0-409b-96ce-84f835e2eb49,62,HPV  quadrivalent
+17/12/2016,6a5dc39d-b575-43d4-b07b-5cee25044dbb,c30f99b8-4e1b-4cc5-9c9e-97626c3fe1b3,140,Influenza  seasonal  injectable  preservative free
+13/07/2010,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,82288133-218a-40f4-aa11-8962b190e17c,133,Pneumococcal conjugate PCV 13
+13/07/2010,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,82288133-218a-40f4-aa11-8962b190e17c,140,Influenza  seasonal  injectable  preservative free
+13/07/2010,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,82288133-218a-40f4-aa11-8962b190e17c,33,pneumococcal polysaccharide vaccine  23 valent
+08/08/2011,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,fc88e461-d33d-48de-8ab5-259fcb110be7,140,Influenza  seasonal  injectable  preservative free
+25/09/2012,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,1dc51ef1-2083-4d25-906e-0bfeab6dfaed,140,Influenza  seasonal  injectable  preservative free
+23/10/2013,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,4b33b2bf-2e99-4db7-968d-43d493d14bcf,140,Influenza  seasonal  injectable  preservative free
+29/12/2014,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,50977ecf-da0e-4b26-902c-84350a9b24a9,140,Influenza  seasonal  injectable  preservative free
+29/12/2014,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,50977ecf-da0e-4b26-902c-84350a9b24a9,113,Td (adult) preservative free
+10/03/2016,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,d3649dbb-141f-42c2-bf54-80b0e3d4db94,140,Influenza  seasonal  injectable  preservative free
+07/05/2017,5ab75a2a-d9e0-4490-ba7d-6548a32c9ff6,7aeb0111-3520-4f9b-a9f8-c6bdb4431200,140,Influenza  seasonal  injectable  preservative free
+23/06/2010,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,d230f386-1c54-4dec-8495-503de2b7d9a1,133,Pneumococcal conjugate PCV 13
+23/06/2010,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,d230f386-1c54-4dec-8495-503de2b7d9a1,83,Hep A  ped/adol  2 dose
+08/01/2011,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,5d98322c-8f87-4e00-b9bc-0bed75058dbf,133,Pneumococcal conjugate PCV 13
+08/01/2011,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,5d98322c-8f87-4e00-b9bc-0bed75058dbf,140,Influenza  seasonal  injectable  preservative free
+21/07/2011,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,f9a8e2b2-e310-46ca-b22e-c9a8d9a20edb,133,Pneumococcal conjugate PCV 13
+04/09/2012,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,57ae7bfe-20d4-4131-bfca-7eb7bb4c96f5,20,DTaP
+04/09/2012,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,57ae7bfe-20d4-4131-bfca-7eb7bb4c96f5,10,IPV
+04/09/2012,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,57ae7bfe-20d4-4131-bfca-7eb7bb4c96f5,140,Influenza  seasonal  injectable  preservative free
+04/09/2012,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,57ae7bfe-20d4-4131-bfca-7eb7bb4c96f5,03,MMR
+04/09/2012,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,57ae7bfe-20d4-4131-bfca-7eb7bb4c96f5,21,varicella
+21/10/2013,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,275a97fc-0975-42f6-97cf-3752b6f8affd,140,Influenza  seasonal  injectable  preservative free
+30/11/2014,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,91a069be-e4c9-42c2-b21b-6ad37dbed29f,140,Influenza  seasonal  injectable  preservative free
+11/11/2015,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,2bc8beaa-93e7-4f17-b43e-0ee44bc2ea29,140,Influenza  seasonal  injectable  preservative free
+24/11/2016,2a394eff-82b3-4ff7-aef5-9d6a8112fbe1,2b5590e0-ef10-4fb0-89b8-304d4df1a35a,140,Influenza  seasonal  injectable  preservative free
+19/03/2011,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,6dbbf6e9-4efb-4fe5-989c-ed053139e67b,140,Influenza  seasonal  injectable  preservative free
+26/03/2012,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,e8af1c42-5472-4937-9a61-1d621ce6c7f8,133,Pneumococcal conjugate PCV 13
+26/03/2012,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,e8af1c42-5472-4937-9a61-1d621ce6c7f8,140,Influenza  seasonal  injectable  preservative free
+16/04/2013,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,c8119f45-f2e2-47a5-be6a-9b6304ccfd1d,140,Influenza  seasonal  injectable  preservative free
+16/04/2013,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,c8119f45-f2e2-47a5-be6a-9b6304ccfd1d,33,pneumococcal polysaccharide vaccine  23 valent
+13/05/2014,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,d19fb7b8-587b-48ef-b382-dc561069fffa,140,Influenza  seasonal  injectable  preservative free
+21/06/2015,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,3f8d5152-15b6-4b0c-af7d-44fd2d27fc97,140,Influenza  seasonal  injectable  preservative free
+29/07/2016,cffd444d-53ad-4d51-86f6-21a8efc1b6f3,2ad39ebe-c868-406e-8b69-4822810e06d6,140,Influenza  seasonal  injectable  preservative free
+27/09/2011,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,54b1794b-f0b3-4f44-8b28-bbf4d33c20ae,140,Influenza  seasonal  injectable  preservative free
+27/09/2011,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,54b1794b-f0b3-4f44-8b28-bbf4d33c20ae,113,Td (adult) preservative free
+07/10/2012,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,405c553e-1e74-4e6b-b439-2fcebbe47430,140,Influenza  seasonal  injectable  preservative free
+20/11/2013,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,52e9f3e8-7e06-43dc-ad1e-00495d58fb54,140,Influenza  seasonal  injectable  preservative free
+29/12/2014,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,c200afa8-7661-4d95-b836-481009a7857e,140,Influenza  seasonal  injectable  preservative free
+10/01/2016,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,4c2f186a-12e0-4df0-9909-8c9cd8804df1,140,Influenza  seasonal  injectable  preservative free
+15/02/2017,52e8ba2e-d934-4c3b-b325-d3fe7c7b6fe3,e17f9c69-52af-43ba-a3de-8c13ff8b0613,140,Influenza  seasonal  injectable  preservative free
+22/02/2011,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,de7fcba5-ff8c-4998-ae74-aef93bc29bd0,140,Influenza  seasonal  injectable  preservative free
+25/03/2012,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,b01ca7ba-03c6-4596-b968-ab47e9cf0c67,140,Influenza  seasonal  injectable  preservative free
+30/04/2013,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,befbb4c0-63ec-4bec-8e10-1a089d186146,140,Influenza  seasonal  injectable  preservative free
+14/05/2014,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,7e8de84c-ae5b-49c7-bc28-8d9ccc41c717,140,Influenza  seasonal  injectable  preservative free
+14/05/2014,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,7e8de84c-ae5b-49c7-bc28-8d9ccc41c717,113,Td (adult) preservative free
+23/06/2015,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,9a58caab-5825-4f5b-939c-69cccc8b9190,140,Influenza  seasonal  injectable  preservative free
+08/07/2016,d60aab8d-e8aa-4a38-85ed-2967dc6e4aec,f44d30eb-56b0-436d-8188-e65f9ac6debf,140,Influenza  seasonal  injectable  preservative free
+23/02/2011,33430040-8ad9-4732-b2ae-77afb19b7a27,22e222a0-8c49-4554-8df8-da0ac435f602,140,Influenza  seasonal  injectable  preservative free
+03/05/2013,33430040-8ad9-4732-b2ae-77afb19b7a27,a303fef6-2e15-4c6b-a692-7f5e49b1d03f,140,Influenza  seasonal  injectable  preservative free
+06/08/2015,33430040-8ad9-4732-b2ae-77afb19b7a27,e0d177ef-1772-4d74-b6a3-6064bedc2e20,140,Influenza  seasonal  injectable  preservative free
+31/01/2012,f7c4dbe1-740c-4843-921e-17a7b9615690,78e1dbf6-ac2a-4fc8-92ed-908b74167e92,140,Influenza  seasonal  injectable  preservative free
+24/05/2014,f7c4dbe1-740c-4843-921e-17a7b9615690,2147a19f-b62d-4797-b849-913e7702b0c4,140,Influenza  seasonal  injectable  preservative free
+06/09/2016,f7c4dbe1-740c-4843-921e-17a7b9615690,2974ea82-5048-4abd-b30e-e9a312cdcafd,140,Influenza  seasonal  injectable  preservative free
+16/04/2012,ab38d528-6568-4c97-9d9c-e6aa2767387b,87ec3625-bd12-4fd8-9b0f-9eb1dafdf91c,140,Influenza  seasonal  injectable  preservative free
+09/06/2013,ab38d528-6568-4c97-9d9c-e6aa2767387b,c935577d-2821-4e6f-bbcc-39ebd57e98ce,140,Influenza  seasonal  injectable  preservative free
+09/06/2013,ab38d528-6568-4c97-9d9c-e6aa2767387b,c935577d-2821-4e6f-bbcc-39ebd57e98ce,113,Td (adult) preservative free
+20/07/2014,ab38d528-6568-4c97-9d9c-e6aa2767387b,4a5ebd78-9b29-4fc5-944b-cae21ea320ae,140,Influenza  seasonal  injectable  preservative free
+16/08/2015,ab38d528-6568-4c97-9d9c-e6aa2767387b,732e8d2d-0af5-4030-bf95-e110962833be,140,Influenza  seasonal  injectable  preservative free
+30/08/2016,ab38d528-6568-4c97-9d9c-e6aa2767387b,c64569bb-2886-48d5-bea3-71a721502e57,140,Influenza  seasonal  injectable  preservative free
+12/07/2010,d97e1bf6-532d-4a7e-aa32-66400be758ed,936fb689-b5e1-4c02-b0b5-e3834c5a8fee,140,Influenza  seasonal  injectable  preservative free
+31/08/2011,d97e1bf6-532d-4a7e-aa32-66400be758ed,8e7c2274-bc1c-4af9-8cb5-48d19e80e8f7,140,Influenza  seasonal  injectable  preservative free
+01/12/2012,d97e1bf6-532d-4a7e-aa32-66400be758ed,ca02f7d2-89f4-4960-9b6f-edf6580d92e7,140,Influenza  seasonal  injectable  preservative free
+01/03/2016,d97e1bf6-532d-4a7e-aa32-66400be758ed,cd737a8a-1af6-48af-ac4e-b99252d4709d,140,Influenza  seasonal  injectable  preservative free
+01/03/2016,d97e1bf6-532d-4a7e-aa32-66400be758ed,cd737a8a-1af6-48af-ac4e-b99252d4709d,113,Td (adult) preservative free
+17/09/2010,9e08e4ac-44c0-4573-b2f1-51271209fd8c,c37b0b8c-2d57-4efd-bb71-2ccdcb49d105,140,Influenza  seasonal  injectable  preservative free
+13/11/2011,9e08e4ac-44c0-4573-b2f1-51271209fd8c,f2d35bf7-ca98-4223-be1e-59b58cc20c88,140,Influenza  seasonal  injectable  preservative free
+14/12/2012,9e08e4ac-44c0-4573-b2f1-51271209fd8c,588f4206-799f-4dce-b78e-08e3d8f99e10,140,Influenza  seasonal  injectable  preservative free
+15/01/2014,9e08e4ac-44c0-4573-b2f1-51271209fd8c,f425164e-f12b-48bd-ad5e-d72bddfd5199,140,Influenza  seasonal  injectable  preservative free
+24/01/2015,9e08e4ac-44c0-4573-b2f1-51271209fd8c,fcf8390c-b9f5-482d-838d-2348d19d2856,140,Influenza  seasonal  injectable  preservative free
+14/02/2016,9e08e4ac-44c0-4573-b2f1-51271209fd8c,1f796ebf-c341-4bb3-b7c1-16c99ffbd9f4,140,Influenza  seasonal  injectable  preservative free
+16/03/2017,9e08e4ac-44c0-4573-b2f1-51271209fd8c,2b3cd07b-da1a-4478-aadb-c9b2c8439213,140,Influenza  seasonal  injectable  preservative free
+05/03/2011,5f04727d-d7a2-4953-8e5a-335c1b70f791,4c976273-3a35-4b72-9e5a-3148de0e4d9b,140,Influenza  seasonal  injectable  preservative free
+25/03/2012,5f04727d-d7a2-4953-8e5a-335c1b70f791,bcc11ef9-e17e-4f08-9ea2-6fcb86292c22,140,Influenza  seasonal  injectable  preservative free
+09/04/2013,5f04727d-d7a2-4953-8e5a-335c1b70f791,ea547cce-b5cc-43c2-878c-080ae5bf412a,140,Influenza  seasonal  injectable  preservative free
+15/04/2014,5f04727d-d7a2-4953-8e5a-335c1b70f791,9f2ade05-c44d-490a-b731-66165dc189c0,140,Influenza  seasonal  injectable  preservative free
+26/04/2015,5f04727d-d7a2-4953-8e5a-335c1b70f791,f6027a51-fe86-48da-9bf8-780f41d20fbe,140,Influenza  seasonal  injectable  preservative free
+26/04/2015,5f04727d-d7a2-4953-8e5a-335c1b70f791,f6027a51-fe86-48da-9bf8-780f41d20fbe,114,meningococcal MCV4P
+26/04/2015,5f04727d-d7a2-4953-8e5a-335c1b70f791,f6027a51-fe86-48da-9bf8-780f41d20fbe,115,Tdap
+26/04/2015,5f04727d-d7a2-4953-8e5a-335c1b70f791,f6027a51-fe86-48da-9bf8-780f41d20fbe,62,HPV  quadrivalent
+08/05/2016,5f04727d-d7a2-4953-8e5a-335c1b70f791,0d6a5a4f-9f26-4f27-80dd-8658c6958502,140,Influenza  seasonal  injectable  preservative free
+08/05/2016,5f04727d-d7a2-4953-8e5a-335c1b70f791,0d6a5a4f-9f26-4f27-80dd-8658c6958502,62,HPV  quadrivalent
+15/05/2017,5f04727d-d7a2-4953-8e5a-335c1b70f791,d2d7cfd0-6865-4a93-bd2d-bb4536e23d45,140,Influenza  seasonal  injectable  preservative free
+15/05/2017,5f04727d-d7a2-4953-8e5a-335c1b70f791,d2d7cfd0-6865-4a93-bd2d-bb4536e23d45,62,HPV  quadrivalent
+05/05/2012,c5ad263a-32f6-40b0-bcba-43701e900f42,7d4f1613-e622-464f-8670-f6603db013b4,140,Influenza  seasonal  injectable  preservative free
+05/05/2012,c5ad263a-32f6-40b0-bcba-43701e900f42,7d4f1613-e622-464f-8670-f6603db013b4,113,Td (adult) preservative free
+21/05/2013,c5ad263a-32f6-40b0-bcba-43701e900f42,1b4a599d-921a-473f-b021-93b49d37a13b,140,Influenza  seasonal  injectable  preservative free
+30/05/2014,c5ad263a-32f6-40b0-bcba-43701e900f42,a9abe7d0-e109-418e-9ae4-16b4deffc9a5,140,Influenza  seasonal  injectable  preservative free
+05/06/2015,c5ad263a-32f6-40b0-bcba-43701e900f42,c06bd37c-e839-4ce5-b761-2d4d42eae4ff,140,Influenza  seasonal  injectable  preservative free
+22/09/2016,c5ad263a-32f6-40b0-bcba-43701e900f42,19f03d8c-644c-485e-8088-7c6e23ecc380,140,Influenza  seasonal  injectable  preservative free
+02/02/2011,bb9ca57a-784d-4f7e-ae13-65c2acc42828,c5ac34e2-5d62-47c5-83b8-79641993ec29,140,Influenza  seasonal  injectable  preservative free
+07/02/2012,bb9ca57a-784d-4f7e-ae13-65c2acc42828,8251e971-ab6d-406c-bb1d-7e455d05c29b,140,Influenza  seasonal  injectable  preservative free
+13/01/2013,bb9ca57a-784d-4f7e-ae13-65c2acc42828,773862d0-03e0-4d5b-9da3-e9612ea41cd7,140,Influenza  seasonal  injectable  preservative free
+11/01/2016,bb9ca57a-784d-4f7e-ae13-65c2acc42828,62617a19-268d-4bb8-8398-45e22e9d70ec,140,Influenza  seasonal  injectable  preservative free
+11/01/2016,bb9ca57a-784d-4f7e-ae13-65c2acc42828,62617a19-268d-4bb8-8398-45e22e9d70ec,113,Td (adult) preservative free
+06/08/2010,2b24b43e-77c5-4da5-8fac-628cff6626ee,dda3324f-69c8-43d0-9e8b-7b9663fb824c,140,Influenza  seasonal  injectable  preservative free
+30/10/2013,2b24b43e-77c5-4da5-8fac-628cff6626ee,01e90cbc-443a-4f3c-84c2-4a5acd7547b4,140,Influenza  seasonal  injectable  preservative free
+30/10/2013,2b24b43e-77c5-4da5-8fac-628cff6626ee,01e90cbc-443a-4f3c-84c2-4a5acd7547b4,113,Td (adult) preservative free
+01/09/2015,2b24b43e-77c5-4da5-8fac-628cff6626ee,22f7298a-d3d5-4f46-ad80-dc6980a16a59,140,Influenza  seasonal  injectable  preservative free
+25/05/2010,374f36c9-6d67-474c-a835-4f51004ce5f8,d86dc3cc-6bfe-43c7-b6b6-ffc4bcc4a23b,140,Influenza  seasonal  injectable  preservative free
+25/05/2010,374f36c9-6d67-474c-a835-4f51004ce5f8,d86dc3cc-6bfe-43c7-b6b6-ffc4bcc4a23b,114,meningococcal MCV4P
+02/04/2011,374f36c9-6d67-474c-a835-4f51004ce5f8,fdae018d-d054-4012-85d3-d0cabcbf7aa7,140,Influenza  seasonal  injectable  preservative free
+16/05/2012,374f36c9-6d67-474c-a835-4f51004ce5f8,ab8fad39-3cbf-408f-af21-eb65c2a0010b,140,Influenza  seasonal  injectable  preservative free
+30/05/2013,374f36c9-6d67-474c-a835-4f51004ce5f8,370d948c-6007-4a5e-a754-e32ff45859e3,140,Influenza  seasonal  injectable  preservative free
+21/05/2014,374f36c9-6d67-474c-a835-4f51004ce5f8,b4b68e05-8fa6-4887-b5bd-9abeb0180315,140,Influenza  seasonal  injectable  preservative free
+02/05/2012,98f5236f-6579-48de-8dcd-2c61a76e6ec6,0c109527-8733-47ff-b977-e20e53fdc8dd,140,Influenza  seasonal  injectable  preservative free
+02/05/2012,98f5236f-6579-48de-8dcd-2c61a76e6ec6,0c109527-8733-47ff-b977-e20e53fdc8dd,113,Td (adult) preservative free
+29/06/2014,98f5236f-6579-48de-8dcd-2c61a76e6ec6,0f4b2bd4-69d9-4848-85f7-0073d41e1bb9,140,Influenza  seasonal  injectable  preservative free
+16/07/2016,98f5236f-6579-48de-8dcd-2c61a76e6ec6,02fa7853-6551-48f7-9c97-88c8f6cfc26b,140,Influenza  seasonal  injectable  preservative free
+18/03/2011,de10fd87-4479-4771-9ccf-84571adbcea5,04959439-17bd-4db3-b240-354d650124d7,140,Influenza  seasonal  injectable  preservative free
+08/05/2012,de10fd87-4479-4771-9ccf-84571adbcea5,6ff87329-755e-4215-b0b7-61d55889743d,140,Influenza  seasonal  injectable  preservative free
+25/04/2013,de10fd87-4479-4771-9ccf-84571adbcea5,62b82a95-87b1-448c-b02c-afdcafc6978b,140,Influenza  seasonal  injectable  preservative free
+14/06/2014,de10fd87-4479-4771-9ccf-84571adbcea5,d0f47ff5-fb4d-4d79-9ad9-8d3b931fde08,133,Pneumococcal conjugate PCV 13
+14/06/2014,de10fd87-4479-4771-9ccf-84571adbcea5,d0f47ff5-fb4d-4d79-9ad9-8d3b931fde08,140,Influenza  seasonal  injectable  preservative free
+18/07/2015,de10fd87-4479-4771-9ccf-84571adbcea5,78a5f0dc-914f-4b88-9495-62e853cf346e,140,Influenza  seasonal  injectable  preservative free
+18/07/2015,de10fd87-4479-4771-9ccf-84571adbcea5,78a5f0dc-914f-4b88-9495-62e853cf346e,33,pneumococcal polysaccharide vaccine  23 valent
+05/08/2016,de10fd87-4479-4771-9ccf-84571adbcea5,7f089162-891a-457a-a56a-0ab1142978a0,140,Influenza  seasonal  injectable  preservative free
+24/03/2013,ab2d83d4-5b14-4dbb-82aa-01dc7f494d91,e7d47fd8-9b21-458d-9fe8-3dfd26516f39,140,Influenza  seasonal  injectable  preservative free
+24/03/2013,ab2d83d4-5b14-4dbb-82aa-01dc7f494d91,e7d47fd8-9b21-458d-9fe8-3dfd26516f39,113,Td (adult) preservative free
+27/06/2015,ab2d83d4-5b14-4dbb-82aa-01dc7f494d91,72e708ce-9a0a-451f-a58d-636bdcdc5e23,140,Influenza  seasonal  injectable  preservative free
+20/06/2010,95964f2b-2f50-4037-801b-ac000b76ba40,40881106-9e11-4c05-a758-d28b3e37dd19,140,Influenza  seasonal  injectable  preservative free
+20/06/2010,95964f2b-2f50-4037-801b-ac000b76ba40,40881106-9e11-4c05-a758-d28b3e37dd19,114,meningococcal MCV4P
+20/06/2010,95964f2b-2f50-4037-801b-ac000b76ba40,40881106-9e11-4c05-a758-d28b3e37dd19,115,Tdap
+20/06/2010,95964f2b-2f50-4037-801b-ac000b76ba40,40881106-9e11-4c05-a758-d28b3e37dd19,62,HPV  quadrivalent
+08/08/2011,95964f2b-2f50-4037-801b-ac000b76ba40,c2366bb4-1c70-494f-8e45-125d87f2d72e,140,Influenza  seasonal  injectable  preservative free
+08/08/2011,95964f2b-2f50-4037-801b-ac000b76ba40,c2366bb4-1c70-494f-8e45-125d87f2d72e,62,HPV  quadrivalent
+04/09/2012,95964f2b-2f50-4037-801b-ac000b76ba40,7753bc02-e1bf-411c-8ba6-e07f9083342c,140,Influenza  seasonal  injectable  preservative free
+04/09/2012,95964f2b-2f50-4037-801b-ac000b76ba40,7753bc02-e1bf-411c-8ba6-e07f9083342c,62,HPV  quadrivalent
+01/10/2013,95964f2b-2f50-4037-801b-ac000b76ba40,6c05df4a-0d54-45a9-8cc1-c17fcb7402ab,140,Influenza  seasonal  injectable  preservative free
+12/11/2014,95964f2b-2f50-4037-801b-ac000b76ba40,082982ec-646e-47d4-8f1a-fee4247082c7,140,Influenza  seasonal  injectable  preservative free
+12/11/2014,95964f2b-2f50-4037-801b-ac000b76ba40,082982ec-646e-47d4-8f1a-fee4247082c7,114,meningococcal MCV4P
+27/11/2015,95964f2b-2f50-4037-801b-ac000b76ba40,e77313fe-0572-42db-bace-1323dbf4c355,140,Influenza  seasonal  injectable  preservative free
+11/12/2016,95964f2b-2f50-4037-801b-ac000b76ba40,e15d32d5-dd85-433d-9c81-04d61f00b55c,140,Influenza  seasonal  injectable  preservative free
+05/01/2011,03908486-b783-4789-a810-032bebb6025e,18eeb326-0f01-41f8-8f32-6f47e174fb65,140,Influenza  seasonal  injectable  preservative free
+05/01/2011,03908486-b783-4789-a810-032bebb6025e,18eeb326-0f01-41f8-8f32-6f47e174fb65,113,Td (adult) preservative free
+01/02/2012,03908486-b783-4789-a810-032bebb6025e,6b03ddf0-036c-420c-bc1a-f77e997f41bb,140,Influenza  seasonal  injectable  preservative free
+11/02/2013,03908486-b783-4789-a810-032bebb6025e,3f1fc1b4-1a09-428f-9b55-fbd7505da71e,140,Influenza  seasonal  injectable  preservative free
+03/03/2014,03908486-b783-4789-a810-032bebb6025e,7c486a58-94ca-4ce6-8237-98c74e6f36e4,140,Influenza  seasonal  injectable  preservative free
+21/03/2015,03908486-b783-4789-a810-032bebb6025e,94d20242-a244-42c7-b66b-16d8ae4c8d14,133,Pneumococcal conjugate PCV 13
+21/03/2015,03908486-b783-4789-a810-032bebb6025e,94d20242-a244-42c7-b66b-16d8ae4c8d14,140,Influenza  seasonal  injectable  preservative free
+21/03/2015,03908486-b783-4789-a810-032bebb6025e,94d20242-a244-42c7-b66b-16d8ae4c8d14,33,pneumococcal polysaccharide vaccine  23 valent
+05/01/2016,03908486-b783-4789-a810-032bebb6025e,7885db75-0ea5-44e7-b704-0a6f46778a7e,140,Influenza  seasonal  injectable  preservative free
+27/09/2010,b5ec7245-487b-4a8f-8455-eb280d05622a,53131d47-084a-44c4-bdd8-e7886717cf5f,140,Influenza  seasonal  injectable  preservative free
+24/10/2012,b5ec7245-487b-4a8f-8455-eb280d05622a,dcbc85d1-5131-484f-bd7d-bf5d7979c94d,140,Influenza  seasonal  injectable  preservative free
+31/08/2014,b5ec7245-487b-4a8f-8455-eb280d05622a,0f63aa96-4cc2-4ad5-895f-016e58122613,140,Influenza  seasonal  injectable  preservative free
+11/08/2015,b5ec7245-487b-4a8f-8455-eb280d05622a,29b0db04-69b2-4973-9f65-404b8d660ca6,140,Influenza  seasonal  injectable  preservative free
+11/08/2015,b5ec7245-487b-4a8f-8455-eb280d05622a,29b0db04-69b2-4973-9f65-404b8d660ca6,113,Td (adult) preservative free
+18/07/2016,b5ec7245-487b-4a8f-8455-eb280d05622a,0eda0644-bf2f-49c8-9043-8a0d762f28bb,140,Influenza  seasonal  injectable  preservative free
+25/08/2010,e5dad4dc-2fa0-446f-bb22-446617603472,4c45a49a-4280-4f15-bef9-67acc20cd752,140,Influenza  seasonal  injectable  preservative free
+09/05/2012,e5dad4dc-2fa0-446f-bb22-446617603472,ebc6facb-d8ef-4ab5-ae12-7ac710e942f7,140,Influenza  seasonal  injectable  preservative free
+26/06/2014,e5dad4dc-2fa0-446f-bb22-446617603472,124bc9f3-6014-4b6a-b88f-49aa78d76eee,140,Influenza  seasonal  injectable  preservative free
+30/09/2014,e5dad4dc-2fa0-446f-bb22-446617603472,4e6c650e-62c6-4ba7-a454-285c38c9ab67,140,Influenza  seasonal  injectable  preservative free
+05/08/2015,e5dad4dc-2fa0-446f-bb22-446617603472,2f7a2226-1b1b-4f33-a8d5-a2258ac78c3f,140,Influenza  seasonal  injectable  preservative free
+05/08/2015,e5dad4dc-2fa0-446f-bb22-446617603472,2f7a2226-1b1b-4f33-a8d5-a2258ac78c3f,113,Td (adult) preservative free
+31/07/2016,e5dad4dc-2fa0-446f-bb22-446617603472,2f7a2226-1b1b-4f33-a8d5-a2258ac78c3f,140,Influenza  seasonal  injectable  preservative free
+27/03/2011,45a72ec0-fc2a-401c-93a3-55aa3d2be610,5907bc6b-072c-48d8-9b89-cad913135a6c,140,Influenza  seasonal  injectable  preservative free
+27/03/2011,45a72ec0-fc2a-401c-93a3-55aa3d2be610,5907bc6b-072c-48d8-9b89-cad913135a6c,113,Td (adult) preservative free
+10/11/2013,45a72ec0-fc2a-401c-93a3-55aa3d2be610,d7e7c32f-8fb6-48b3-81b3-35da6223002f,140,Influenza  seasonal  injectable  preservative free
+23/12/2016,45a72ec0-fc2a-401c-93a3-55aa3d2be610,3d7d5f50-6abf-4312-9b48-7ad75064b49a,140,Influenza  seasonal  injectable  preservative free
+05/06/2011,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,467d91b1-819b-4b0c-897c-6af97ad4a786,140,Influenza  seasonal  injectable  preservative free
+05/06/2011,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,467d91b1-819b-4b0c-897c-6af97ad4a786,113,Td (adult) preservative free
+11/07/2012,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,4da3821f-2639-44c8-9a17-fe9e0ed6b832,140,Influenza  seasonal  injectable  preservative free
+25/07/2013,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,ba58cb09-6e6a-4179-9e63-4dfb0ccfd048,140,Influenza  seasonal  injectable  preservative free
+07/09/2014,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,86e2f999-2b2e-474e-8c24-05d857a2b57b,140,Influenza  seasonal  injectable  preservative free
+15/10/2015,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,7a09221d-b98c-46b8-956b-2f83d3295c8f,140,Influenza  seasonal  injectable  preservative free
+25/09/2016,243ef8a5-33e2-4c4c-bc7f-4ade35da9934,2caa3d45-a8e7-4c03-93a0-e5acc369d9ed,140,Influenza  seasonal  injectable  preservative free
+18/04/2011,b6941904-b460-4773-b290-9835cdbc6396,c01db292-5e56-4434-b8dc-39dda86d4bbf,140,Influenza  seasonal  injectable  preservative free
+29/11/2013,b6941904-b460-4773-b290-9835cdbc6396,5e84b9f4-e209-4958-accd-eeb9ddbf17ff,140,Influenza  seasonal  injectable  preservative free
+29/11/2013,b6941904-b460-4773-b290-9835cdbc6396,5e84b9f4-e209-4958-accd-eeb9ddbf17ff,113,Td (adult) preservative free
+09/10/2016,b6941904-b460-4773-b290-9835cdbc6396,a9d380fa-1657-4f4a-b4bc-4ba6bf02ceca,140,Influenza  seasonal  injectable  preservative free
+04/09/2010,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,ce3ac94e-2682-41c7-9fb0-e4f36f2474dd,140,Influenza  seasonal  injectable  preservative free
+16/10/2011,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,774b72a5-deb6-4fa1-9fb2-cb96bc61f1dc,140,Influenza  seasonal  injectable  preservative free
+08/09/2012,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,c8271de0-ac2b-4db6-87cf-b4d265b94326,140,Influenza  seasonal  injectable  preservative free
+25/08/2013,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,4c9d5aea-dde4-413d-ae09-0ae195170b5e,140,Influenza  seasonal  injectable  preservative free
+16/07/2014,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,c3558165-8bc9-4083-9234-28bb49b0ebf6,140,Influenza  seasonal  injectable  preservative free
+10/08/2015,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,a8057eff-b247-4dab-9cad-85f1ac674d86,140,Influenza  seasonal  injectable  preservative free
+28/06/2016,f1e3472f-b44d-4439-a45f-b0ed6bb2cb16,26c54749-e0be-4623-8e02-529beea50229,140,Influenza  seasonal  injectable  preservative free
+08/07/2010,7b14715b-337e-420f-837e-13276c1f546f,583dd662-831b-4e7c-9739-95c57d25fe16,140,Influenza  seasonal  injectable  preservative free
+08/07/2010,7b14715b-337e-420f-837e-13276c1f546f,583dd662-831b-4e7c-9739-95c57d25fe16,113,Td (adult) preservative free
+05/06/2011,7b14715b-337e-420f-837e-13276c1f546f,17df0c18-4fcb-4cf2-b9ca-9edc2045f6b5,140,Influenza  seasonal  injectable  preservative free
+07/06/2012,7b14715b-337e-420f-837e-13276c1f546f,306c7250-4f12-49a2-a08c-c5da2bd42718,140,Influenza  seasonal  injectable  preservative free
+24/05/2013,7b14715b-337e-420f-837e-13276c1f546f,55610566-7321-44f1-b33c-d1308b1de75e,140,Influenza  seasonal  injectable  preservative free
+09/05/2014,7b14715b-337e-420f-837e-13276c1f546f,3daaea97-fe41-4a61-addf-a65f28569e0e,140,Influenza  seasonal  injectable  preservative free
+01/05/2015,7b14715b-337e-420f-837e-13276c1f546f,6a04b337-5640-44f7-9e59-5b470fa22d70,140,Influenza  seasonal  injectable  preservative free
+23/04/2016,7b14715b-337e-420f-837e-13276c1f546f,1d18ed45-def1-492a-a530-abdcd7acdc4c,140,Influenza  seasonal  injectable  preservative free
+08/03/2017,7b14715b-337e-420f-837e-13276c1f546f,8ba82d3e-7d94-4ab2-a6ee-f15c6a582cfb,140,Influenza  seasonal  injectable  preservative free
+17/06/2010,c4d0968a-8547-42d8-ab82-d8052830fc3f,fca29197-8eab-4ad7-9ed7-f009248eab41,133,Pneumococcal conjugate PCV 13
+17/06/2010,c4d0968a-8547-42d8-ab82-d8052830fc3f,fca29197-8eab-4ad7-9ed7-f009248eab41,140,Influenza  seasonal  injectable  preservative free
+27/06/2011,c4d0968a-8547-42d8-ab82-d8052830fc3f,1e61de72-293c-4097-884c-c9fc567b930c,140,Influenza  seasonal  injectable  preservative free
+13/06/2012,c4d0968a-8547-42d8-ab82-d8052830fc3f,b6c8863d-7445-4a62-90cd-ab7cddea2af2,140,Influenza  seasonal  injectable  preservative free
+11/07/2013,c4d0968a-8547-42d8-ab82-d8052830fc3f,be81ab4a-f4b3-407a-9b65-e64fbd459712,140,Influenza  seasonal  injectable  preservative free
+31/07/2014,c4d0968a-8547-42d8-ab82-d8052830fc3f,52e82581-17a4-48a2-b06d-685c86b981f6,140,Influenza  seasonal  injectable  preservative free
+31/07/2014,c4d0968a-8547-42d8-ab82-d8052830fc3f,52e82581-17a4-48a2-b06d-685c86b981f6,113,Td (adult) preservative free
+06/07/2015,c4d0968a-8547-42d8-ab82-d8052830fc3f,8b09acc8-89b9-4bca-aace-16519bf1ba57,140,Influenza  seasonal  injectable  preservative free
+31/08/2016,c4d0968a-8547-42d8-ab82-d8052830fc3f,8665cd2c-451c-41b2-b21b-9ddc73a497e4,140,Influenza  seasonal  injectable  preservative free
+24/09/2010,d98cd721-4439-46c6-a054-865c406f7c73,dba59711-399b-463a-ae76-f6fbf6e5fc81,140,Influenza  seasonal  injectable  preservative free
+24/09/2010,d98cd721-4439-46c6-a054-865c406f7c73,dba59711-399b-463a-ae76-f6fbf6e5fc81,113,Td (adult) preservative free
+15/08/2011,d98cd721-4439-46c6-a054-865c406f7c73,20e6b7b4-40ee-4ca7-b9ea-50d3a0946e1e,140,Influenza  seasonal  injectable  preservative free
+29/07/2012,d98cd721-4439-46c6-a054-865c406f7c73,2ea05e77-7b94-427d-8984-c08622cdc4fa,140,Influenza  seasonal  injectable  preservative free
+30/07/2013,d98cd721-4439-46c6-a054-865c406f7c73,7856dc09-f74e-44d6-964a-e6fdec086bab,140,Influenza  seasonal  injectable  preservative free
+16/06/2014,d98cd721-4439-46c6-a054-865c406f7c73,edee0fc2-9975-477d-b5b9-c0ac98f76967,140,Influenza  seasonal  injectable  preservative free
+31/05/2015,d98cd721-4439-46c6-a054-865c406f7c73,22347076-8d7e-4f8a-becb-d5339046d741,140,Influenza  seasonal  injectable  preservative free
+20/07/2016,d98cd721-4439-46c6-a054-865c406f7c73,c56f39a2-7772-4254-b030-d26461f1316e,140,Influenza  seasonal  injectable  preservative free
+17/06/2010,72a8d956-6261-48ac-aae9-07b8b629e9b3,e5ffd3e4-7e60-4081-851c-efebb817f498,140,Influenza  seasonal  injectable  preservative free
+31/05/2011,72a8d956-6261-48ac-aae9-07b8b629e9b3,c55b2908-42ac-434d-8afc-9f7a328de56a,140,Influenza  seasonal  injectable  preservative free
+27/05/2012,72a8d956-6261-48ac-aae9-07b8b629e9b3,6c9f5820-0a03-48ad-81c9-9b5cdae69d88,140,Influenza  seasonal  injectable  preservative free
+27/05/2012,72a8d956-6261-48ac-aae9-07b8b629e9b3,6c9f5820-0a03-48ad-81c9-9b5cdae69d88,121,zoster
+15/05/2013,72a8d956-6261-48ac-aae9-07b8b629e9b3,bd86f175-a6bc-430e-bc28-d90f98feda4f,140,Influenza  seasonal  injectable  preservative free
+15/05/2013,72a8d956-6261-48ac-aae9-07b8b629e9b3,bd86f175-a6bc-430e-bc28-d90f98feda4f,113,Td (adult) preservative free
+04/03/2014,72a8d956-6261-48ac-aae9-07b8b629e9b3,d2200fbf-da47-47c6-9b7a-64f939c2a01c,140,Influenza  seasonal  injectable  preservative free
+11/03/2015,72a8d956-6261-48ac-aae9-07b8b629e9b3,0aca45fe-0e8d-4109-be30-51646560b877,140,Influenza  seasonal  injectable  preservative free
+23/02/2016,72a8d956-6261-48ac-aae9-07b8b629e9b3,25106dc9-61b1-4ecf-8389-ab29a3d490f3,140,Influenza  seasonal  injectable  preservative free
+04/03/2017,72a8d956-6261-48ac-aae9-07b8b629e9b3,94ee6a06-98a4-4788-96fb-548d357bc237,133,Pneumococcal conjugate PCV 13
+04/03/2017,72a8d956-6261-48ac-aae9-07b8b629e9b3,94ee6a06-98a4-4788-96fb-548d357bc237,140,Influenza  seasonal  injectable  preservative free
+24/03/2011,5ce51201-7499-4ac8-ac47-a044c8dd5e69,05238140-c263-4bba-9662-a61bc473e23f,140,Influenza  seasonal  injectable  preservative free
+24/08/2014,5ce51201-7499-4ac8-ac47-a044c8dd5e69,c3a70725-4e15-4485-9d74-707bad614985,140,Influenza  seasonal  injectable  preservative free
+24/08/2014,5ce51201-7499-4ac8-ac47-a044c8dd5e69,c3a70725-4e15-4485-9d74-707bad614985,113,Td (adult) preservative free
+01/10/2016,5ce51201-7499-4ac8-ac47-a044c8dd5e69,e6667005-c2ba-48ba-b051-a86d714bcb9b,140,Influenza  seasonal  injectable  preservative free
+17/01/2011,1e1599dc-e0ab-49a7-b581-5dde343626e7,380ae909-7317-4a43-8b79-6838e614e1c0,140,Influenza  seasonal  injectable  preservative free
+25/02/2012,1e1599dc-e0ab-49a7-b581-5dde343626e7,387001f9-a510-428a-bd45-8c40b2c2ccfe,140,Influenza  seasonal  injectable  preservative free
+21/04/2013,1e1599dc-e0ab-49a7-b581-5dde343626e7,67ef757d-e8f3-43b0-b903-c8b6b1071a7c,140,Influenza  seasonal  injectable  preservative free
+21/04/2013,1e1599dc-e0ab-49a7-b581-5dde343626e7,67ef757d-e8f3-43b0-b903-c8b6b1071a7c,121,zoster
+25/06/2014,1e1599dc-e0ab-49a7-b581-5dde343626e7,8c311aea-d925-424c-a520-ec93cdcd4ffe,140,Influenza  seasonal  injectable  preservative free
+25/06/2014,1e1599dc-e0ab-49a7-b581-5dde343626e7,8c311aea-d925-424c-a520-ec93cdcd4ffe,113,Td (adult) preservative free
+17/07/2015,1e1599dc-e0ab-49a7-b581-5dde343626e7,39e6faae-ea1a-48f1-a0ba-1a595022c213,140,Influenza  seasonal  injectable  preservative free
+24/09/2016,1e1599dc-e0ab-49a7-b581-5dde343626e7,72e9976a-b6e5-4bac-8d70-3ec7a351101c,140,Influenza  seasonal  injectable  preservative free
+07/03/2011,f53e661f-2feb-4b10-8a73-f9c89c6b5ae2,2c83df14-d0a7-45b7-8c00-cf08296c4c73,140,Influenza  seasonal  injectable  preservative free
+18/04/2014,f53e661f-2feb-4b10-8a73-f9c89c6b5ae2,cf856b94-aa61-4bb0-b84c-29554a00dc80,140,Influenza  seasonal  injectable  preservative free
+30/07/2010,0bd58270-f701-4ded-963e-9a32b0fee308,83af8f9a-a526-4ecd-964e-bf5b4cb3d7ed,140,Influenza  seasonal  injectable  preservative free
+24/09/2011,0bd58270-f701-4ded-963e-9a32b0fee308,790b29ab-7e15-4c7f-85bc-27b588ece767,140,Influenza  seasonal  injectable  preservative free
+26/09/2012,0bd58270-f701-4ded-963e-9a32b0fee308,174ddd79-300e-4b8f-8e7a-c10f215b1424,140,Influenza  seasonal  injectable  preservative free
+26/09/2012,0bd58270-f701-4ded-963e-9a32b0fee308,174ddd79-300e-4b8f-8e7a-c10f215b1424,114,meningococcal MCV4P
+27/10/2013,0bd58270-f701-4ded-963e-9a32b0fee308,b3d13f6a-64c7-4371-89d2-5a9e80ce31fc,140,Influenza  seasonal  injectable  preservative free
+07/11/2014,0bd58270-f701-4ded-963e-9a32b0fee308,bb77416e-9be2-4f84-b7ed-5b378c901511,140,Influenza  seasonal  injectable  preservative free
+29/11/2015,0bd58270-f701-4ded-963e-9a32b0fee308,40ce013c-83a6-40fd-b6e9-b3c447ec07da,140,Influenza  seasonal  injectable  preservative free
+18/09/2016,0bd58270-f701-4ded-963e-9a32b0fee308,b1fc449e-b598-421c-b4c1-cd2961d7d7e7,140,Influenza  seasonal  injectable  preservative free
+09/07/2012,50b62194-aaa0-4169-9bc0-eac27cc296bf,28dc73f4-e22d-42d3-9ebb-605fdaec4327,140,Influenza  seasonal  injectable  preservative free
+25/07/2014,50b62194-aaa0-4169-9bc0-eac27cc296bf,ad2fb35a-b84a-4f1c-89d1-914d7eb502b0,140,Influenza  seasonal  injectable  preservative free
+25/07/2014,50b62194-aaa0-4169-9bc0-eac27cc296bf,ad2fb35a-b84a-4f1c-89d1-914d7eb502b0,113,Td (adult) preservative free
+28/07/2015,50b62194-aaa0-4169-9bc0-eac27cc296bf,99f16f73-2dc0-4f30-bc62-b72d1891b566,140,Influenza  seasonal  injectable  preservative free
+03/08/2016,50b62194-aaa0-4169-9bc0-eac27cc296bf,4d0ddd0d-6321-429b-b122-c7b0f0655cb9,140,Influenza  seasonal  injectable  preservative free
+08/08/2012,94df89dc-e456-42a2-8099-258a697b8fcc,f8854e14-377b-4612-81c6-92d06169db67,140,Influenza  seasonal  injectable  preservative free
+04/08/2014,94df89dc-e456-42a2-8099-258a697b8fcc,ad53d024-70df-4bb6-8704-7c4bfc2e84fc,140,Influenza  seasonal  injectable  preservative free
+12/08/2016,94df89dc-e456-42a2-8099-258a697b8fcc,68ad90b7-827d-4cdd-bc27-96c4efe5d84d,140,Influenza  seasonal  injectable  preservative free
+08/12/2010,d8755427-05c5-434b-9218-dc59a17a53ee,b5717946-120c-4a9e-b83b-0fc8cc334b44,140,Influenza  seasonal  injectable  preservative free
+18/12/2011,d8755427-05c5-434b-9218-dc59a17a53ee,661fdc20-873a-4196-bbcb-a3364d207c2f,140,Influenza  seasonal  injectable  preservative free
+18/12/2012,d8755427-05c5-434b-9218-dc59a17a53ee,5e55d43e-b8f4-4d30-9d90-867321e68f5a,140,Influenza  seasonal  injectable  preservative free
+20/01/2014,d8755427-05c5-434b-9218-dc59a17a53ee,5c1f707a-c761-4785-a123-009a2f2f0413,140,Influenza  seasonal  injectable  preservative free
+20/01/2014,d8755427-05c5-434b-9218-dc59a17a53ee,5c1f707a-c761-4785-a123-009a2f2f0413,114,meningococcal MCV4P
+20/01/2014,d8755427-05c5-434b-9218-dc59a17a53ee,5c1f707a-c761-4785-a123-009a2f2f0413,115,Tdap
+20/01/2014,d8755427-05c5-434b-9218-dc59a17a53ee,5c1f707a-c761-4785-a123-009a2f2f0413,62,HPV  quadrivalent
+25/06/2012,23c1c58b-94a3-47fa-b9ca-ed539fcf30ab,e38ef792-4647-4005-99aa-416032952f22,140,Influenza  seasonal  injectable  preservative free
+29/01/2015,d8755427-05c5-434b-9218-dc59a17a53ee,317ae276-2cf7-4bec-8a74-b68bceb1845a,140,Influenza  seasonal  injectable  preservative free
+29/01/2015,d8755427-05c5-434b-9218-dc59a17a53ee,317ae276-2cf7-4bec-8a74-b68bceb1845a,62,HPV  quadrivalent
+14/02/2016,d8755427-05c5-434b-9218-dc59a17a53ee,83334731-f042-40b1-aa37-75e35ec93707,140,Influenza  seasonal  injectable  preservative free
+14/02/2016,d8755427-05c5-434b-9218-dc59a17a53ee,83334731-f042-40b1-aa37-75e35ec93707,62,HPV  quadrivalent
+24/01/2017,d8755427-05c5-434b-9218-dc59a17a53ee,014cfd8f-b751-4066-84e6-a98e1505392f,140,Influenza  seasonal  injectable  preservative free
+25/10/2015,23c1c58b-94a3-47fa-b9ca-ed539fcf30ab,7338943d-82f2-4c57-9d5b-765649bf7d16,140,Influenza  seasonal  injectable  preservative free
+25/10/2015,23c1c58b-94a3-47fa-b9ca-ed539fcf30ab,7338943d-82f2-4c57-9d5b-765649bf7d16,113,Td (adult) preservative free
+07/04/2011,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,03ff5107-aa89-4023-8fe4-c9d7d534d9a1,140,Influenza  seasonal  injectable  preservative free
+10/05/2012,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,87ecf90c-d167-41c5-9497-a21c9cc3b19a,140,Influenza  seasonal  injectable  preservative free
+10/05/2012,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,87ecf90c-d167-41c5-9497-a21c9cc3b19a,113,Td (adult) preservative free
+01/07/2013,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,24f5bb29-e5f0-41ec-8f1b-c64a7f7fd791,140,Influenza  seasonal  injectable  preservative free
+19/07/2014,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,f9109bbf-c07d-4f97-9d8d-9414ad241b8f,140,Influenza  seasonal  injectable  preservative free
+06/09/2015,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,47c682a5-c2a6-424c-8c67-02f732488cba,140,Influenza  seasonal  injectable  preservative free
+15/09/2016,a2fc43eb-b6eb-45d8-8134-1e8c0b52b86a,aac0d39c-7b8b-485d-90e1-0f2714302fcd,140,Influenza  seasonal  injectable  preservative free
+30/08/2010,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,3f257f08-b823-4ab8-9db5-678ee1dbe796,133,Pneumococcal conjugate PCV 13
+30/08/2010,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,3f257f08-b823-4ab8-9db5-678ee1dbe796,140,Influenza  seasonal  injectable  preservative free
+02/10/2011,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,6f8c81e1-b412-4c55-bbb2-c0c6730dc70e,140,Influenza  seasonal  injectable  preservative free
+02/10/2011,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,6f8c81e1-b412-4c55-bbb2-c0c6730dc70e,33,pneumococcal polysaccharide vaccine  23 valent
+25/11/2012,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,871af5fe-42d6-4e26-9f92-2ddce0b25c67,140,Influenza  seasonal  injectable  preservative free
+10/11/2013,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,9bddba8f-7fc6-45db-9ad4-d88d3472857d,140,Influenza  seasonal  injectable  preservative free
+07/12/2014,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,098d3718-474c-4553-8d56-c27e60db0ee7,140,Influenza  seasonal  injectable  preservative free
+23/12/2015,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,147de952-7d87-4ee9-b240-72d6f548e2d0,140,Influenza  seasonal  injectable  preservative free
+09/01/2017,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,8a0ef8bf-5265-41e4-81dc-c1a2bdf17e56,140,Influenza  seasonal  injectable  preservative free
+09/01/2017,fbe9330e-cb63-4fe8-b29c-125ffd6bd494,8a0ef8bf-5265-41e4-81dc-c1a2bdf17e56,113,Td (adult) preservative free
+22/02/2011,d23a770c-d887-491e-98aa-2d7d7e9074d0,c1e2b570-bb9d-4195-a562-b761084485e9,140,Influenza  seasonal  injectable  preservative free
+22/02/2011,d23a770c-d887-491e-98aa-2d7d7e9074d0,c1e2b570-bb9d-4195-a562-b761084485e9,113,Td (adult) preservative free
+01/04/2012,d23a770c-d887-491e-98aa-2d7d7e9074d0,abdeefcc-2bed-4cc3-ab96-0663df2cec3f,140,Influenza  seasonal  injectable  preservative free
+13/05/2013,d23a770c-d887-491e-98aa-2d7d7e9074d0,7e95014b-585e-475c-a7a6-b4096272a667,140,Influenza  seasonal  injectable  preservative free
+18/06/2014,d23a770c-d887-491e-98aa-2d7d7e9074d0,dfe972da-2ab6-4cdf-9223-6c77d298cae8,140,Influenza  seasonal  injectable  preservative free
+07/07/2015,d23a770c-d887-491e-98aa-2d7d7e9074d0,bda679e8-e020-4818-9f45-ec8a944db7a3,133,Pneumococcal conjugate PCV 13
+07/07/2015,d23a770c-d887-491e-98aa-2d7d7e9074d0,bda679e8-e020-4818-9f45-ec8a944db7a3,140,Influenza  seasonal  injectable  preservative free
+06/09/2016,d23a770c-d887-491e-98aa-2d7d7e9074d0,79a8878d-bffd-4014-8956-c5d013ad8389,140,Influenza  seasonal  injectable  preservative free
+06/09/2016,d23a770c-d887-491e-98aa-2d7d7e9074d0,79a8878d-bffd-4014-8956-c5d013ad8389,33,pneumococcal polysaccharide vaccine  23 valent
+07/06/2010,0f6474b0-f2d7-486d-8bdd-5ae555472384,1a0d7d3d-a10a-472b-a23b-28f811af20ae,133,Pneumococcal conjugate PCV 13
+07/06/2010,0f6474b0-f2d7-486d-8bdd-5ae555472384,1a0d7d3d-a10a-472b-a23b-28f811af20ae,140,Influenza  seasonal  injectable  preservative free
+07/06/2010,0f6474b0-f2d7-486d-8bdd-5ae555472384,1a0d7d3d-a10a-472b-a23b-28f811af20ae,33,pneumococcal polysaccharide vaccine  23 valent
+16/07/2011,0f6474b0-f2d7-486d-8bdd-5ae555472384,6773204d-838f-48b3-8d3a-76020896688a,140,Influenza  seasonal  injectable  preservative free
+06/08/2012,0f6474b0-f2d7-486d-8bdd-5ae555472384,658fe3f5-0e3e-4bda-9d70-296a1d09db39,140,Influenza  seasonal  injectable  preservative free
+19/09/2013,0f6474b0-f2d7-486d-8bdd-5ae555472384,e6f7a603-ff21-4aa2-a5df-27f66ce5a27a,140,Influenza  seasonal  injectable  preservative free
+22/10/2014,0f6474b0-f2d7-486d-8bdd-5ae555472384,b13bec7b-73e9-4bc4-a700-e3210bd39ec3,140,Influenza  seasonal  injectable  preservative free
+21/11/2015,0f6474b0-f2d7-486d-8bdd-5ae555472384,aad96b45-4d6c-4fde-928a-05d2ae1fe3a6,140,Influenza  seasonal  injectable  preservative free
+21/11/2015,0f6474b0-f2d7-486d-8bdd-5ae555472384,aad96b45-4d6c-4fde-928a-05d2ae1fe3a6,113,Td (adult) preservative free
+10/01/2017,0f6474b0-f2d7-486d-8bdd-5ae555472384,4168a89f-b999-4b0f-b039-f79e4a6da3f3,140,Influenza  seasonal  injectable  preservative free
+27/03/2011,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,17bf6a2b-ffec-42fc-9171-dfa2cb6eeb82,140,Influenza  seasonal  injectable  preservative free
+01/05/2012,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,023d7762-0ee7-4f82-b4b2-01dec8bf566f,140,Influenza  seasonal  injectable  preservative free
+31/05/2013,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,f3210ba5-3f45-424a-8485-453f896ac87d,140,Influenza  seasonal  injectable  preservative free
+31/05/2013,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,f3210ba5-3f45-424a-8485-453f896ac87d,121,zoster
+22/06/2014,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,0fd2b2da-6b56-491f-a507-dcc4e946ac60,140,Influenza  seasonal  injectable  preservative free
+22/06/2014,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,0fd2b2da-6b56-491f-a507-dcc4e946ac60,113,Td (adult) preservative free
+07/07/2015,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,fb86c1bf-21a6-410c-b1ec-933cdf37e6be,140,Influenza  seasonal  injectable  preservative free
+02/08/2016,d6f0bfcc-0093-4ba9-bebb-888b8caee2d4,27b7116c-3a93-4fbf-8d3e-897cdb54a806,140,Influenza  seasonal  injectable  preservative free
+24/09/2010,b78cb7ce-3aac-40a8-90c2-d0f9b434db35,321d5377-06ed-427e-acb2-bb22ef71c31d,140,Influenza  seasonal  injectable  preservative free
+21/01/2014,b78cb7ce-3aac-40a8-90c2-d0f9b434db35,430e19d0-ba1e-4194-8130-d67368d7aa60,140,Influenza  seasonal  injectable  preservative free
+21/01/2014,b78cb7ce-3aac-40a8-90c2-d0f9b434db35,430e19d0-ba1e-4194-8130-d67368d7aa60,113,Td (adult) preservative free
+17/01/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,5dae0669-796c-4dce-80ea-1dde300a0aec,08,Hep B  adolescent or pediatric
+26/02/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,360e6110-793d-4cf7-8297-7dea5eafe4b2,08,Hep B  adolescent or pediatric
+04/04/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,3295bc77-6457-4605-a1ec-9d4b40978b9e,119,rotavirus  monovalent
+04/04/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,3295bc77-6457-4605-a1ec-9d4b40978b9e,20,DTaP
+04/04/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,3295bc77-6457-4605-a1ec-9d4b40978b9e,49,Hib (PRP-OMP)
+04/04/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,3295bc77-6457-4605-a1ec-9d4b40978b9e,133,Pneumococcal conjugate PCV 13
+04/04/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,3295bc77-6457-4605-a1ec-9d4b40978b9e,10,IPV
+07/06/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,8288491e-f355-474c-b185-79b178cf6472,119,rotavirus  monovalent
+07/06/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,8288491e-f355-474c-b185-79b178cf6472,20,DTaP
+07/06/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,8288491e-f355-474c-b185-79b178cf6472,49,Hib (PRP-OMP)
+07/06/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,8288491e-f355-474c-b185-79b178cf6472,133,Pneumococcal conjugate PCV 13
+07/06/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,8288491e-f355-474c-b185-79b178cf6472,10,IPV
+16/08/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,d19c9f03-dc08-4e5d-9d2b-81f0e347ab9b,08,Hep B  adolescent or pediatric
+16/08/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,d19c9f03-dc08-4e5d-9d2b-81f0e347ab9b,20,DTaP
+16/08/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,d19c9f03-dc08-4e5d-9d2b-81f0e347ab9b,133,Pneumococcal conjugate PCV 13
+16/08/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,d19c9f03-dc08-4e5d-9d2b-81f0e347ab9b,10,IPV
+16/08/2014,66456516-3f76-4457-a0b9-bb670d6df9d6,d19c9f03-dc08-4e5d-9d2b-81f0e347ab9b,140,Influenza  seasonal  injectable  preservative free
+11/03/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,0e9aa966-bee7-4891-b117-58bb17e65d1e,49,Hib (PRP-OMP)
+11/03/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,0e9aa966-bee7-4891-b117-58bb17e65d1e,133,Pneumococcal conjugate PCV 13
+11/03/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,0e9aa966-bee7-4891-b117-58bb17e65d1e,03,MMR
+11/03/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,0e9aa966-bee7-4891-b117-58bb17e65d1e,21,varicella
+11/03/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,0e9aa966-bee7-4891-b117-58bb17e65d1e,83,Hep A  ped/adol  2 dose
+19/06/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,c8a4b471-a962-49d7-8d62-fcab77e3e0b3,20,DTaP
+02/09/2015,66456516-3f76-4457-a0b9-bb670d6df9d6,f9467ea2-c082-418a-bc7e-d3e357c427b8,140,Influenza  seasonal  injectable  preservative free
+14/03/2016,66456516-3f76-4457-a0b9-bb670d6df9d6,6a7d3911-8582-4f50-bc8a-d812acd1c217,83,Hep A  ped/adol  2 dose
+20/09/2016,66456516-3f76-4457-a0b9-bb670d6df9d6,f1e56d0f-6c8c-40a5-916e-fda7ce6ae199,140,Influenza  seasonal  injectable  preservative free
+06/01/2011,39fa0a46-239c-4cb4-bf38-a3e48349c2f8,a9354938-2417-4402-8412-45a70bb3783c,140,Influenza  seasonal  injectable  preservative free
+20/01/2013,39fa0a46-239c-4cb4-bf38-a3e48349c2f8,50770abe-9bf4-475e-9f66-008991504494,140,Influenza  seasonal  injectable  preservative free
+20/01/2013,39fa0a46-239c-4cb4-bf38-a3e48349c2f8,50770abe-9bf4-475e-9f66-008991504494,113,Td (adult) preservative free
+27/02/2015,39fa0a46-239c-4cb4-bf38-a3e48349c2f8,640f8b9b-28ac-40a2-bf1e-15f016010209,140,Influenza  seasonal  injectable  preservative free
+14/05/2017,39fa0a46-239c-4cb4-bf38-a3e48349c2f8,83d37b69-9e3a-458a-84c4-e0fb7558ba65,140,Influenza  seasonal  injectable  preservative free
+16/06/2011,dc55e45b-9b9b-4cc2-a49c-b737e3250ad6,47a38c52-7426-4a52-818f-613d4a4d5362,140,Influenza  seasonal  injectable  preservative free
+08/06/2012,dc55e45b-9b9b-4cc2-a49c-b737e3250ad6,13cb5beb-66cf-4984-9995-b3ebef2bf608,140,Influenza  seasonal  injectable  preservative free
+29/06/2013,dc55e45b-9b9b-4cc2-a49c-b737e3250ad6,ab21f0d1-50fa-4cf5-a8d1-7f5acccb92b3,140,Influenza  seasonal  injectable  preservative free
+29/06/2013,dc55e45b-9b9b-4cc2-a49c-b737e3250ad6,ab21f0d1-50fa-4cf5-a8d1-7f5acccb92b3,121,zoster
+06/07/2014,dc55e45b-9b9b-4cc2-a49c-b737e3250ad6,47f62e78-fd42-4c39-88f7-85fccae19ac4,140,Influenza  seasonal  injectable  preservative free
+06/07/2014,dc55e45b-9b9b-4cc2-a49c-b737e3250ad6,47f62e78-fd42-4c39-88f7-85fccae19ac4,113,Td (adult) preservative free
+09/05/2011,bba68444-713a-4ac2-8205-7752e1b7e91b,6c6bdc01-7261-41c9-8703-5144dfb6789a,140,Influenza  seasonal  injectable  preservative free
+25/05/2012,bba68444-713a-4ac2-8205-7752e1b7e91b,4f19777f-3040-4d90-a45e-161ff7383910,140,Influenza  seasonal  injectable  preservative free
+25/05/2012,bba68444-713a-4ac2-8205-7752e1b7e91b,4f19777f-3040-4d90-a45e-161ff7383910,114,meningococcal MCV4P
+25/05/2012,bba68444-713a-4ac2-8205-7752e1b7e91b,4f19777f-3040-4d90-a45e-161ff7383910,115,Tdap
+25/05/2012,bba68444-713a-4ac2-8205-7752e1b7e91b,4f19777f-3040-4d90-a45e-161ff7383910,62,HPV  quadrivalent
+21/06/2013,bba68444-713a-4ac2-8205-7752e1b7e91b,56b6c6a3-0efd-4170-ba3a-6f3fad354e05,140,Influenza  seasonal  injectable  preservative free
+21/06/2013,bba68444-713a-4ac2-8205-7752e1b7e91b,56b6c6a3-0efd-4170-ba3a-6f3fad354e05,62,HPV  quadrivalent
+11/07/2014,bba68444-713a-4ac2-8205-7752e1b7e91b,2dfcc7da-d7a0-4236-8bcd-5e4b032ff364,140,Influenza  seasonal  injectable  preservative free
+11/07/2014,bba68444-713a-4ac2-8205-7752e1b7e91b,2dfcc7da-d7a0-4236-8bcd-5e4b032ff364,62,HPV  quadrivalent
+14/08/2015,bba68444-713a-4ac2-8205-7752e1b7e91b,b81ed353-5653-4d3e-b61e-249eec3cc817,140,Influenza  seasonal  injectable  preservative free
+28/10/2016,bba68444-713a-4ac2-8205-7752e1b7e91b,7c93b808-69e2-4291-8553-8f9d42c30eb9,140,Influenza  seasonal  injectable  preservative free
+15/09/2010,9813eb4a-cd8d-4151-b57b-6888526899cd,d8bfd596-46d6-4454-8512-694edb8eef44,140,Influenza  seasonal  injectable  preservative free
+15/09/2010,9813eb4a-cd8d-4151-b57b-6888526899cd,d8bfd596-46d6-4454-8512-694edb8eef44,113,Td (adult) preservative free
+18/04/2014,9813eb4a-cd8d-4151-b57b-6888526899cd,dc3424c6-8125-435c-9a50-5b9b2474fd90,140,Influenza  seasonal  injectable  preservative free
+22/05/2017,9813eb4a-cd8d-4151-b57b-6888526899cd,54be8630-9a56-421c-b473-ac5ebfc56f61,140,Influenza  seasonal  injectable  preservative free
+25/05/2010,d85f602c-9f60-4968-800a-2ef0752e410a,beb9a5f8-3d33-4c30-a47c-0261342ff0d9,140,Influenza  seasonal  injectable  preservative free
+23/07/2011,d85f602c-9f60-4968-800a-2ef0752e410a,1eb96ad6-8e6c-4c8a-a9fe-4e37df3338c5,140,Influenza  seasonal  injectable  preservative free
+12/08/2012,d85f602c-9f60-4968-800a-2ef0752e410a,7845436b-9124-4e09-8b70-5c6dce1173a7,140,Influenza  seasonal  injectable  preservative free
+25/08/2013,d85f602c-9f60-4968-800a-2ef0752e410a,2740a8d1-274d-4061-ad62-d672a2809d54,140,Influenza  seasonal  injectable  preservative free
+07/09/2014,d85f602c-9f60-4968-800a-2ef0752e410a,a3aef66f-a299-48b9-8487-a84c07ec3cbf,140,Influenza  seasonal  injectable  preservative free
+15/10/2015,d85f602c-9f60-4968-800a-2ef0752e410a,017e3eda-afa5-4efb-82b0-f4f37f42fdee,140,Influenza  seasonal  injectable  preservative free
+01/11/2016,d85f602c-9f60-4968-800a-2ef0752e410a,94605063-f820-4d6f-8991-1db42362f815,140,Influenza  seasonal  injectable  preservative free
+18/03/2011,a37a8904-702b-424f-8f77-f16d0bcd82d4,7c3d75eb-d63f-4e41-9535-6a6a94f18448,140,Influenza  seasonal  injectable  preservative free
+18/04/2012,a37a8904-702b-424f-8f77-f16d0bcd82d4,86b96c61-78eb-4e99-8102-769ec49ab2fe,140,Influenza  seasonal  injectable  preservative free
+22/05/2013,a37a8904-702b-424f-8f77-f16d0bcd82d4,8b474ab4-b029-4193-86a9-339dd41fe533,140,Influenza  seasonal  injectable  preservative free
+21/06/2014,a37a8904-702b-424f-8f77-f16d0bcd82d4,d00a72b5-df2d-484c-a89b-963e67fcdc6c,140,Influenza  seasonal  injectable  preservative free
+21/06/2014,a37a8904-702b-424f-8f77-f16d0bcd82d4,d00a72b5-df2d-484c-a89b-963e67fcdc6c,114,meningococcal MCV4P
+21/06/2014,a37a8904-702b-424f-8f77-f16d0bcd82d4,d00a72b5-df2d-484c-a89b-963e67fcdc6c,115,Tdap
+21/06/2014,a37a8904-702b-424f-8f77-f16d0bcd82d4,d00a72b5-df2d-484c-a89b-963e67fcdc6c,62,HPV  quadrivalent
+17/07/2015,a37a8904-702b-424f-8f77-f16d0bcd82d4,a91278c7-52d7-4f9d-9d89-e5487a9b194f,140,Influenza  seasonal  injectable  preservative free
+17/07/2015,a37a8904-702b-424f-8f77-f16d0bcd82d4,a91278c7-52d7-4f9d-9d89-e5487a9b194f,62,HPV  quadrivalent
+30/08/2016,a37a8904-702b-424f-8f77-f16d0bcd82d4,d89ee1e7-ec51-4549-b4d6-ce9401c04c43,140,Influenza  seasonal  injectable  preservative free
+30/08/2016,a37a8904-702b-424f-8f77-f16d0bcd82d4,d89ee1e7-ec51-4549-b4d6-ce9401c04c43,62,HPV  quadrivalent
+05/10/2011,ebce206d-d04c-4887-bb81-40e422121a92,95cb1b55-3258-4d87-ba92-91faa402811d,140,Influenza  seasonal  injectable  preservative free
+29/11/2013,ebce206d-d04c-4887-bb81-40e422121a92,c12ed65e-12d5-414a-b272-dc1dec486fdf,140,Influenza  seasonal  injectable  preservative free
+03/10/2015,ebce206d-d04c-4887-bb81-40e422121a92,2fe6397b-0e88-48fe-bbd3-c995a31eaa48,140,Influenza  seasonal  injectable  preservative free
+05/10/2010,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,fd2ba8af-51d8-4469-b5e3-d432a98d2f6d,133,Pneumococcal conjugate PCV 13
+05/10/2010,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,fd2ba8af-51d8-4469-b5e3-d432a98d2f6d,140,Influenza  seasonal  injectable  preservative free
+12/04/2011,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,9e50242d-f024-4757-802d-7dc8daa6663c,133,Pneumococcal conjugate PCV 13
+02/03/2012,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,be84da35-48e6-4cd0-8dae-b9ee1029938b,133,Pneumococcal conjugate PCV 13
+02/03/2012,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,be84da35-48e6-4cd0-8dae-b9ee1029938b,140,Influenza  seasonal  injectable  preservative free
+21/01/2013,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,cc12b4e7-ba73-4af8-81dc-e3f30cafc8b1,20,DTaP
+21/01/2013,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,cc12b4e7-ba73-4af8-81dc-e3f30cafc8b1,10,IPV
+21/01/2013,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,cc12b4e7-ba73-4af8-81dc-e3f30cafc8b1,140,Influenza  seasonal  injectable  preservative free
+21/01/2013,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,cc12b4e7-ba73-4af8-81dc-e3f30cafc8b1,03,MMR
+21/01/2013,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,cc12b4e7-ba73-4af8-81dc-e3f30cafc8b1,21,varicella
+23/01/2014,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,0ddb56bf-96f7-44df-8a43-95dc3a1d5f44,140,Influenza  seasonal  injectable  preservative free
+03/12/2014,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,eac2b006-860e-4e95-a173-451a81b85760,140,Influenza  seasonal  injectable  preservative free
+17/11/2015,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,5e18a3cb-919f-4bc5-b808-a910ba22fd68,140,Influenza  seasonal  injectable  preservative free
+04/11/2016,a8caa5a2-b9f4-4c5d-8a9b-8a6bea9b982f,b6436ff4-0174-4f29-af0a-7648e9011f62,140,Influenza  seasonal  injectable  preservative free
+16/06/2010,b3886c5d-b9e8-464e-ac39-c4875e908d0e,41a9440f-1191-47e5-b7a6-b90f44d8586f,140,Influenza  seasonal  injectable  preservative free
+16/06/2010,b3886c5d-b9e8-464e-ac39-c4875e908d0e,41a9440f-1191-47e5-b7a6-b90f44d8586f,113,Td (adult) preservative free
+11/03/2012,b3886c5d-b9e8-464e-ac39-c4875e908d0e,d9ada222-e213-458d-985d-bf91ddd5d844,140,Influenza  seasonal  injectable  preservative free
+06/02/2014,b3886c5d-b9e8-464e-ac39-c4875e908d0e,d59f4a7f-dde6-4a7f-9595-869aaea0b6a7,140,Influenza  seasonal  injectable  preservative free
+22/11/2015,b3886c5d-b9e8-464e-ac39-c4875e908d0e,aaf93ee6-a8d7-4acc-bcac-72d5c618d369,140,Influenza  seasonal  injectable  preservative free
+10/04/2011,03d889ba-5cdc-444a-bcb0-e86b705e860e,30af4130-c29d-4407-b221-9b64c95f64b6,140,Influenza  seasonal  injectable  preservative free
+10/04/2011,03d889ba-5cdc-444a-bcb0-e86b705e860e,30af4130-c29d-4407-b221-9b64c95f64b6,113,Td (adult) preservative free
+29/02/2012,03d889ba-5cdc-444a-bcb0-e86b705e860e,b73bb4dc-5b76-4b6f-93f1-7054d7eaedae,140,Influenza  seasonal  injectable  preservative free
+10/02/2013,03d889ba-5cdc-444a-bcb0-e86b705e860e,d38b3d13-01b4-4f9f-ae39-b8fa28139b92,140,Influenza  seasonal  injectable  preservative free
+20/01/2014,03d889ba-5cdc-444a-bcb0-e86b705e860e,50f8ba52-5f62-4387-831c-28cbb676c318,140,Influenza  seasonal  injectable  preservative free
+16/02/2015,03d889ba-5cdc-444a-bcb0-e86b705e860e,0f75c105-fbc6-49af-952f-510d7cfad4c3,140,Influenza  seasonal  injectable  preservative free
+19/01/2016,03d889ba-5cdc-444a-bcb0-e86b705e860e,7abebe3d-20b3-4585-af5c-1a078673e0db,140,Influenza  seasonal  injectable  preservative free
+13/01/2017,03d889ba-5cdc-444a-bcb0-e86b705e860e,8f5a2fbd-7275-4f50-b444-3ed3c6437893,140,Influenza  seasonal  injectable  preservative free
+30/09/2010,f9b9358c-172b-4474-ac62-c67236ee1f79,b77cba69-dc71-4ced-8e16-77fe88b7eff9,140,Influenza  seasonal  injectable  preservative free
+10/09/2011,f9b9358c-172b-4474-ac62-c67236ee1f79,28866e6d-21a0-4573-a26e-1ec35c402cf5,140,Influenza  seasonal  injectable  preservative free
+21/10/2012,f9b9358c-172b-4474-ac62-c67236ee1f79,d228be1b-983b-4c5f-8c6c-8796b7a3e227,140,Influenza  seasonal  injectable  preservative free
+02/10/2013,f9b9358c-172b-4474-ac62-c67236ee1f79,df00b3eb-0930-4ee7-92cd-9f31b81a510a,140,Influenza  seasonal  injectable  preservative free
+21/09/2014,f9b9358c-172b-4474-ac62-c67236ee1f79,886dd325-fffe-416a-89ef-e7031a7bce0c,140,Influenza  seasonal  injectable  preservative free
+26/08/2015,f9b9358c-172b-4474-ac62-c67236ee1f79,640cc936-fb9e-4516-9d8b-20afb28d8c85,140,Influenza  seasonal  injectable  preservative free
+31/07/2016,f9b9358c-172b-4474-ac62-c67236ee1f79,4e905a90-881f-4667-9853-baeac1547c6e,140,Influenza  seasonal  injectable  preservative free
+20/09/2010,4d2836d8-73df-4de7-8a89-9142bc377aaa,6d9bf921-2224-4f22-a715-06240a8169b4,140,Influenza  seasonal  injectable  preservative free
+23/08/2011,4d2836d8-73df-4de7-8a89-9142bc377aaa,ace5c4c2-70c0-4056-880a-42563d70c4f0,140,Influenza  seasonal  injectable  preservative free
+06/08/2012,4d2836d8-73df-4de7-8a89-9142bc377aaa,51ed71e5-b92b-426f-97ec-351972e30ee8,140,Influenza  seasonal  injectable  preservative free
+06/08/2012,4d2836d8-73df-4de7-8a89-9142bc377aaa,51ed71e5-b92b-426f-97ec-351972e30ee8,121,zoster
+16/08/2010,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,351c788b-4daa-4011-8b94-622ef827a961,140,Influenza  seasonal  injectable  preservative free
+16/07/2011,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,f899bcfe-51a3-419b-b768-f382d77a5ad9,140,Influenza  seasonal  injectable  preservative free
+18/06/2012,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,1dc01f11-cd35-41fa-bc5c-57ecf01a363d,140,Influenza  seasonal  injectable  preservative free
+18/06/2013,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,4d1a1608-1770-4131-a480-ef1c1a667ff5,140,Influenza  seasonal  injectable  preservative free
+07/06/2014,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,a88d0ab0-1a8b-470e-9e62-b2d312b14f3c,140,Influenza  seasonal  injectable  preservative free
+02/07/2015,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,6966f628-f5a3-45eb-84c8-d3206ffb3e87,140,Influenza  seasonal  injectable  preservative free
+02/07/2015,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,6966f628-f5a3-45eb-84c8-d3206ffb3e87,121,zoster
+21/06/2016,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,1894640b-122b-4d33-9cf6-8099e418db8f,140,Influenza  seasonal  injectable  preservative free
+21/06/2016,257ba1a2-e0a0-4319-8f6e-0bfdef8f6c01,1894640b-122b-4d33-9cf6-8099e418db8f,113,Td (adult) preservative free
+25/03/2011,1bf23e46-1a4f-412b-bd7a-8bfcf1985617,0ee1cab4-dd8a-438b-b7e0-ce364c15e28a,140,Influenza  seasonal  injectable  preservative free
+28/03/2012,1bf23e46-1a4f-412b-bd7a-8bfcf1985617,767c9934-6edc-4748-b379-1a4aa890045a,140,Influenza  seasonal  injectable  preservative free
+27/03/2013,1bf23e46-1a4f-412b-bd7a-8bfcf1985617,72e3af3c-b749-4114-8fb0-5a8a6fad80c8,140,Influenza  seasonal  injectable  preservative free
+02/04/2012,1516c893-273b-40b1-99d1-789e452d008c,d6258665-f985-49b3-b736-ca01be10428f,140,Influenza  seasonal  injectable  preservative free
+02/04/2012,1516c893-273b-40b1-99d1-789e452d008c,d6258665-f985-49b3-b736-ca01be10428f,113,Td (adult) preservative free
+02/02/2015,1516c893-273b-40b1-99d1-789e452d008c,7399b219-946f-4ffb-b7ff-16502f885437,140,Influenza  seasonal  injectable  preservative free
+08/07/2011,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,8a7425b2-1cf2-42fd-a51a-32ee2bcc4b54,140,Influenza  seasonal  injectable  preservative free
+25/05/2012,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,0a3566e4-4547-42f9-a013-dad1f58519ef,140,Influenza  seasonal  injectable  preservative free
+06/05/2013,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,95bbb276-4f0e-4bcf-b3e2-0ca573f3df5f,140,Influenza  seasonal  injectable  preservative free
+06/05/2013,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,95bbb276-4f0e-4bcf-b3e2-0ca573f3df5f,114,meningococcal MCV4P
+06/05/2013,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,95bbb276-4f0e-4bcf-b3e2-0ca573f3df5f,115,Tdap
+06/05/2013,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,95bbb276-4f0e-4bcf-b3e2-0ca573f3df5f,62,HPV  quadrivalent
+19/04/2014,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,794fc7d8-43ef-482e-b32f-77598a64c4d8,140,Influenza  seasonal  injectable  preservative free
+19/04/2014,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,794fc7d8-43ef-482e-b32f-77598a64c4d8,62,HPV  quadrivalent
+08/04/2015,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,4b9718a7-b0f1-408b-8381-03c0f2a1f3b8,140,Influenza  seasonal  injectable  preservative free
+08/04/2015,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,4b9718a7-b0f1-408b-8381-03c0f2a1f3b8,62,HPV  quadrivalent
+13/03/2016,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,fda9b9e0-9084-479a-ae36-baeaba838d30,140,Influenza  seasonal  injectable  preservative free
+14/04/2017,4daf42a3-b6a8-49fc-9e55-32f57a1ac344,93b7a93a-ae4f-43b9-bc7b-d9de59fdd66c,140,Influenza  seasonal  injectable  preservative free
+05/07/2010,39124658-0e5a-496b-b46f-9ce147023a59,214da69e-cfe5-4fcb-86e6-74e19979e471,140,Influenza  seasonal  injectable  preservative free
+26/06/2011,39124658-0e5a-496b-b46f-9ce147023a59,b44af342-6262-402f-bd1b-4cdc46c5784d,140,Influenza  seasonal  injectable  preservative free
+08/06/2012,39124658-0e5a-496b-b46f-9ce147023a59,66135728-b2c2-41fb-95ad-f474599d4e54,140,Influenza  seasonal  injectable  preservative free
+19/05/2013,39124658-0e5a-496b-b46f-9ce147023a59,5483a701-437e-41d0-af43-7f48c7944974,140,Influenza  seasonal  injectable  preservative free
+07/05/2014,39124658-0e5a-496b-b46f-9ce147023a59,f7954e6a-6b49-454f-bbf7-ab861cd4360d,140,Influenza  seasonal  injectable  preservative free
+07/05/2014,39124658-0e5a-496b-b46f-9ce147023a59,f7954e6a-6b49-454f-bbf7-ab861cd4360d,121,zoster
+14/06/2015,39124658-0e5a-496b-b46f-9ce147023a59,3693dc1b-0147-43b4-a014-c8a62db8b449,140,Influenza  seasonal  injectable  preservative free
+14/06/2015,39124658-0e5a-496b-b46f-9ce147023a59,3693dc1b-0147-43b4-a014-c8a62db8b449,113,Td (adult) preservative free
+19/09/2016,39124658-0e5a-496b-b46f-9ce147023a59,f800f7f9-6bee-4351-a3e2-7f06bdb3d5cb,140,Influenza  seasonal  injectable  preservative free
+24/07/2010,dc6af68b-b7b8-4645-8595-ae555505f2da,a67f9d78-fa46-48ab-a2b8-ba5d0606ba2f,140,Influenza  seasonal  injectable  preservative free
+08/09/2011,dc6af68b-b7b8-4645-8595-ae555505f2da,63016eec-0387-4e05-a584-fa44d8699425,140,Influenza  seasonal  injectable  preservative free
+24/08/2012,dc6af68b-b7b8-4645-8595-ae555505f2da,eb431e9a-deb2-41de-ac36-2a5015b52080,140,Influenza  seasonal  injectable  preservative free
+25/09/2013,dc6af68b-b7b8-4645-8595-ae555505f2da,6dcd0a2d-0788-4b75-95fc-f63846f1303b,140,Influenza  seasonal  injectable  preservative free
+30/09/2014,dc6af68b-b7b8-4645-8595-ae555505f2da,1c8a7a2a-5440-4e02-8498-c567612ee523,140,Influenza  seasonal  injectable  preservative free
+26/10/2015,dc6af68b-b7b8-4645-8595-ae555505f2da,84f0ddd2-9516-4099-870d-ed1213cb0f3b,140,Influenza  seasonal  injectable  preservative free
+23/12/2016,dc6af68b-b7b8-4645-8595-ae555505f2da,4901e93a-4fd9-42b7-aa0a-ad96da083413,140,Influenza  seasonal  injectable  preservative free
+23/12/2016,dc6af68b-b7b8-4645-8595-ae555505f2da,4901e93a-4fd9-42b7-aa0a-ad96da083413,113,Td (adult) preservative free
+26/09/2010,6271783c-d27e-4d6e-9baf-66baddb20863,9889eb40-a74b-4ab7-98cb-994f2370471d,133,Pneumococcal conjugate PCV 13
+26/09/2010,6271783c-d27e-4d6e-9baf-66baddb20863,9889eb40-a74b-4ab7-98cb-994f2370471d,140,Influenza  seasonal  injectable  preservative free
+24/09/2011,6271783c-d27e-4d6e-9baf-66baddb20863,3060b40a-7fca-4168-81b2-e9045059d830,140,Influenza  seasonal  injectable  preservative free
+24/09/2011,6271783c-d27e-4d6e-9baf-66baddb20863,3060b40a-7fca-4168-81b2-e9045059d830,33,pneumococcal polysaccharide vaccine  23 valent
+19/10/2012,6271783c-d27e-4d6e-9baf-66baddb20863,37ed130f-113c-45a3-9f9e-b06f3b33cb61,140,Influenza  seasonal  injectable  preservative free
+30/10/2013,6271783c-d27e-4d6e-9baf-66baddb20863,fe6890f2-43ca-407b-a81c-1ab277ec4b5f,140,Influenza  seasonal  injectable  preservative free
+10/12/2014,6271783c-d27e-4d6e-9baf-66baddb20863,190f7aab-c4ad-4f5a-9b6d-6f2e75b438b7,140,Influenza  seasonal  injectable  preservative free
+11/01/2016,6271783c-d27e-4d6e-9baf-66baddb20863,2a07e3dc-c961-416d-aa12-d92819bc513b,140,Influenza  seasonal  injectable  preservative free
+29/12/2016,6271783c-d27e-4d6e-9baf-66baddb20863,3853532e-9200-460f-aeff-062445048946,140,Influenza  seasonal  injectable  preservative free
+29/12/2016,6271783c-d27e-4d6e-9baf-66baddb20863,3853532e-9200-460f-aeff-062445048946,113,Td (adult) preservative free
+05/10/2010,7e419284-f400-4ea2-8f2a-8ad7687d1264,019e85f6-ce37-4a4f-8f78-70abbe5a5d89,133,Pneumococcal conjugate PCV 13
+05/10/2010,7e419284-f400-4ea2-8f2a-8ad7687d1264,019e85f6-ce37-4a4f-8f78-70abbe5a5d89,140,Influenza  seasonal  injectable  preservative free
+05/10/2010,7e419284-f400-4ea2-8f2a-8ad7687d1264,019e85f6-ce37-4a4f-8f78-70abbe5a5d89,33,pneumococcal polysaccharide vaccine  23 valent
+06/11/2011,7e419284-f400-4ea2-8f2a-8ad7687d1264,b1ee0884-5b75-4d85-a907-073952e35ed4,140,Influenza  seasonal  injectable  preservative free
+26/11/2012,7e419284-f400-4ea2-8f2a-8ad7687d1264,90cca597-2d2c-4e4c-9b3d-31985af99f0e,140,Influenza  seasonal  injectable  preservative free
+07/01/2014,7e419284-f400-4ea2-8f2a-8ad7687d1264,a85e03ff-1962-42a6-a017-865b4b48948c,140,Influenza  seasonal  injectable  preservative free
+04/02/2015,7e419284-f400-4ea2-8f2a-8ad7687d1264,391b1fbc-24a2-4cc9-aa31-be658232129e,140,Influenza  seasonal  injectable  preservative free
+14/03/2016,7e419284-f400-4ea2-8f2a-8ad7687d1264,9eb04292-68d4-49c1-ac8d-8dce698ab277,140,Influenza  seasonal  injectable  preservative free
+14/03/2016,7e419284-f400-4ea2-8f2a-8ad7687d1264,9eb04292-68d4-49c1-ac8d-8dce698ab277,113,Td (adult) preservative free
+22/04/2017,7e419284-f400-4ea2-8f2a-8ad7687d1264,78e107ae-7cff-48c6-970a-efa08b704c89,140,Influenza  seasonal  injectable  preservative free
+18/01/2011,e97a2594-a73f-4f80-9499-effea051c748,8194edcc-7524-4249-ad56-92af1d9aac34,140,Influenza  seasonal  injectable  preservative free
+31/01/2012,e97a2594-a73f-4f80-9499-effea051c748,20337ee7-0f3b-4db6-8bdf-3f5bbf27c816,140,Influenza  seasonal  injectable  preservative free
+19/02/2013,e97a2594-a73f-4f80-9499-effea051c748,eb88790b-9020-4603-b5a9-f65a7effaf06,140,Influenza  seasonal  injectable  preservative free
+19/02/2013,e97a2594-a73f-4f80-9499-effea051c748,eb88790b-9020-4603-b5a9-f65a7effaf06,121,zoster
+28/06/2011,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,ed694ebb-957f-4e6f-985b-ebffa4adec7c,140,Influenza  seasonal  injectable  preservative free
+30/06/2012,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,4c889906-bd28-4b54-bdfc-954d29b301fc,140,Influenza  seasonal  injectable  preservative free
+31/07/2013,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,f6b6cd79-235f-4125-aee8-00dc86e41613,140,Influenza  seasonal  injectable  preservative free
+31/07/2013,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,f6b6cd79-235f-4125-aee8-00dc86e41613,121,zoster
+27/08/2014,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,65c3801c-1e64-4faf-a678-43adb22b8088,140,Influenza  seasonal  injectable  preservative free
+27/08/2014,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,65c3801c-1e64-4faf-a678-43adb22b8088,113,Td (adult) preservative free
+22/09/2015,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,1c9ee1ff-f174-472d-80bf-008c3ffaca49,140,Influenza  seasonal  injectable  preservative free
+24/10/2016,048ffcd2-bb77-415d-8d49-2d74fa3ca5be,c3ea8351-8399-4288-8445-1228c0638906,140,Influenza  seasonal  injectable  preservative free
+11/10/2010,a3a5683a-4279-4656-9b72-e16d4b326b38,01a47e30-47ce-4a28-8337-502ef9a23192,140,Influenza  seasonal  injectable  preservative free
+11/10/2010,a3a5683a-4279-4656-9b72-e16d4b326b38,01a47e30-47ce-4a28-8337-502ef9a23192,113,Td (adult) preservative free
+27/11/2011,a3a5683a-4279-4656-9b72-e16d4b326b38,97f67267-cb5f-4d67-a7d7-efe3c9276056,140,Influenza  seasonal  injectable  preservative free
+09/01/2013,a3a5683a-4279-4656-9b72-e16d4b326b38,eae7145c-a9ea-4e3a-8d91-e06f9d2a8029,140,Influenza  seasonal  injectable  preservative free
+25/02/2014,a3a5683a-4279-4656-9b72-e16d4b326b38,4953fd2a-2c19-441a-9db8-987bbd43dea7,140,Influenza  seasonal  injectable  preservative free
+28/03/2015,a3a5683a-4279-4656-9b72-e16d4b326b38,4c997ea7-c90b-4cfa-bcad-667e54e57545,133,Pneumococcal conjugate PCV 13
+28/03/2015,a3a5683a-4279-4656-9b72-e16d4b326b38,4c997ea7-c90b-4cfa-bcad-667e54e57545,140,Influenza  seasonal  injectable  preservative free
+19/05/2016,a3a5683a-4279-4656-9b72-e16d4b326b38,8e43f25d-ed1a-45bc-8256-453b463c6704,140,Influenza  seasonal  injectable  preservative free
+19/05/2016,a3a5683a-4279-4656-9b72-e16d4b326b38,8e43f25d-ed1a-45bc-8256-453b463c6704,33,pneumococcal polysaccharide vaccine  23 valent
+11/12/2010,9581676d-44e5-404c-9573-a629a9b3e108,cecde92f-347e-43d8-a566-d6a255f2375c,140,Influenza  seasonal  injectable  preservative free

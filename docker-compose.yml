@@ -1,0 +1,110 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: cse400
+      POSTGRES_PASSWORD: cse400
+      POSTGRES_DB: cse400
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  preprocess:
+    build: ./services/preprocess_service
+    environment:
+      API_KEY: ${API_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_ALG: ${JWT_ALG}
+      JWT_ISSUER: ${JWT_ISSUER}
+      RETURN_OCR_TEXT: ${RETURN_OCR_TEXT}
+      SPACY_MODEL: en_core_web_sm
+
+  patient-store:
+    build: ./services/patient_store_service
+    environment:
+      API_KEY: ${API_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_ALG: ${JWT_ALG}
+      JWT_ISSUER: ${JWT_ISSUER}
+      DATABASE_URL: ${DATABASE_URL}
+      STORAGE_DIR: ${STORAGE_DIR}
+      FILE_ENCRYPTION_KEY: ${FILE_ENCRYPTION_KEY}
+    depends_on:
+      - db
+    volumes:
+      - patient_docs:${STORAGE_DIR}
+
+  inference:
+    build: ./services/inference_service
+    environment:
+      API_KEY: ${API_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_ALG: ${JWT_ALG}
+      JWT_ISSUER: ${JWT_ISSUER}
+      PATIENT_STORE_URL: ${PATIENT_STORE_URL}
+      MODEL_BUNDLE_DIR: ${MODEL_BUNDLE_DIR}
+    depends_on:
+      - patient-store
+    volumes:
+      - ./model_bundle:${MODEL_BUNDLE_DIR}:ro
+
+  auth:
+    build: ./services/auth_service
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_ALG: ${JWT_ALG}
+      JWT_ISSUER: ${JWT_ISSUER}
+      JWT_EXP_SECONDS: ${JWT_EXP_SECONDS}
+      USERS_FILE: ${USERS_FILE}
+      ADMIN_USERNAME: ${ADMIN_USERNAME}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+    volumes:
+      - auth_data:/data
+
+  web-portal:
+    build: ./services/web_portal
+    environment:
+      AUTH_URL: ${AUTH_URL}
+      PREPROCESS_URL: ${PREPROCESS_URL}
+      PATIENT_STORE_URL: ${PATIENT_STORE_URL}
+      INFERENCE_URL: ${INFERENCE_URL}
+      COOKIE_SECURE: ${COOKIE_SECURE}
+      # Optional: route internal calls through the gateway (single ingress)
+      GATEWAY_URL: ${GATEWAY_URL}
+      GATEWAY_TLS_VERIFY: ${GATEWAY_TLS_VERIFY}
+      GATEWAY_CA_CERT: ${GATEWAY_CA_CERT}
+    volumes:
+      # Read-only mount so web-portal can verify Caddy's internal CA when using GATEWAY_TLS_VERIFY=ca
+      - caddy_data:/caddy:ro
+    depends_on:
+      - auth
+      - preprocess
+      - patient-store
+      - inference
+
+  gateway:
+    build: ./services/gateway
+    depends_on:
+      - web-portal
+      - auth
+    ports:
+      - "8443:8443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+  tools:
+    image: python:3.11-slim
+    working_dir: /repo
+    volumes:
+      - ./:/repo
+    depends_on:
+      - auth
+      - patient-store
+    entrypoint: ["bash", "-lc", "sleep infinity"]
+
+volumes:
+  db_data:
+  patient_docs:
+  auth_data:
+  caddy_data:
+  caddy_config:

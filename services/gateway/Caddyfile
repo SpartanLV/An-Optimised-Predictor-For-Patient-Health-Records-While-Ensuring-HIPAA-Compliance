@@ -1,0 +1,32 @@
+{
+    https_port 8443
+}
+
+localhost:8443, gateway:8443 {
+    tls internal
+
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "DENY"
+        Referrer-Policy "no-referrer"
+    }
+
+    # Auth (strip /auth prefix)
+    handle_path /auth/* {
+        reverse_proxy auth:8004
+    }
+
+    # APIs (strip /api/<service> prefix)
+    handle_path /api/preprocess/* {
+        reverse_proxy preprocess:8001
+    }
+    handle_path /api/store/* {
+        reverse_proxy patient-store:8002
+    }
+    handle_path /api/inference/* {
+        reverse_proxy inference:8003
+    }
+
+    # Everything else -> web portal
+    reverse_proxy web-portal:8000
+}
