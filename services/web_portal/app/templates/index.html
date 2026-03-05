@@ -516,10 +516,10 @@
       <div class="landing-nav__brand-name">HIPAA <i>Predictor</i></div>
     </div>
     <div class="landing-nav__links">
-      <a href="#">Telemetry</a>
-      <a href="#">Security</a>
-      <a href="#">Engine</a>
-      <a href="#">API</a>
+      <a href="#platform-overview">Overview</a>
+      <a href="#security">Security</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="/api-contracts">API</a>
     </div>
     <div class="landing-nav__actions">
       {% if user %}
@@ -535,30 +535,29 @@
     <div class="hero__text">
       <div class="hero__badge">
         <span class="material-symbols-outlined" style="font-size:0.8rem;">verified</span>
-        System Status: Optimal
+        System Profile: HIPAA-Oriented MVP
       </div>
       <h1 class="hero__heading">
         Predictive
         Health
-        <span>Racing Velocity</span>
+        <span>Risk Stratification Platform</span>
       </h1>
       <p class="hero__desc">
-        High-performance ML infrastructure engineered for the most demanding healthcare environments.
-        Carbon-black precision meets total HIPAA compliance.
+        Three-stage clinical document pipeline (OCR/NER → patient store → model inference) with JWT auth, service API keys, and TLS gateway support.
       </p>
       <div class="hero__actions">
         {% if user %}
         <a href="/patients" class="btn btn--primary">
           <span class="material-symbols-outlined" style="font-size:1rem;">bolt</span>
-          Run New Prediction
+          Open Patient Workspace
         </a>
         {% else %}
         <a href="/login" class="btn btn--primary">
           <span class="material-symbols-outlined" style="font-size:1rem;">bolt</span>
-          Run New Prediction
+          Open Patient Workspace
         </a>
         {% endif %}
-        <a href="#features" class="btn btn--outline">View Docs</a>
+        <a href="#platform-overview" class="btn btn--outline">View Platform</a>
       </div>
     </div>
     <div class="hero__visual">
@@ -566,72 +565,70 @@
         <div style="color:rgba(255,255,255,0.15);text-align:center;font-size:0.8rem;padding:2rem;">
           <span class="material-symbols-outlined"
             style="font-size:3rem;display:block;margin-bottom:0.5rem;">monitoring</span>
-          Neural Telemetry Feed
+          Pipeline Preview
         </div>
       </div>
       <div class="hero__latency">
-        <span class="hero__latency-label">Neural Latency</span>
-        <span class="hero__latency-value">0.0042s</span>
+        <span class="hero__latency-label">Pipeline Stages</span>
+        <span class="hero__latency-value">3 Services + Auth</span>
       </div>
     </div>
   </section>
 
   <!-- Stats Bar -->
-  <section class="stats-bar">
+  <section id="pipeline" class="stats-bar">
     <div class="stats-bar__item">
-      <div class="stats-bar__label">Accuracy</div>
-      <div class="stats-bar__value">99.98%</div>
-      <div class="stats-bar__meta">+2.4% vs Baseline</div>
+      <div class="stats-bar__label">Stage 1</div>
+      <div class="stats-bar__value">Preprocess</div>
+      <div class="stats-bar__meta">OCR + best-effort NER extraction</div>
     </div>
     <div class="stats-bar__item">
-      <div class="stats-bar__label">Data Points</div>
-      <div class="stats-bar__value">4.8PB</div>
-      <div class="stats-bar__meta">Encrypted End-to-End</div>
+      <div class="stats-bar__label">Stage 2</div>
+      <div class="stats-bar__value">Patient Store</div>
+      <div class="stats-bar__meta">Postgres records + document hash/encryption</div>
     </div>
     <div class="stats-bar__item">
-      <div class="stats-bar__label">Uptime</div>
-      <div class="stats-bar__value">99.999%</div>
-      <div class="stats-bar__meta">Tier 4 Infrastructure</div>
+      <div class="stats-bar__label">Stage 3</div>
+      <div class="stats-bar__value">Inference</div>
+      <div class="stats-bar__meta">Hybrid model predictions + recommendations</div>
     </div>
     <div class="stats-bar__item">
-      <div class="stats-bar__label">Compliance</div>
-      <div class="stats-bar__value">HIPAA</div>
-      <div class="stats-bar__meta">Certified & Audited</div>
+      <div class="stats-bar__label">Access Control</div>
+      <div class="stats-bar__value">JWT + API Key</div>
+      <div class="stats-bar__meta">Designed for HIPAA-oriented deployments</div>
     </div>
   </section>
 
   <!-- Features -->
-  <section id="features" class="features-section">
+  <section id="platform-overview" class="features-section">
     <div class="features-section__inner">
-      <h2 class="features-section__heading">Engineered For Zero&#8209;Failure Environments</h2>
+      <h2 class="features-section__heading">Platform Capabilities</h2>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-card__icon">
             <span class="material-symbols-outlined">psychology</span>
           </div>
-          <h3 class="feature-card__title">ML Neural Engine</h3>
+          <h3 class="feature-card__title">Stage 1: Document Preprocess</h3>
           <p class="feature-card__desc">
-            Proprietary longitudinal models trained on diverse clinical datasets to identify early health markers before
-            symptoms manifest.
+            Upload PDFs/images and extract entities/events with OCR and heuristic NLP in a controlled service boundary.
           </p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon">
             <span class="material-symbols-outlined">lock</span>
           </div>
-          <h3 class="feature-card__title">Carbon Security</h3>
+          <h3 class="feature-card__title">Stage 2: Patient Store</h3>
           <p class="feature-card__desc">
-            Hardware-level AES-256 encryption. Your data never leaves the encrypted perimeter, ensuring absolute HIPAA
-            compliance.
+            Store patients, documents, entities, and events with audit logging and optional at-rest file encryption.
           </p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon">
             <span class="material-symbols-outlined">speed</span>
           </div>
-          <h3 class="feature-card__title">Real-Time Telemetry</h3>
+          <h3 class="feature-card__title">Stage 3: Inference Service</h3>
           <p class="feature-card__desc">
-            Instant data ingestion and processing with less than 40ms latency. Because in healthcare, speed saves lives.
+            Run hybrid model inference from patient events to return ranked condition predictions with recommendations.
           </p>
         </div>
       </div>
@@ -639,7 +636,7 @@
   </section>
 
   <!-- Terminal Preview -->
-  <section class="terminal-section">
+  <section id="api" class="terminal-section">
     <div class="terminal-section__inner">
       <div class="terminal-card">
         <div class="terminal-card__header">
@@ -648,7 +645,7 @@
             <div class="terminal-card__dot terminal-card__dot--yellow"></div>
             <div class="terminal-card__dot terminal-card__dot--green"></div>
           </div>
-          <div class="terminal-card__title">Command Center v2.4</div>
+          <div class="terminal-card__title">Pipeline Event Snapshot</div>
           <div></div>
         </div>
         <div class="terminal-card__body">
@@ -662,23 +659,23 @@
           </div>
           <div class="terminal-card__stream mt-2">
             <div class="terminal-card__stream-header">
-              <span class="terminal-card__stream-title">Patient Telemetry Stream</span>
-              <span class="terminal-card__stream-live">Live Data</span>
+              <span class="terminal-card__stream-title">Pipeline Processing Notes</span>
+              <span class="terminal-card__stream-live">Reference</span>
             </div>
             <div class="terminal-line">
               <span class="terminal-line__time">09:42:03</span>
-              <span class="terminal-line__msg">Analysis Complete: Patient #781</span>
-              <span class="terminal-line__status terminal-line__status--score">94% Risk Score</span>
+              <span class="terminal-line__msg">Document uploaded and parsed by Stage 1</span>
+              <span class="terminal-line__status terminal-line__status--score">Events extracted for Stage 2</span>
             </div>
             <div class="terminal-line">
               <span class="terminal-line__time">09:41:55</span>
-              <span class="terminal-line__msg">Ingesting EMR Sequence</span>
-              <span class="terminal-line__status terminal-line__status--processing">Processing…</span>
+              <span class="terminal-line__msg">Patient timeline persisted in Stage 2</span>
+              <span class="terminal-line__status terminal-line__status--processing">Ready for inference request</span>
             </div>
             <div class="terminal-line">
               <span class="terminal-line__time">09:41:40</span>
-              <span class="terminal-line__msg">Anomaly Detected: Cardio-Metric</span>
-              <span class="terminal-line__status terminal-line__status--alert">Alert Level 2</span>
+              <span class="terminal-line__msg">Top-N condition predictions returned</span>
+              <span class="terminal-line__status terminal-line__status--alert">Recommendations attached</span>
             </div>
           </div>
         </div>
@@ -687,19 +684,18 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <h2 class="cta-section__heading">Ready To <span>Shift Gears?</span></h2>
+  <section id="security" class="cta-section">
+    <h2 class="cta-section__heading">Ready to <span>Run the Pipeline?</span></h2>
     <p class="cta-section__desc">
-      Deploy the world's most advanced healthcare predictive engine.
-      HIPAA-compliant, zero-latency, carbon-black secure.
+      Sign in to create patients, upload documents, and execute Stage 1-3 workflows from one web portal.
     </p>
     <div class="cta-section__actions">
       {% if user %}
       <a href="/patients" class="btn btn--primary">Go to Dashboard</a>
       {% else %}
-      <a href="/login" class="btn btn--primary">Request Access</a>
+      <a href="/login" class="btn btn--primary">Sign In</a>
       {% endif %}
-      <a href="#features" class="btn btn--outline">Technical Audit</a>
+      <a href="/api-contracts" class="btn btn--outline">Read API Contracts</a>
     </div>
   </section>
 
@@ -710,11 +706,11 @@
       HIPAA <span style="font-weight:400;">Predictor</span>
     </div>
     <div class="landing-footer__links">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Compliance</a>
+      <a href="/system-health">Service Health</a>
+      <a href="/audit">Audit Log</a>
+      <a href="/patients">Patients</a>
     </div>
-    <div>© 2024 Neural Race Technologies</div>
+    <div>© 2024 CSE400 HIPAA-Oriented Platform</div>
   </footer>
 </div>
 {% endblock %}
