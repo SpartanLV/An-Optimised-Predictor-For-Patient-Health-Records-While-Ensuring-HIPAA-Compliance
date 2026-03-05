@@ -108,6 +108,50 @@ def _auth_headers(token: str, request: Request | None = None) -> Dict[str, str]:
     return h
 
 
+def _parse_iso_utc(value: str | None) -> Optional[datetime]:
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed
+    except ValueError:
+        return None
+
+
+def _filter_patients(patients: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]]:
+    q = query.strip().lower()
+    if not q:
+        return patients
+    return [
+        p for p in patients
+        if q in (p.get("id", "").lower())
+        or q in (p.get("mrn", "").lower())
+        or q in ((p.get("first_name") or "").lower())
+        or q in ((p.get("last_name") or "").lower())
+    ]
+
+
+def _patient_stats(patients: List[Dict[str, Any]], *, now: datetime | None = None) -> Dict[str, int]:
+    now = now or _utcnow()
+    recent_cutoff = now - timedelta(days=7)
+    with_mrn = 0
+    created_recent = 0
+    for p in patients:
+        if p.get("mrn"):
+            with_mrn += 1
+        created_dt = _parse_iso_utc(p.get("created_at_utc"))
+        if created_dt and created_dt >= recent_cutoff:
+            created_recent += 1
+
+    return {
+        "total": len(patients),
+        "with_mrn": with_mrn,
+        "created_recent": created_recent,
+    }
+
+
 async def _me(token: str) -> Optional[Dict[str, Any]]:
     if not token:
         return None
