@@ -1,4 +1,10 @@
+import sys
 from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
+
 from services.web_portal.app.main import _filter_patients, _parse_iso_utc, _patient_stats
 
 

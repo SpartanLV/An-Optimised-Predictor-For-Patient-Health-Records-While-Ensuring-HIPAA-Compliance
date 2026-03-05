@@ -2,8 +2,6 @@ import os
 import json
 import time
 import uuid
-import asyncio
-from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -293,14 +291,73 @@ async def audit_log(request: Request):
     logs = []
     message = None
     async with httpx.AsyncClient(**_client_kwargs(30.0)) as client:
+        r = await client.get(f"{PATIENT_STORE_URL.rstrip('/')}/v1/patients", headers=_auth_headers(token, request), params={"limit": 50})
+        r.raise_for_status()
+        pts = r.json()
+
+    query = request.query_params.get("q", "").strip().lower()
+    if query:
+        pts = [
+            p for p in pts
+            if query in (p.get("id", "").lower())
+            or query in (p.get("mrn", "").lower())
+            or query in ((p.get("first_name") or "").lower())
+            or query in ((p.get("last_name") or "").lower())
+        ]
+
+    now = _utcnow()
+    recent_cutoff = now - timedelta(days=7)
+    with_mrn = 0
+    created_recent = 0
+    for p in pts:
+        if p.get("mrn"):
+            with_mrn += 1
+        created_raw = p.get("created_at_utc")
+        if created_raw:
+            try:
+                created_dt = datetime.fromisoformat(created_raw.replace("Z", "+00:00"))
+                if created_dt.tzinfo is None:
+                    created_dt = created_dt.replace(tzinfo=timezone.utc)
+                if created_dt >= recent_cutoff:
+                    created_recent += 1
+            except Exception:
+                pass
+
+    return templates.TemplateResponse(
+        "patients.html",
+        {
+            "request": request,
+            "patients": pts,
+            "user": user,
+            "query": query,
+            "stats": {
+                "total": len(pts),
+                "with_mrn": with_mrn,
+                "created_recent": created_recent,
+            },
+        },
+    )
+
+
+@app.get("/audit", response_class=HTMLResponse)
+async def audit_log(request: Request):
+    token = request.cookies.get(COOKIE_NAME, "")
+    if not token:
+        return RedirectResponse(url="/login", status_code=303)
+    user = await _me(token)
+
+    logs = []
+    message = None
+    async with httpx.AsyncClient(**_client_kwargs(30.0)) as client:
         try:
-            logs = await _get_json_or_raise(
-                client,
+            r = await client.get(
                 f"{PATIENT_STORE_URL.rstrip('/')}/v1/audit",
                 headers=_auth_headers(token, request),
                 params={"limit": 100},
             )
-        except ServiceCallError as e:
+            r.raise_for_status()
+            logs = r.json()
+        except Exception as e:
             message = f"Unable to load audit logs: {e}"
 
     return templates.TemplateResponse(
@@ -322,46 +379,24 @@ async def system_health(request: Request):
         ("Patient Store Service", f"{PATIENT_STORE_URL.rstrip('/')}/health", True),
         ("Inference Service", f"{INFERENCE_URL.rstrip('/')}/health", True),
     ]
+    statuses: List[Dict[str, Any]] = []
+
     async with httpx.AsyncClient(**_client_kwargs(20.0)) as client:
-        async def _check(name: str, url: str, needs_auth: bool) -> Dict[str, Any]:
-            started = time.time()
+        for name, url, needs_auth in checks:
             try:
                 headers = _auth_headers(token, request) if needs_auth else {}
                 resp = await client.get(url, headers=headers)
-                latency_ms = int((time.time() - started) * 1000)
                 if resp.status_code == 200:
                     payload = resp.json()
-                    return {"name": name, "url": url, "status": "ok", "latency_ms": latency_ms, "details": payload}
-                return {"name": name, "url": url, "status": "error", "latency_ms": latency_ms, "details": {"status_code": resp.status_code}}
-            except (httpx.HTTPError, ValueError) as e:
-                latency_ms = int((time.time() - started) * 1000)
-                return {"name": name, "url": url, "status": "error", "latency_ms": latency_ms, "details": {"error": str(e)}}
-
-        statuses = await asyncio.gather(*[_check(*c) for c in checks])
+                    statuses.append({"name": name, "status": "ok", "details": payload})
+                else:
+                    statuses.append({"name": name, "status": "error", "details": {"status_code": resp.status_code}})
+            except Exception as e:
+                statuses.append({"name": name, "status": "error", "details": {"error": str(e)}})
 
     return templates.TemplateResponse(
         "system_health.html",
         {"request": request, "user": user, "statuses": statuses},
-    )
-
-
-@app.get("/api-contracts", response_class=HTMLResponse)
-async def api_contracts(request: Request):
-    token = request.cookies.get(COOKIE_NAME, "")
-    if not token:
-        return RedirectResponse(url="/login", status_code=303)
-    user = await _me(token)
-
-    contracts_path = Path(__file__).resolve().parents[3] / "docs" / "API_CONTRACTS.md"
-    content = "API contracts file not found."
-    try:
-        content = contracts_path.read_text(encoding="utf-8")
-    except OSError:
-        pass
-
-    return templates.TemplateResponse(
-        "api_contracts.html",
-        {"request": request, "user": user, "contracts": content},
     )
 
 

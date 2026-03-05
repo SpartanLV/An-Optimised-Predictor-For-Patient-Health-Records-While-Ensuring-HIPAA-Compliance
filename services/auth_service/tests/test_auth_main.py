@@ -1,4 +1,10 @@
+import sys
+from pathlib import Path
+
 from fastapi.testclient import TestClient
+
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
 
 from services.auth_service.app.main import app
 
