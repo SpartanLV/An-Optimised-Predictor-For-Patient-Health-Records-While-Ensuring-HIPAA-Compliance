@@ -643,3 +643,24 @@ async def upload_document(
         "patient_detail.html",
         {"request": request, "patient": patient, "events": events, "documents": docs, "predictions": preds, "message": msg, "user": user, "extraction": preprocess_payload, "stored_doc": stored_doc},
     )
+
+
+@app.get("/patients/{patient_id}/summary", response_class=HTMLResponse)
+async def patient_summary_snapshot(request: Request, patient_id: str):
+    token = request.cookies.get(COOKIE_NAME, "")
+    if not token:
+        return RedirectResponse(url="/login", status_code=303)
+    user = await _me(token)
+
+    async with httpx.AsyncClient(**_client_kwargs(30.0)) as client:
+        r = await client.get(
+            f"{PATIENT_STORE_URL.rstrip('/')}/v1/patients/{patient_id}/summary",
+            headers=_auth_headers(token, request),
+        )
+        r.raise_for_status()
+        summary = r.json()
+
+    return templates.TemplateResponse(
+        "patient_summary.html",
+        {"request": request, "summary": summary, "user": user},
+    )

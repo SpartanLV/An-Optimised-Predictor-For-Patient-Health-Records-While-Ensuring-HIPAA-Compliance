@@ -80,3 +80,17 @@ class ExtractionPayload(BaseModel):
     text: Optional[str] = None
     entities: List[NEREntityIn] = []
     events: List[EventIn] = []
+
+
+class CohortCreate(BaseModel):
+    name: str
+    filters: Dict[str, Any] = {}
+
+
+class CohortOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    id: str
+    name: str
+    created_by: Optional[str] = None
+    filters: Dict[str, Any] = {}
+    created_at_utc: datetime

@@ -107,3 +107,13 @@ class AuditLog(Base):
 
     ip: Mapped[str | None] = mapped_column(String(64), nullable=True)
     meta: Mapped[dict | None] = mapped_column("metadata", JSON, nullable=True)
+
+
+class Cohort(Base):
+    __tablename__ = "cohorts"
+
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    name: Mapped[str] = mapped_column(String(128), index=True)
+    created_by: Mapped[str | None] = mapped_column(String(128), nullable=True, index=True)
+    filters: Mapped[dict] = mapped_column(JSON, default=dict)
+    created_at_utc: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow, index=True)

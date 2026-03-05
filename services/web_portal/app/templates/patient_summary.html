@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+  <div class="card__header">
+    <h2 class="card__title">Patient Summary Snapshot</h2>
+    <button onclick="window.print()" class="btn btn--outline btn--sm">Print</button>
+  </div>
+  <p class="text-sm text-muted">Generated at {{ summary.generated_at_utc }}</p>
+  <h3>Patient</h3>
+  <p><strong>ID:</strong> {{ summary.patient.id }}</p>
+  <p><strong>Name:</strong> {{ summary.patient.first_name }} {{ summary.patient.last_name }}</p>
+  <p><strong>DOB:</strong> {{ summary.patient.dob }}</p>
+
+  <h3>Care Gaps</h3>
+  <ul>
+  {% for g in summary.care_gaps %}
+    <li><strong>{{ g.title }}</strong> ({{ g.severity }}) - {{ g.rationale }}</li>
+  {% endfor %}
+  </ul>
+
+  <h3>Recent Events</h3>
+  <ul>
+  {% for e in summary.recent_events[:10] %}
+    <li>{{ e.event_date }} — {{ e.description or e.code or e.source }}</li>
+  {% endfor %}
+  </ul>
+</div>
+{% endblock %}
