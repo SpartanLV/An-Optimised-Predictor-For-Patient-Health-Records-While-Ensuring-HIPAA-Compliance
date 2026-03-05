@@ -3,8 +3,9 @@ import os
 import pathlib
 import hashlib
 import uuid
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 
 from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Form, Request
 from sqlalchemy import select
@@ -18,7 +19,7 @@ from .schemas import (
     DocumentOut, ExtractionPayload,
     NEREntityOut,
 )
-from .security import require_api_key, actor_from_headers
+from .security import require_api_key, actor_from_headers, require_roles
 from .crypto import encrypt, encryption_enabled
 
 APP_NAME = "cse400-patient-store-service"
@@ -38,10 +39,18 @@ def get_db():
         db.close()
 
 
+@asynccontextmanager
+async def lifespan(_: FastAPI):
+    STORAGE_DIR.mkdir(parents=True, exist_ok=True)
+    init_db_with_retry()
+    yield
+
+
 app = FastAPI(
     title="CSE400 Patient Store Service (Stage 2)",
     version="0.1.0",
     description="Stores patients, documents, extracted entities, and structured events.",
+    lifespan=lifespan,
 )
 
 @app.middleware("http")
@@ -51,13 +60,6 @@ async def _request_id(request: Request, call_next):
     response = await call_next(request)
     response.headers["X-Request-ID"] = rid
     return response
-
-
-@app.on_event("startup")
-def _startup():
-    STORAGE_DIR.mkdir(parents=True, exist_ok=True)
-    init_db_with_retry()
-
 
 @app.get("/health")
 def health():
@@ -306,14 +308,12 @@ def list_document_entities(
 def list_audit_logs(
     request: Request,
     db: Session = Depends(get_db),
-    _: None = Depends(require_api_key),
+    auth: Dict[str, Any] = Depends(require_api_key),
     actor: str = Depends(actor_from_headers),
     limit: int = 200,
 ):
-    """Return recent audit events. For demo, any authenticated user can call.
-
-    In a real deployment you should restrict this to admin/audit roles.
-    """
+    if auth.get("mode") != "api_key":
+        require_roles(auth, ["admin", "auditor"])
     q = select(AuditLog).order_by(AuditLog.created_at_utc.desc()).limit(limit)
     logs = db.execute(q).scalars().all()
     _audit(db, request, action="audit.list", actor=actor, metadata={"limit": limit})
