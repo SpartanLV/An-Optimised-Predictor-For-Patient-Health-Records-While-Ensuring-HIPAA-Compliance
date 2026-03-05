@@ -2,10 +2,13 @@
 {% block content %}
 <div class="flex-between mb-2">
   <h1 class="page-heading" style="margin-bottom:0;">Patient Record</h1>
-  <a href="/patients" class="btn btn--outline btn--sm">
-    <span class="material-symbols-outlined" style="font-size:0.9rem;">arrow_back</span>
-    Back to Patients
-  </a>
+  <div style="display:flex;gap:0.5rem;">
+    <a href="/patients/{{patient.id}}/summary" class="btn btn--outline btn--sm">Summary Snapshot</a>
+    <a href="/patients" class="btn btn--outline btn--sm">
+      <span class="material-symbols-outlined" style="font-size:0.9rem;">arrow_back</span>
+      Back to Patients
+    </a>
+  </div>
 </div>
 
 {% if message %}
@@ -284,6 +287,7 @@
         <th>Description</th>
         <th>Probability</th>
         <th>Recommendations</th>
+        <th>Explainability</th>
       </tr>
     </thead>
     <tbody>
@@ -326,10 +330,27 @@
           </div>
           {% endif %}
         </td>
+        <td>
+          {% if p.explanation %}
+          {% for ex in p.explanation %}
+          <div class="text-sm">• {{ex}}</div>
+          {% endfor %}
+          {% else %}
+          <span class="td-muted">—</span>
+          {% endif %}
+        </td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
+  {% if predictions.timeline and predictions.timeline|length > 0 %}
+  <div class="mt-2">
+    <h3 class="card__title" style="font-size:0.95rem;">Risk Timeline</h3>
+    {% for t in predictions.timeline[-10:] %}
+    <div class="text-sm td-muted">{{t.ts_utc}} - score {{"%.2f"|format(t.top_probability)}} ({{t.trend}})</div>
+    {% endfor %}
+  </div>
+  {% endif %}
   {% endif %}
 </div>
 {% endblock %}
