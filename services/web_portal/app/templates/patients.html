@@ -1,26 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 <h1 class="page-heading">Patients</h1>
+<p class="text-muted mb-2">Manage patient records and start document ingestion for Stage 1–3 processing.</p>
+{% if query %}
+<p class="text-sm mb-2">Showing {{ filtered_count }} result{{ 's' if filtered_count != 1 else '' }} for "<strong>{{ query }}</strong>".</p>
+{% endif %}
 
 <!-- Stat Cards -->
 <div class="stat-grid">
   <div class="stat-card">
     <div class="stat-card__label">Total Patients</div>
-    <div class="stat-card__value">{{ patients|length }}</div>
+    <div class="stat-card__value">{{ stats.total }}</div>
     <div class="stat-card__meta stat-card__meta--muted">Registered in database</div>
     <span class="material-symbols-outlined stat-card__icon">groups</span>
   </div>
   <div class="stat-card">
-    <div class="stat-card__label">System Accuracy</div>
-    <div class="stat-card__value">99.2%</div>
-    <div class="stat-card__meta stat-card__meta--success">✓ Optimal</div>
-    <span class="material-symbols-outlined stat-card__icon">check_circle</span>
+    <div class="stat-card__label">Records with MRN</div>
+    <div class="stat-card__value">{{ stats.with_mrn }}</div>
+    <div class="stat-card__meta stat-card__meta--success">Patients with chart identifier</div>
+    <span class="material-symbols-outlined stat-card__icon">badge</span>
   </div>
   <div class="stat-card">
-    <div class="stat-card__label">Security Score</div>
-    <div class="stat-card__value">94/100</div>
-    <div class="stat-card__meta stat-card__meta--success">● HIPAA Compliant</div>
-    <span class="material-symbols-outlined stat-card__icon">shield</span>
+    <div class="stat-card__label">New in Last 7 Days</div>
+    <div class="stat-card__value">{{ stats.created_recent }}</div>
+    <div class="stat-card__meta stat-card__meta--success">Recently registered patients</div>
+    <span class="material-symbols-outlined stat-card__icon">schedule</span>
   </div>
 </div>
 
@@ -69,7 +73,7 @@
   <div class="card__header">
     <div>
       <h2 class="card__title">Existing Patients</h2>
-      <p class="card__subtitle">{{ patients|length }} patient{{ 's' if patients|length != 1 else '' }} registered</p>
+      <p class="card__subtitle">{{ patients|length }} patient{{ 's' if patients|length != 1 else '' }} shown</p>
     </div>
   </div>
   {% if patients|length > 0 %}

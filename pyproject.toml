@@ -40,4 +40,3 @@ addopts = "-ra -q --tb=short"
 testpaths = [
     "services/*/tests",
 ]
-asyncio_default_fixture_loop_scope = "function"

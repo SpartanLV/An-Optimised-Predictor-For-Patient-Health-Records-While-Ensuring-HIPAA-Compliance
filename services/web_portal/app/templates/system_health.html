@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-heading">System Health</h1>
+<p class="text-muted mb-2">Live service health checks from the web portal runtime.</p>
+
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Status</th>
+        <th>Latency</th>
+        <th>Endpoint</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for svc in statuses %}
+      <tr>
+        <td class="fw-600">{{ svc.name }}</td>
+        <td>
+          {% if svc.status == "ok" %}
+          <span class="pill pill--success">OK</span>
+          {% else %}
+          <span class="pill pill--danger">ERROR</span>
+          {% endif %}
+        </td>
+        <td class="td-muted text-sm">{{ svc.latency_ms }} ms</td>
+        <td class="td-muted text-sm">{{ svc.url }}</td>
+        <td class="td-muted text-sm"><pre style="white-space:pre-wrap; margin:0;">{{ svc.details }}</pre></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
