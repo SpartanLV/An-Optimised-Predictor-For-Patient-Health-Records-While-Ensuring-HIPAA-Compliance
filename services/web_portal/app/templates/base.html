@@ -400,35 +400,17 @@
       </div>
 
       <nav class="sidebar__nav">
-        <a href="/patients" class="sidebar__link {% if request.url.path == '/patients' %}sidebar__link--active{% endif %}">
-          <span class="material-symbols-outlined">dashboard</span>
-          <span>Dashboard</span>
+        <a href="/patients" class="sidebar__link {% if request.url.path.startswith('/patients') %}sidebar__link--active{% endif %}">
+          <span class="material-symbols-outlined">groups</span>
+          <span>Patients</span>
         </a>
-        <a href="/patients" class="sidebar__link">
-          <span class="material-symbols-outlined">query_stats</span>
-          <span>Predictions</span>
+        <a href="/audit" class="sidebar__link {% if request.url.path == '/audit' %}sidebar__link--active{% endif %}">
+          <span class="material-symbols-outlined">history</span>
+          <span>Audit Log</span>
         </a>
-        <a href="/patients" class="sidebar__link">
-          <span class="material-symbols-outlined">notifications_active</span>
-          <span>Patient Alerts</span>
-        </a>
-        <a href="/patients" class="sidebar__link">
-          <span class="material-symbols-outlined">trending_up</span>
-          <span>Accuracy Trends</span>
-        </a>
-        <a href="/patients" class="sidebar__link">
-          <span class="material-symbols-outlined">verified_user</span>
-          <span>Security Hub</span>
-        </a>
-
-        <div class="sidebar__section-label">Systems</div>
-        <a href="#" class="sidebar__link">
-          <span class="material-symbols-outlined">settings</span>
-          <span>Settings</span>
-        </a>
-        <a href="#" class="sidebar__link">
-          <span class="material-symbols-outlined">database</span>
-          <span>Data Sources</span>
+        <a href="/system-health" class="sidebar__link {% if request.url.path == '/system-health' %}sidebar__link--active{% endif %}">
+          <span class="material-symbols-outlined">monitor_heart</span>
+          <span>System Health</span>
         </a>
       </nav>
 
@@ -446,21 +428,15 @@
       <header class="topbar">
         <div class="topbar__status">
           <div class="topbar__status-dot"></div>
-          <span>System Status: Operational</span>
+          <span>System Status: Services Reachable</span>
         </div>
 
-        <div class="topbar__search">
+        <form class="topbar__search" method="get" action="/patients">
           <span class="material-symbols-outlined">search</span>
-          <input type="text" placeholder="Search patient ID or alert..." />
-        </div>
+          <input type="text" name="q" value="{{ query or '' }}" placeholder="Search by patient ID, MRN, or name" />
+        </form>
 
         <div class="topbar__actions">
-          <button class="topbar__icon-btn">
-            <span class="material-symbols-outlined" style="font-size:1.1rem;">light_mode</span>
-          </button>
-          <button class="topbar__icon-btn">
-            <span class="material-symbols-outlined" style="font-size:1.1rem;">mail</span>
-          </button>
           <div class="topbar__user">
             <div class="topbar__user-info">
               {% if user %}
