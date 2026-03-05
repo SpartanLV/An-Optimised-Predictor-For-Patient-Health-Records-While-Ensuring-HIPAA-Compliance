@@ -2,7 +2,6 @@ import os
 import json
 import time
 import uuid
-from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -285,26 +284,6 @@ async def system_health(request: Request):
     return templates.TemplateResponse(
         "system_health.html",
         {"request": request, "user": user, "statuses": statuses},
-    )
-
-
-@app.get("/api-contracts", response_class=HTMLResponse)
-async def api_contracts(request: Request):
-    token = request.cookies.get(COOKIE_NAME, "")
-    if not token:
-        return RedirectResponse(url="/login", status_code=303)
-    user = await _me(token)
-
-    contracts_path = Path(__file__).resolve().parents[3] / "docs" / "API_CONTRACTS.md"
-    content = "API contracts file not found."
-    try:
-        content = contracts_path.read_text(encoding="utf-8")
-    except Exception:
-        pass
-
-    return templates.TemplateResponse(
-        "api_contracts.html",
-        {"request": request, "user": user, "contracts": content},
     )
 
 
