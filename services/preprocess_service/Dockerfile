@@ -17,5 +17,10 @@ RUN python -m spacy download en_core_web_sm || true
 
 COPY app ./app
 
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+RUN chown -R appuser:appuser /app
+
+USER appuser
 EXPOSE 8001
+
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001"]

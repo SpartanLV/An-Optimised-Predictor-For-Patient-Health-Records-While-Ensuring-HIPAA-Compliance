@@ -6,3 +6,4 @@ sqlalchemy==2.0.31
 psycopg2-binary==2.9.9
 cryptography==43.0.1
 python-jose[cryptography]==3.3.0
+structlog==24.4.0

@@ -1,15 +1,126 @@
 {% extends "base.html" %}
-{% block content %}
-  <h1>Login</h1>
-  <p class="muted">Demo auth for the CSE400 platform. Use the admin credentials from your .env (AUTH service).</p>
-  {% if error %}
-    <p class="error">{{ error }}</p>
-  {% endif %}
-  <div class="card">
-    <form method="post" action="/login">
-      <label>Username<br><input name="username" required></label><br><br>
-      <label>Password<br><input name="password" type="password" required></label><br><br>
-      <button type="submit">Sign in</button>
-    </form>
+{% block body %}
+{# Login uses full-width centered layout, no sidebar #}
+<div class="layout--full">
+  <style>
+    .login-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-bg);
+      padding: 2rem;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--color-surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-elevated);
+      padding: 2.5rem;
+    }
+
+    .login-card__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .login-card__brand-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--color-primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-card__brand-text h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .login-card__brand-text span {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+    }
+
+    .login-card__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .login-card__subtitle {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 1.75rem;
+    }
+
+    .login-card__footer {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+    }
+
+    .login-card__footer a {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+  </style>
+
+  <div class="login-page">
+    <div class="login-card">
+      <div class="login-card__brand">
+        <div class="login-card__brand-icon">
+          <span class="material-symbols-outlined" style="font-size:1.2rem;color:#fff;">monitoring</span>
+        </div>
+        <div class="login-card__brand-text">
+          <h2>Predictor</h2>
+          <span>Command Center</span>
+        </div>
+      </div>
+
+      <h1 class="login-card__title">Sign in</h1>
+      <p class="login-card__subtitle">Access the HIPAA-compliant predictive analytics platform.</p>
+
+      {% if error %}
+      <div class="alert alert--error">
+        <span class="material-symbols-outlined"
+          style="font-size:1rem;vertical-align:middle;margin-right:0.3rem;">error</span>
+        {{ error }}
+      </div>
+      {% endif %}
+
+      <form method="post" action="/login">
+        <div class="form-group">
+          <label class="form-label" for="login-username">Username</label>
+          <input class="form-input" id="login-username" name="username" required autocomplete="username"
+            placeholder="Enter your username" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input class="form-input" id="login-password" name="password" type="password" required
+            autocomplete="current-password" placeholder="Enter your password" />
+        </div>
+        <button type="submit" class="btn btn--primary btn--block mt-1">
+          <span class="material-symbols-outlined" style="font-size:1rem;">login</span>
+          Sign in
+        </button>
+      </form>
+
+      <div class="login-card__footer">
+        <a href="/">← Back to home</a>
+      </div>
+    </div>
   </div>
+</div>
 {% endblock %}

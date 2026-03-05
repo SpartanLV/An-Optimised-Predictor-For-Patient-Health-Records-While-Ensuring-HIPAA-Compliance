@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install shared dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install ruff mypy pytest pytest-asyncio httpx structlog
+
+    - name: Install service dependencies
+      run: |
+        # Install dependencies for services to ensure type checking and testing works
+        pip install -r services/patient_store_service/requirements.txt
+        pip install -r services/auth_service/requirements.txt
+        # If adding tests for others, add their requirements here
+        # pip install -r services/preprocess_service/requirements.txt
+        # pip install -r services/inference_service/requirements.txt
+
+    - name: Format Check (Ruff)
+      run: ruff format --check .
+
+    - name: Lint Check (Ruff)
+      run: ruff check .
+
+    - name: Type Check (Mypy)
+      run: mypy services/
+
+    - name: Run Tests (Pytest)
+      run: pytest
+      env:
+        # Mock environment variables needed for tests
+        JWT_SECRET: "test_secret"
+        API_KEY: "test_api_key"
+        DATABASE_URL: "sqlite:///./test.db"
+        STORAGE_DIR: "/tmp/test_storage"

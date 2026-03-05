@@ -1,34 +1,488 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>CSE400 Web Portal</title>
+  <title>Predictor — Command Center</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HIPAA-compliant predictive health analytics command center" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
-    .nav a { margin-right: 1rem; }
-    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border-bottom: 1px solid #eee; padding: 0.5rem; text-align: left; }
-    .muted { color: #666; font-size: 0.9rem; }
-    .error { color: #a00; }
-    .pill { display: inline-block; padding: 0.1rem 0.5rem; border: 1px solid #ddd; border-radius: 999px; margin-right: 0.5rem; }
+    /* ── CSS Custom Properties (Design Tokens) ── */
+    :root {
+      --color-sidebar: #0D2B3E;
+      --color-primary: #00BCD4;
+      --color-primary-light: rgba(0,188,212,0.12);
+      --color-primary-glow: rgba(0,188,212,0.15);
+      --color-bg: #F5F7FA;
+      --color-surface: #FFFFFF;
+      --color-text: #1A1A2E;
+      --color-text-secondary: #6B7B8D;
+      --color-danger: #E74C3C;
+      --color-danger-light: #FDE8E8;
+      --color-warning: #F59E0B;
+      --color-success: #10B981;
+      --color-border: #E5E7EB;
+      --color-hover: #F9FAFB;
+      --radius-card: 12px;
+      --radius-input: 8px;
+      --radius-pill: 999px;
+      --shadow-card: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-elevated: 0 4px 12px rgba(0,0,0,0.1);
+      --sidebar-width: 240px;
+      --topbar-height: 64px;
+      --font: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+      --transition: 0.2s ease;
+    }
+
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: var(--font);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--color-primary); text-decoration: none; transition: opacity var(--transition); }
+    a:hover { opacity: 0.85; }
+
+    /* ── Layout Shell ── */
+    .layout { display: flex; min-height: 100vh; }
+    .layout--full { display: block; } /* landing page / login: no sidebar */
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: var(--sidebar-width);
+      background: var(--color-sidebar);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      z-index: 100;
+      padding: 1.25rem 0.75rem;
+      overflow-y: auto;
+    }
+    .sidebar__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0 0.5rem 1.5rem;
+    }
+    .sidebar__brand-icon {
+      width: 36px; height: 36px;
+      background: var(--color-primary);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .sidebar__brand-text h2 {
+      font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.2;
+    }
+    .sidebar__brand-text span {
+      font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--color-primary); display: block;
+    }
+
+    .sidebar__nav { flex: 1; display: flex; flex-direction: column; gap: 0.25rem; }
+    .sidebar__section-label {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+      padding: 1.25rem 0.75rem 0.5rem;
+    }
+    .sidebar__link {
+      display: flex; align-items: center; gap: 0.65rem;
+      padding: 0.6rem 0.75rem; border-radius: var(--radius-input);
+      color: rgba(255,255,255,0.7); font-size: 0.875rem; font-weight: 500;
+      transition: all var(--transition); position: relative;
+    }
+    .sidebar__link:hover { background: rgba(255,255,255,0.08); color: #fff; opacity: 1; }
+    .sidebar__link--active {
+      background: var(--color-primary); color: #fff; font-weight: 600;
+    }
+    .sidebar__link--active:hover { background: var(--color-primary); opacity: 1; }
+    .sidebar__link .material-symbols-outlined { font-size: 1.2rem; }
+    .sidebar__badge {
+      position: absolute; right: 0.75rem;
+      background: var(--color-danger); color: #fff;
+      font-size: 0.65rem; font-weight: 700;
+      width: 20px; height: 20px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .sidebar__footer { padding-top: 1rem; }
+    .sidebar__cta {
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      width: 100%; padding: 0.75rem;
+      background: var(--color-primary); color: #fff;
+      border: none; border-radius: var(--radius-pill);
+      font-family: var(--font); font-size: 0.875rem; font-weight: 600;
+      cursor: pointer; transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .sidebar__cta:hover { transform: scale(1.02); box-shadow: 0 4px 16px rgba(0,188,212,0.3); }
+
+    /* ── Main Content ── */
+    .main {
+      flex: 1;
+      margin-left: var(--sidebar-width);
+      display: flex; flex-direction: column;
+    }
+
+    /* ── Top Bar ── */
+    .topbar {
+      height: var(--topbar-height);
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      display: flex; align-items: center;
+      padding: 0 1.5rem;
+      gap: 1rem;
+      position: sticky; top: 0; z-index: 50;
+    }
+    .topbar__status {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--color-text-secondary);
+      white-space: nowrap;
+    }
+    .topbar__status-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--color-success);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .topbar__search {
+      flex: 1; max-width: 400px; margin: 0 auto;
+      position: relative;
+    }
+    .topbar__search input {
+      width: 100%; padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+      border: 1px solid var(--color-border); border-radius: var(--radius-input);
+      background: var(--color-bg); font-family: var(--font); font-size: 0.85rem;
+      color: var(--color-text); outline: none;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .topbar__search input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-glow);
+    }
+    .topbar__search .material-symbols-outlined {
+      position: absolute; left: 0.6rem; top: 50%; transform: translateY(-50%);
+      font-size: 1.1rem; color: var(--color-text-secondary);
+    }
+    .topbar__actions {
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .topbar__icon-btn {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid var(--color-border); background: var(--color-surface);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: background var(--transition);
+      color: var(--color-text-secondary);
+    }
+    .topbar__icon-btn:hover { background: var(--color-bg); }
+    .topbar__user {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding-left: 0.75rem; border-left: 1px solid var(--color-border);
+    }
+    .topbar__user-info { text-align: right; }
+    .topbar__user-name { font-size: 0.85rem; font-weight: 600; }
+    .topbar__user-role { font-size: 0.65rem; color: var(--color-primary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+    .topbar__avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--color-primary); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.8rem;
+      border: 2px solid var(--color-primary-light);
+    }
+
+    /* ── Content Area ── */
+    .content { padding: 1.5rem; flex: 1; }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--color-surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card--flat { box-shadow: none; border: 1px solid var(--color-border); }
+    .card__header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .card__title { font-size: 1.15rem; font-weight: 600; }
+    .card__subtitle { font-size: 0.8rem; color: var(--color-text-secondary); margin-top: 0.15rem; }
+
+    /* ── Stat Cards ── */
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+    .stat-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      padding: 1.25rem 1.5rem;
+      position: relative; overflow: hidden;
+    }
+    .stat-card__label {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--color-primary);
+      margin-bottom: 0.35rem;
+    }
+    .stat-card__label--danger { color: var(--color-danger); }
+    .stat-card__value {
+      font-size: 2.25rem; font-weight: 700; line-height: 1.2;
+    }
+    .stat-card__meta {
+      font-size: 0.75rem; margin-top: 0.35rem;
+    }
+    .stat-card__meta--success { color: var(--color-success); }
+    .stat-card__meta--danger { color: var(--color-danger); }
+    .stat-card__meta--muted { color: var(--color-text-secondary); }
+    .stat-card__icon {
+      position: absolute; top: 1rem; right: 1rem;
+      font-size: 2.5rem; color: var(--color-border);
+      opacity: 0.5;
+    }
+
+    /* ── Tables ── */
+    table { width: 100%; border-collapse: collapse; }
+    thead th {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--color-text-secondary);
+      text-align: left; padding: 0.75rem 1rem;
+      border-bottom: 2px solid var(--color-border);
+    }
+    tbody td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.875rem;
+      vertical-align: top;
+    }
+    tbody tr { transition: background var(--transition); }
+    tbody tr:hover { background: var(--color-hover); }
+    .td-muted { color: var(--color-text-secondary); }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.6rem 1.4rem;
+      border-radius: var(--radius-pill);
+      font-family: var(--font); font-size: 0.85rem; font-weight: 600;
+      border: none; cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+    .btn:hover { transform: scale(1.02); }
+    .btn--primary { background: var(--color-primary); color: #fff; }
+    .btn--primary:hover { box-shadow: 0 4px 16px rgba(0,188,212,0.3); }
+    .btn--outline {
+      background: transparent; color: var(--color-text);
+      border: 1.5px solid var(--color-border);
+    }
+    .btn--outline:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .btn--danger { background: var(--color-danger); color: #fff; }
+    .btn--sm { padding: 0.4rem 1rem; font-size: 0.78rem; }
+    .btn--block { width: 100%; }
+
+    /* ── Forms ── */
+    .form-group { margin-bottom: 1rem; }
+    .form-label {
+      display: block; font-size: 0.78rem; font-weight: 600;
+      color: var(--color-text-secondary); text-transform: uppercase;
+      letter-spacing: 0.05em; margin-bottom: 0.35rem;
+    }
+    .form-input {
+      width: 100%; padding: 0.6rem 0.85rem;
+      border: 1px solid var(--color-border); border-radius: var(--radius-input);
+      background: var(--color-surface); font-family: var(--font); font-size: 0.875rem;
+      color: var(--color-text); outline: none;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .form-input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-glow);
+    }
+    .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+
+    /* ── Pill Badges ── */
+    .pill {
+      display: inline-flex; align-items: center; gap: 0.25rem;
+      padding: 0.2rem 0.65rem; border-radius: var(--radius-pill);
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .pill--primary { background: var(--color-primary-light); color: var(--color-primary); }
+    .pill--success { background: rgba(16,185,129,0.12); color: var(--color-success); }
+    .pill--danger { background: var(--color-danger-light); color: var(--color-danger); }
+    .pill--warning { background: rgba(245,158,11,0.12); color: var(--color-warning); }
+    .pill--neutral { background: var(--color-bg); color: var(--color-text-secondary); border: 1px solid var(--color-border); }
+
+    /* ── Alerts ── */
+    .alert {
+      padding: 0.85rem 1rem; border-radius: var(--radius-input);
+      font-size: 0.85rem; margin-bottom: 1rem;
+    }
+    .alert--error { background: var(--color-danger-light); color: var(--color-danger); border: 1px solid rgba(231,76,60,0.2); }
+    .alert--success { background: rgba(16,185,129,0.1); color: var(--color-success); border: 1px solid rgba(16,185,129,0.2); }
+
+    /* ── Progress Bar ── */
+    .progress { height: 6px; background: var(--color-border); border-radius: 4px; overflow: hidden; }
+    .progress__fill { height: 100%; background: var(--color-primary); border-radius: 4px; transition: width 0.5s ease; }
+
+    /* ── Utilities ── */
+    .text-muted { color: var(--color-text-secondary); }
+    .text-sm { font-size: 0.8rem; }
+    .text-xs { font-size: 0.7rem; }
+    .text-primary { color: var(--color-primary); }
+    .text-danger { color: var(--color-danger); }
+    .text-success { color: var(--color-success); }
+    .fw-600 { font-weight: 600; }
+    .fw-700 { font-weight: 700; }
+    .mt-1 { margin-top: 0.5rem; }
+    .mt-2 { margin-top: 1rem; }
+    .mt-3 { margin-top: 1.5rem; }
+    .mb-1 { margin-bottom: 0.5rem; }
+    .mb-2 { margin-bottom: 1rem; }
+    .gap-row { display: flex; gap: 0.75rem; align-items: center; }
+    .flex-between { display: flex; justify-content: space-between; align-items: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    /* ── Details/Summary ── */
+    details { margin-top: 0.5rem; }
+    summary {
+      cursor: pointer; font-weight: 600; font-size: 0.9rem;
+      color: var(--color-primary); padding: 0.5rem 0;
+    }
+    summary:hover { opacity: 0.85; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .sidebar { width: 60px; padding: 1rem 0.35rem; }
+      .sidebar__brand-text, .sidebar__link span, .sidebar__section-label { display: none; }
+      .sidebar__cta span { display: none; }
+      .main { margin-left: 60px; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .topbar__status span { display: none; }
+      .topbar__user-info { display: none; }
+    }
+
+    /* ── Page heading ── */
+    .page-heading {
+      font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-text-secondary); }
   </style>
 </head>
 <body>
-    <div class="nav">
-    <a href="/">Home</a>
-    <a href="/patients">Patients</a>
-    <span style="float:right">
-      {% if user %}
-        <span class="muted">Signed in as {{ user.username }}</span>
-        &nbsp;|&nbsp;<a href="/logout">Logout</a>
-      {% else %}
-        <a href="/login">Login</a>
-      {% endif %}
-    </span>
-  </div>
+  {% block body %}
+  <div class="layout">
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-icon">
+          <span class="material-symbols-outlined" style="font-size:1.1rem;color:#fff;">monitoring</span>
+        </div>
+        <div class="sidebar__brand-text">
+          <h2>Predictor</h2>
+          <span>Command Center</span>
+        </div>
+      </div>
 
-  {% block content %}{% endblock %}
+      <nav class="sidebar__nav">
+        <a href="/patients" class="sidebar__link {% if request.url.path == '/patients' %}sidebar__link--active{% endif %}">
+          <span class="material-symbols-outlined">dashboard</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="/patients" class="sidebar__link">
+          <span class="material-symbols-outlined">query_stats</span>
+          <span>Predictions</span>
+        </a>
+        <a href="/patients" class="sidebar__link">
+          <span class="material-symbols-outlined">notifications_active</span>
+          <span>Patient Alerts</span>
+        </a>
+        <a href="/patients" class="sidebar__link">
+          <span class="material-symbols-outlined">trending_up</span>
+          <span>Accuracy Trends</span>
+        </a>
+        <a href="/patients" class="sidebar__link">
+          <span class="material-symbols-outlined">verified_user</span>
+          <span>Security Hub</span>
+        </a>
+
+        <div class="sidebar__section-label">Systems</div>
+        <a href="#" class="sidebar__link">
+          <span class="material-symbols-outlined">settings</span>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <span class="material-symbols-outlined">database</span>
+          <span>Data Sources</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <a href="/patients" class="sidebar__cta" style="text-decoration:none;">
+          <span class="material-symbols-outlined" style="font-size:1.1rem;">add_circle</span>
+          <span>New Analysis</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ── Main ── -->
+    <div class="main">
+      <!-- ── Top Bar ── -->
+      <header class="topbar">
+        <div class="topbar__status">
+          <div class="topbar__status-dot"></div>
+          <span>System Status: Operational</span>
+        </div>
+
+        <div class="topbar__search">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" placeholder="Search patient ID or alert..." />
+        </div>
+
+        <div class="topbar__actions">
+          <button class="topbar__icon-btn">
+            <span class="material-symbols-outlined" style="font-size:1.1rem;">light_mode</span>
+          </button>
+          <button class="topbar__icon-btn">
+            <span class="material-symbols-outlined" style="font-size:1.1rem;">mail</span>
+          </button>
+          <div class="topbar__user">
+            <div class="topbar__user-info">
+              {% if user %}
+                <div class="topbar__user-name">{{ user.username }}</div>
+                <div class="topbar__user-role"><a href="/logout">Sign out</a></div>
+              {% else %}
+                <div class="topbar__user-name"><a href="/login">Sign in</a></div>
+              {% endif %}
+            </div>
+            <div class="topbar__avatar">
+              {% if user %}{{ user.username[:2]|upper }}{% else %}?{% endif %}
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ── Page Content ── -->
+      <div class="content">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
 </body>
 </html>

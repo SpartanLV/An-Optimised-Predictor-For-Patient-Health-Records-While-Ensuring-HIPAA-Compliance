@@ -1,179 +1,335 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Patient</h1>
+<div class="flex-between mb-2">
+  <h1 class="page-heading" style="margin-bottom:0;">Patient Record</h1>
+  <a href="/patients" class="btn btn--outline btn--sm">
+    <span class="material-symbols-outlined" style="font-size:0.9rem;">arrow_back</span>
+    Back to Patients
+  </a>
+</div>
 
-  {% if message %}
-    <p class="error">{{message}}</p>
-  {% endif %}
+{% if message %}
+<div class="alert alert--error">
+  <span class="material-symbols-outlined" style="font-size:1rem;vertical-align:middle;margin-right:0.3rem;">error</span>
+  {{ message }}
+</div>
+{% endif %}
 
-  <div class="card">
-    <div><span class="pill">ID</span> {{patient.id}}</div>
-    <div><span class="pill">MRN</span> {{patient.mrn or ""}}</div>
-    <div><span class="pill">Name</span> {{(patient.first_name or "")}} {{(patient.last_name or "")}}</div>
-    <div><span class="pill">DOB</span> {{patient.dob or ""}}</div>
-    <div><span class="pill">Gender</span> {{patient.gender or ""}}</div>
+<!-- Patient Info Card -->
+<div class="card">
+  <div class="card__header">
+    <div>
+      <h2 class="card__title">Patient Information</h2>
+    </div>
+    <span class="pill pill--primary">
+      <span class="material-symbols-outlined" style="font-size:0.75rem;">verified_user</span>
+      HIPAA Protected
+    </span>
   </div>
+  <div class="form-row" style="gap:2rem;">
+    <div>
+      <div class="text-xs text-muted fw-600"
+        style="text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.2rem;">Patient ID</div>
+      <div class="fw-600 text-sm">{{patient.id}}</div>
+    </div>
+    <div>
+      <div class="text-xs text-muted fw-600"
+        style="text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.2rem;">MRN</div>
+      <div class="fw-600 text-sm">{{patient.mrn or "—"}}</div>
+    </div>
+    <div>
+      <div class="text-xs text-muted fw-600"
+        style="text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.2rem;">Name</div>
+      <div class="fw-600 text-sm">{{(patient.first_name or "")}} {{(patient.last_name or "")}}</div>
+    </div>
+    <div>
+      <div class="text-xs text-muted fw-600"
+        style="text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.2rem;">Date of Birth</div>
+      <div class="fw-600 text-sm">{{patient.dob or "—"}}</div>
+    </div>
+    <div>
+      <div class="text-xs text-muted fw-600"
+        style="text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.2rem;">Gender</div>
+      <div class="fw-600 text-sm">{{patient.gender or "—"}}</div>
+    </div>
+  </div>
+</div>
 
+<!-- Actions Row -->
+<div class="grid-2">
+  <!-- Upload Card -->
   <div class="card">
-    <h2>Upload document (Stage 1 → 2) + Predict (Stage 3)</h2>
+    <div class="card__header">
+      <div>
+        <h2 class="card__title">Upload Document</h2>
+        <p class="card__subtitle">Stage 1 (OCR/NER) → Stage 2 (DB) → Stage 3 (Predict)</p>
+      </div>
+    </div>
     <form method="post" action="/patients/{{patient.id}}/upload" enctype="multipart/form-data">
-      <div><input type="file" name="file" required /></div>
-      <div><label>Document date (optional) <input name="document_date" placeholder="YYYY-MM-DD or ISO" /></label></div>
-      <div style="margin-top: 0.5rem;"><button type="submit">Upload & Run</button></div>
-    </form>
-    <form method="post" action="/patients/{{patient.id}}/predict" style="margin-top: 1rem;">
-      <button type="submit">Run Prediction Only</button>
+      <div class="form-group">
+        <label class="form-label" for="upload-file">Medical Document</label>
+        <input class="form-input" id="upload-file" type="file" name="file" required style="padding:0.45rem 0.65rem;" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="upload-date">Document Date (optional)</label>
+        <input class="form-input" id="upload-date" name="document_date" placeholder="YYYY-MM-DD or ISO" />
+      </div>
+      <button type="submit" class="btn btn--primary">
+        <span class="material-symbols-outlined" style="font-size:1rem;">upload_file</span>
+        Upload & Run
+      </button>
     </form>
   </div>
 
-  {% if stored_doc or extraction %}
+  <!-- Quick Predict Card -->
   <div class="card">
-    <h2>Latest extraction output (Stage 1)</h2>
-    {% if stored_doc %}
-      <p class="muted">Stored as document <b>{{stored_doc.filename or ""}}</b> (id {{stored_doc.id}})
-      {% if stored_doc.sha256 %}— SHA-256 {{stored_doc.sha256[:12]}}…{% endif %}</p>
-    {% endif %}
+    <div class="card__header">
+      <div>
+        <h2 class="card__title">Run Prediction</h2>
+        <p class="card__subtitle">Re-run Stage 3 inference on existing data</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;padding:2rem 0;">
+      <form method="post" action="/patients/{{patient.id}}/predict">
+        <button type="submit" class="btn btn--primary" style="padding:1rem 2rem;font-size:1rem;">
+          <span class="material-symbols-outlined" style="font-size:1.3rem;">psychology</span>
+          Run Prediction Only
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
-    {% if extraction %}
-      <details open>
-        <summary>View OCR/NER output</summary>
-        {% if extraction.text %}
-          <h3>OCR text (snippet)</h3>
-          <pre style="white-space: pre-wrap;">{{ extraction.text[:1200] }}{% if extraction.text|length > 1200 %}…{% endif %}</pre>
-        {% endif %}
+<!-- Extraction Output -->
+{% if stored_doc or extraction %}
+<div class="card">
+  <div class="card__header">
+    <h2 class="card__title">Latest Extraction Output (Stage 1)</h2>
+  </div>
 
-        <h3>NER entities</h3>
-        {% if extraction.entities and extraction.entities|length > 0 %}
-          <table>
-            <thead><tr><th>Label</th><th>Text</th><th>Confidence</th></tr></thead>
-            <tbody>
-              {% for ent in extraction.entities[:50] %}
-                <tr>
-                  <td class="muted">{{ent.label}}</td>
-                  <td>{{ent.text}}</td>
-                  <td class="muted">{% if ent.confidence %}{{"%.2f"|format(ent.confidence)}}{% endif %}</td>
-                </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-          {% if extraction.entities|length > 50 %}<p class="muted">Showing first 50 entities.</p>{% endif %}
-        {% else %}
-          <p class="muted">No entities extracted.</p>
-        {% endif %}
-
-        <h3>Extracted events (to be stored)</h3>
-        {% if extraction.events and extraction.events|length > 0 %}
-          <table>
-            <thead><tr><th>Date</th><th>Source</th><th>Code</th><th>Description</th><th>Value</th></tr></thead>
-            <tbody>
-              {% for ev in extraction.events[:50] %}
-                <tr>
-                  <td class="muted">{{ev.event_date}}</td>
-                  <td>{{ev.source}}</td>
-                  <td class="muted">{{ev.code or ""}}</td>
-                  <td>{{ev.description or ""}}</td>
-                  <td class="muted">{% if ev.value %}{{ev.value}} {{ev.units or ""}}{% endif %}</td>
-                </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-          {% if extraction.events|length > 50 %}<p class="muted">Showing first 50 events.</p>{% endif %}
-        {% else %}
-          <p class="muted">No events extracted by heuristics.</p>
-        {% endif %}
-      </details>
-    {% else %}
-      <p class="muted">Upload a document to view extraction output here.</p>
-    {% endif %}
+  {% if stored_doc %}
+  <div class="alert alert--success">
+    <span class="material-symbols-outlined"
+      style="font-size:1rem;vertical-align:middle;margin-right:0.3rem;">check_circle</span>
+    Stored as document <strong>{{stored_doc.filename or ""}}</strong> (id {{stored_doc.id}})
+    {% if stored_doc.sha256 %} — SHA-256 {{stored_doc.sha256[:12]}}…{% endif %}
   </div>
   {% endif %}
 
-  <div class="card">
-    <h2>Documents</h2>
-    {% if documents and documents|length > 0 %}
-      <table>
-        <thead>
-          <tr><th>Created</th><th>Filename</th><th>SHA-256</th><th></th></tr>
-        </thead>
-        <tbody>
-          {% for d in documents %}
-            <tr>
-              <td class="muted">{{d.created_at_utc}}</td>
-              <td>{{d.filename or ""}}</td>
-              <td class="muted">{% if d.sha256 %}{{d.sha256[:12]}}…{% endif %}</td>
-              <td><a href="/patients/{{patient.id}}/documents/{{d.id}}">View</a></td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    {% else %}
-      <p class="muted">No documents uploaded yet.</p>
-    {% endif %}
-  </div>
+  {% if extraction %}
+  <details open>
+    <summary>
+      <span class="material-symbols-outlined"
+        style="font-size:0.9rem;vertical-align:middle;margin-right:0.25rem;">visibility</span>
+      View OCR/NER Output
+    </summary>
 
-  <div class="card">
-    <h2>Recent events (Stage 2)</h2>
-    {% if events|length == 0 %}
-      <p class="muted">No events stored yet.</p>
-    {% else %}
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Source</th><th>Code</th><th>Description</th><th>Value</th></tr>
-        </thead>
-        <tbody>
-          {% for e in events %}
-            <tr>
-              <td class="muted">{{e.event_date}}</td>
-              <td>{{e.source}}</td>
-              <td class="muted">{{e.code or ""}}</td>
-              <td>{{e.description or ""}}</td>
-              <td class="muted">{% if e.value %}{{e.value}} {{e.units or ""}}{% endif %}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+    {% if extraction.text %}
+    <h3 class="card__title mt-2 mb-1" style="font-size:0.95rem;">OCR Text (Snippet)</h3>
+    <pre
+      style="white-space:pre-wrap;background:var(--color-bg);padding:1rem;border-radius:var(--radius-input);font-size:0.8rem;max-height:300px;overflow-y:auto;border:1px solid var(--color-border);">{{ extraction.text[:1200] }}{% if extraction.text|length > 1200 %}…{% endif %}</pre>
     {% endif %}
-  </div>
 
-  <div class="card">
-    <h2>Predictions + Recommendations (Stage 3)</h2>
-    {% if not predictions %}
-      <p class="muted">No prediction run yet.</p>
+    <h3 class="card__title mt-2 mb-1" style="font-size:0.95rem;">NER Entities</h3>
+    {% if extraction.entities and extraction.entities|length > 0 %}
+    <table>
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>Text</th>
+          <th>Confidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ent in extraction.entities[:50] %}
+        <tr>
+          <td><span class="pill pill--primary">{{ent.label}}</span></td>
+          <td>{{ent.text}}</td>
+          <td class="td-muted">{% if ent.confidence %}{{"%.2f"|format(ent.confidence)}}{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if extraction.entities|length > 50 %}<p class="text-muted text-sm mt-1">Showing first 50 entities.</p>{% endif %}
     {% else %}
-      <p class="muted">Threshold used: {{predictions.threshold}}</p>
-      <table>
-        <thead>
-          <tr><th>Code</th><th>Description</th><th>Probability</th><th>Recommendations</th></tr>
-        </thead>
-        <tbody>
-          {% for p in predictions.predictions %}
-            <tr>
-              <td>{{p.code}}</td>
-              <td>{{p.description or ""}}</td>
-              <td>{{"%.3f"|format(p.probability)}}</td>
-              <td>
-                {% if p.recommendations %}
-                  <div><b>Meds</b>:
-                    {% for m in p.recommendations.medications %}
-                      <div class="muted">{{m.item}} ({{m.count}})</div>
-                    {% endfor %}
-                  </div>
-                  <div><b>Procedures</b>:
-                    {% for m in p.recommendations.procedures %}
-                      <div class="muted">{{m.item}} ({{m.count}})</div>
-                    {% endfor %}
-                  </div>
-                  <div><b>Careplans</b>:
-                    {% for m in p.recommendations.careplans %}
-                      <div class="muted">{{m.item}} ({{m.count}})</div>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+    <p class="text-muted text-sm">No entities extracted.</p>
     {% endif %}
+
+    <h3 class="card__title mt-2 mb-1" style="font-size:0.95rem;">Extracted Events</h3>
+    {% if extraction.events and extraction.events|length > 0 %}
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Source</th>
+          <th>Code</th>
+          <th>Description</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ev in extraction.events[:50] %}
+        <tr>
+          <td class="td-muted text-sm">{{ev.event_date}}</td>
+          <td>{{ev.source}}</td>
+          <td class="td-muted">{{ev.code or "—"}}</td>
+          <td>{{ev.description or "—"}}</td>
+          <td class="td-muted">{% if ev.value %}{{ev.value}} {{ev.units or ""}}{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if extraction.events|length > 50 %}<p class="text-muted text-sm mt-1">Showing first 50 events.</p>{% endif %}
+    {% else %}
+    <p class="text-muted text-sm">No events extracted by heuristics.</p>
+    {% endif %}
+  </details>
+  {% else %}
+  <p class="text-muted text-sm">Upload a document to view extraction output here.</p>
+  {% endif %}
+</div>
+{% endif %}
+
+<!-- Documents -->
+<div class="card">
+  <div class="card__header">
+    <div>
+      <h2 class="card__title">Documents</h2>
+      <p class="card__subtitle">{{ documents|length if documents else 0 }} document{{ 's' if (documents|length if
+        documents else 0) != 1 else '' }} stored</p>
+    </div>
   </div>
+  {% if documents and documents|length > 0 %}
+  <table>
+    <thead>
+      <tr>
+        <th>Created</th>
+        <th>Filename</th>
+        <th>SHA-256</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for d in documents %}
+      <tr>
+        <td class="td-muted text-sm">{{d.created_at_utc}}</td>
+        <td class="fw-600">{{d.filename or "—"}}</td>
+        <td class="td-muted text-sm">{% if d.sha256 %}{{d.sha256[:12]}}…{% endif %}</td>
+        <td><a href="/patients/{{patient.id}}/documents/{{d.id}}" class="btn btn--outline btn--sm">View</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="text-muted text-sm" style="padding:0.5rem 0;">No documents uploaded yet.</p>
+  {% endif %}
+</div>
+
+<!-- Events -->
+<div class="card">
+  <div class="card__header">
+    <div>
+      <h2 class="card__title">Patient Events (Stage 2)</h2>
+      <p class="card__subtitle">{{ events|length }} event{{ 's' if events|length != 1 else '' }} recorded</p>
+    </div>
+  </div>
+  {% if events|length == 0 %}
+  <p class="text-muted text-sm" style="padding:0.5rem 0;">No events stored yet.</p>
+  {% else %}
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Source</th>
+        <th>Code</th>
+        <th>Description</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for e in events %}
+      <tr>
+        <td class="td-muted text-sm">{{e.event_date}}</td>
+        <td class="fw-600">{{e.source}}</td>
+        <td class="td-muted">{{e.code or "—"}}</td>
+        <td>{{e.description or "—"}}</td>
+        <td class="td-muted">{% if e.value %}{{e.value}} {{e.units or ""}}{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>
+
+<!-- Predictions -->
+<div class="card">
+  <div class="card__header">
+    <div>
+      <h2 class="card__title">Predictions & Recommendations (Stage 3)</h2>
+      <p class="card__subtitle">ML-generated risk assessments and treatment recommendations</p>
+    </div>
+  </div>
+  {% if not predictions %}
+  <p class="text-muted text-sm" style="padding:0.5rem 0;">No prediction run yet. Upload a document or run prediction
+    above.</p>
+  {% else %}
+  <div class="mb-2">
+    <span class="text-xs text-muted fw-600" style="text-transform:uppercase;letter-spacing:0.06em;">Threshold:</span>
+    <span class="pill pill--neutral">{{predictions.threshold}}</span>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Description</th>
+        <th>Probability</th>
+        <th>Recommendations</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in predictions.predictions %}
+      <tr>
+        <td><span class="pill pill--primary">{{p.code}}</span></td>
+        <td class="fw-600">{{p.description or "—"}}</td>
+        <td>
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <div class="progress" style="width:80px;">
+              <div class="progress__fill"
+                style="width:{{ (p.probability * 100)|int }}%;{% if p.probability > 0.7 %}background:var(--color-danger);{% elif p.probability > 0.4 %}background:var(--color-warning);{% endif %}">
+              </div>
+            </div>
+            <span
+              class="fw-600 text-sm {% if p.probability > 0.7 %}text-danger{% elif p.probability > 0.4 %}text-muted{% else %}text-success{% endif %}">
+              {{"%.1f"|format(p.probability * 100)}}%
+            </span>
+          </div>
+        </td>
+        <td>
+          {% if p.recommendations %}
+          <div class="mb-1">
+            <span class="text-xs fw-600 text-primary" style="text-transform:uppercase;">Medications</span>
+            {% for m in p.recommendations.medications %}
+            <div class="text-sm">{{m.item}} <span class="td-muted">({{m.count}})</span></div>
+            {% endfor %}
+          </div>
+          <div class="mb-1">
+            <span class="text-xs fw-600 text-primary" style="text-transform:uppercase;">Procedures</span>
+            {% for m in p.recommendations.procedures %}
+            <div class="text-sm">{{m.item}} <span class="td-muted">({{m.count}})</span></div>
+            {% endfor %}
+          </div>
+          <div>
+            <span class="text-xs fw-600 text-primary" style="text-transform:uppercase;">Careplans</span>
+            {% for m in p.recommendations.careplans %}
+            <div class="text-sm">{{m.item}} <span class="td-muted">({{m.count}})</span></div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>
 {% endblock %}

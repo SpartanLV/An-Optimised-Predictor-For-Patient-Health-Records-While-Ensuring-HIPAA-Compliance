@@ -1,16 +1,720 @@
 {% extends "base.html" %}
-{% block content %}
-  <h1>CSE400 Web Portal</h1>
-  <p class="muted">Web platform that orchestrates Stage 1 (OCR/NER) → Stage 2 (DB) → Stage 3 (Hybrid inference).</p>
+{% block body %}
+{# Landing page uses full-width layout, no sidebar #}
+<div class="layout--full">
+  <style>
+    /* ── Landing-specific overrides ── */
+    .landing-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 3rem;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
 
-  {% if not user %}
-    <div class="card">
-      <p>You are not signed in.</p>
-      <p><a href="/login">Login</a> to access patient records.</p>
+    .landing-nav__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .landing-nav__brand-icon {
+      width: 30px;
+      height: 30px;
+      background: var(--color-primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .landing-nav__brand-name {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .landing-nav__brand-name i {
+      font-style: normal;
+      color: var(--color-primary);
+    }
+
+    .landing-nav__links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .landing-nav__links a {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+    }
+
+    .landing-nav__links a:hover {
+      color: var(--color-text);
+    }
+
+    .landing-nav__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 5rem 3rem 3rem;
+    }
+
+    .hero__text {
+      flex: 1;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-pill);
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--color-success);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero__heading {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero__heading span {
+      color: var(--color-danger);
+      display: block;
+    }
+
+    .hero__desc {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 420px;
+      margin-bottom: 2rem;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .hero__visual {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero__screen {
+      width: 100%;
+      max-width: 440px;
+      aspect-ratio: 16/9;
+      background: #0D2B3E;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero__screen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero__latency {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: var(--color-surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-elevated);
+      padding: 0.6rem 1rem;
+    }
+
+    .hero__latency-label {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+    }
+
+    .hero__latency-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      background: var(--color-surface);
+    }
+
+    .stats-bar__item {
+      padding: 2rem 2.5rem;
+      border-right: 1px solid var(--color-border);
+    }
+
+    .stats-bar__item:last-child {
+      border-right: none;
+    }
+
+    .stats-bar__label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .stats-bar__value {
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    .stats-bar__meta {
+      font-size: 0.7rem;
+      color: var(--color-primary);
+      font-weight: 500;
+      margin-top: 0.25rem;
+    }
+
+    /* Features */
+    .features-section {
+      padding: 5rem 3rem;
+      background: var(--color-bg);
+    }
+
+    .features-section__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .features-section__heading {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+      max-width: 500px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      padding: 2rem 1.75rem;
+    }
+
+    .feature-card__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .feature-card__icon .material-symbols-outlined {
+      font-size: 1.2rem;
+      color: var(--color-primary);
+    }
+
+    .feature-card__title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-card__desc {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+    }
+
+    /* Terminal preview */
+    .terminal-section {
+      padding: 4rem 3rem;
+    }
+
+    .terminal-section__inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .terminal-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-elevated);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+
+    .terminal-card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--color-border);
+      background: var(--color-bg);
+    }
+
+    .terminal-card__dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .terminal-card__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .terminal-card__dot--red {
+      background: var(--color-danger);
+    }
+
+    .terminal-card__dot--yellow {
+      background: var(--color-warning);
+    }
+
+    .terminal-card__dot--green {
+      background: var(--color-success);
+    }
+
+    .terminal-card__title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+    }
+
+    .terminal-card__body {
+      padding: 1.25rem;
+    }
+
+    .terminal-card__grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 0.5rem 1.5rem;
+      font-size: 0.82rem;
+    }
+
+    .terminal-card__grid dt {
+      color: var(--color-text-secondary);
+      font-weight: 500;
+    }
+
+    .terminal-card__grid dd {
+      font-weight: 600;
+    }
+
+    .terminal-card__stream {
+      margin-top: 1rem;
+    }
+
+    .terminal-card__stream-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .terminal-card__stream-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .terminal-card__stream-live {
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 0.78rem;
+    }
+
+    .terminal-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.82rem;
+    }
+
+    .terminal-line__time {
+      color: var(--color-text-secondary);
+      font-family: monospace;
+    }
+
+    .terminal-line__msg {
+      flex: 1;
+      margin-left: 1rem;
+    }
+
+    .terminal-line__status {
+      font-weight: 600;
+    }
+
+    .terminal-line__status--score {
+      color: var(--color-primary);
+    }
+
+    .terminal-line__status--processing {
+      color: var(--color-warning);
+    }
+
+    .terminal-line__status--alert {
+      color: var(--color-danger);
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 5rem 3rem;
+    }
+
+    .cta-section__heading {
+      font-size: 2.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section__heading span {
+      color: var(--color-primary);
+    }
+
+    .cta-section__desc {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-section__actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    /* Footer */
+    .landing-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.75rem;
+      color: var(--color-text-secondary);
+    }
+
+    .landing-footer__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .landing-footer__links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .landing-footer__links a {
+      color: var(--color-text-secondary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.7rem;
+    }
+
+    .landing-footer__links a:hover {
+      color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+      }
+
+      .hero__heading {
+        font-size: 2.25rem;
+      }
+
+      .stats-bar {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-section__heading {
+        font-size: 2rem;
+      }
+
+      .landing-nav {
+        padding: 1rem 1.5rem;
+      }
+
+      .landing-nav__links {
+        display: none;
+      }
+    }
+  </style>
+
+  <!-- Navigation -->
+  <nav class="landing-nav">
+    <div class="landing-nav__brand">
+      <div class="landing-nav__brand-icon">
+        <span class="material-symbols-outlined" style="font-size:1rem;color:#fff;">monitoring</span>
+      </div>
+      <div class="landing-nav__brand-name">HIPAA <i>Predictor</i></div>
     </div>
-  {% else %}
-    <div class="card">
-      <p><a href="/patients">Go to Patients</a></p>
+    <div class="landing-nav__links">
+      <a href="#">Telemetry</a>
+      <a href="#">Security</a>
+      <a href="#">Engine</a>
+      <a href="#">API</a>
     </div>
-  {% endif %}
+    <div class="landing-nav__actions">
+      {% if user %}
+      <a href="/patients" class="btn btn--primary btn--sm">Go to Dashboard</a>
+      {% else %}
+      <a href="/login" class="btn btn--primary btn--sm">Get Started</a>
+      {% endif %}
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__text">
+      <div class="hero__badge">
+        <span class="material-symbols-outlined" style="font-size:0.8rem;">verified</span>
+        System Status: Optimal
+      </div>
+      <h1 class="hero__heading">
+        Predictive
+        Health
+        <span>Racing Velocity</span>
+      </h1>
+      <p class="hero__desc">
+        High-performance ML infrastructure engineered for the most demanding healthcare environments.
+        Carbon-black precision meets total HIPAA compliance.
+      </p>
+      <div class="hero__actions">
+        {% if user %}
+        <a href="/patients" class="btn btn--primary">
+          <span class="material-symbols-outlined" style="font-size:1rem;">bolt</span>
+          Run New Prediction
+        </a>
+        {% else %}
+        <a href="/login" class="btn btn--primary">
+          <span class="material-symbols-outlined" style="font-size:1rem;">bolt</span>
+          Run New Prediction
+        </a>
+        {% endif %}
+        <a href="#features" class="btn btn--outline">View Docs</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__screen">
+        <div style="color:rgba(255,255,255,0.15);text-align:center;font-size:0.8rem;padding:2rem;">
+          <span class="material-symbols-outlined"
+            style="font-size:3rem;display:block;margin-bottom:0.5rem;">monitoring</span>
+          Neural Telemetry Feed
+        </div>
+      </div>
+      <div class="hero__latency">
+        <span class="hero__latency-label">Neural Latency</span>
+        <span class="hero__latency-value">0.0042s</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stats-bar__item">
+      <div class="stats-bar__label">Accuracy</div>
+      <div class="stats-bar__value">99.98%</div>
+      <div class="stats-bar__meta">+2.4% vs Baseline</div>
+    </div>
+    <div class="stats-bar__item">
+      <div class="stats-bar__label">Data Points</div>
+      <div class="stats-bar__value">4.8PB</div>
+      <div class="stats-bar__meta">Encrypted End-to-End</div>
+    </div>
+    <div class="stats-bar__item">
+      <div class="stats-bar__label">Uptime</div>
+      <div class="stats-bar__value">99.999%</div>
+      <div class="stats-bar__meta">Tier 4 Infrastructure</div>
+    </div>
+    <div class="stats-bar__item">
+      <div class="stats-bar__label">Compliance</div>
+      <div class="stats-bar__value">HIPAA</div>
+      <div class="stats-bar__meta">Certified & Audited</div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features-section">
+    <div class="features-section__inner">
+      <h2 class="features-section__heading">Engineered For Zero&#8209;Failure Environments</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">psychology</span>
+          </div>
+          <h3 class="feature-card__title">ML Neural Engine</h3>
+          <p class="feature-card__desc">
+            Proprietary longitudinal models trained on diverse clinical datasets to identify early health markers before
+            symptoms manifest.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">lock</span>
+          </div>
+          <h3 class="feature-card__title">Carbon Security</h3>
+          <p class="feature-card__desc">
+            Hardware-level AES-256 encryption. Your data never leaves the encrypted perimeter, ensuring absolute HIPAA
+            compliance.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">speed</span>
+          </div>
+          <h3 class="feature-card__title">Real-Time Telemetry</h3>
+          <p class="feature-card__desc">
+            Instant data ingestion and processing with less than 40ms latency. Because in healthcare, speed saves lives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terminal Preview -->
+  <section class="terminal-section">
+    <div class="terminal-section__inner">
+      <div class="terminal-card">
+        <div class="terminal-card__header">
+          <div class="terminal-card__dots">
+            <div class="terminal-card__dot terminal-card__dot--red"></div>
+            <div class="terminal-card__dot terminal-card__dot--yellow"></div>
+            <div class="terminal-card__dot terminal-card__dot--green"></div>
+          </div>
+          <div class="terminal-card__title">Command Center v2.4</div>
+          <div></div>
+        </div>
+        <div class="terminal-card__body">
+          <div class="terminal-card__grid">
+            <dt>Active Predictions</dt>
+            <dd style="display:flex;align-items:center;gap:0.5rem;">
+              <div style="width:60px;height:24px;background:var(--color-primary);border-radius:4px;opacity:0.2;"></div>
+            </dd>
+            <dt>Queue Status</dt>
+            <dd><span class="pill pill--success">Clear</span></dd>
+          </div>
+          <div class="terminal-card__stream mt-2">
+            <div class="terminal-card__stream-header">
+              <span class="terminal-card__stream-title">Patient Telemetry Stream</span>
+              <span class="terminal-card__stream-live">Live Data</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-line__time">09:42:03</span>
+              <span class="terminal-line__msg">Analysis Complete: Patient #781</span>
+              <span class="terminal-line__status terminal-line__status--score">94% Risk Score</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-line__time">09:41:55</span>
+              <span class="terminal-line__msg">Ingesting EMR Sequence</span>
+              <span class="terminal-line__status terminal-line__status--processing">Processing…</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-line__time">09:41:40</span>
+              <span class="terminal-line__msg">Anomaly Detected: Cardio-Metric</span>
+              <span class="terminal-line__status terminal-line__status--alert">Alert Level 2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-section__heading">Ready To <span>Shift Gears?</span></h2>
+    <p class="cta-section__desc">
+      Deploy the world's most advanced healthcare predictive engine.
+      HIPAA-compliant, zero-latency, carbon-black secure.
+    </p>
+    <div class="cta-section__actions">
+      {% if user %}
+      <a href="/patients" class="btn btn--primary">Go to Dashboard</a>
+      {% else %}
+      <a href="/login" class="btn btn--primary">Request Access</a>
+      {% endif %}
+      <a href="#features" class="btn btn--outline">Technical Audit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <div class="landing-footer__brand">
+      <span class="material-symbols-outlined" style="font-size:1rem;">monitoring</span>
+      HIPAA <span style="font-weight:400;">Predictor</span>
+    </div>
+    <div class="landing-footer__links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Compliance</a>
+    </div>
+    <div>© 2024 Neural Race Technologies</div>
+  </footer>
+</div>
 {% endblock %}
