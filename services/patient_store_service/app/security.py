@@ -10,6 +10,7 @@ except Exception:  # pragma: no cover
     JWTError = Exception
 
 _API_KEY = os.getenv("API_KEY", "").strip()
+PHI_UNMASK_ROLES = {r.strip() for r in os.getenv("PHI_UNMASK_ROLES", "admin,clinician").split(",") if r.strip()}
 
 JWT_SECRET = os.getenv("JWT_SECRET", "").strip()
 JWT_ALG = os.getenv("JWT_ALG", "HS256").strip()
@@ -67,3 +68,8 @@ def require_roles(claims: Dict[str, Any], allowed: List[str]) -> None:
     roles = claims.get("roles") or []
     if not any(role in roles for role in allowed):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Insufficient role.")
+
+
+def can_view_phi(claims: Dict[str, Any]) -> bool:
+    roles = set(claims.get("roles") or [])
+    return bool(roles.intersection(PHI_UNMASK_ROLES))

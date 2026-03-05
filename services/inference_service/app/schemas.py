@@ -45,10 +45,21 @@ class PredictionOut(BaseModel):
     description: Optional[str] = None
     probability: float
     recommendations: Optional[RecommendationsOut] = None
+    explanation: Optional[List[str]] = None
 
 
 class PredictResponse(BaseModel):
     threshold: float
     predictions: List[PredictionOut]
+    timeline: Optional[List[Dict[str, Any]]] = None
     # optional debug
     debug: Optional[Dict[str, Any]] = None
+
+
+class TelemetryPoint(BaseModel):
+    ts_utc: datetime
+    patient_id: Optional[str] = None
+    threshold: float
+    top_probability: float
+    prediction_count: int
+    model_version: Optional[str] = None

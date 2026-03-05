@@ -42,6 +42,13 @@ class FakeAsyncClient:
             return FakeResponse(payload={"status": "ok"})
         if url.endswith("/v1/auth/me"):
             return FakeResponse(payload={"username": "admin", "roles": ["admin"]})
+        if url.endswith("/summary"):
+            return FakeResponse(payload={
+                "patient": {"id": "abc-1", "first_name": "Alice", "last_name": "Ng", "dob": "1990-01-01"},
+                "care_gaps": [{"title": "No recent observations", "severity": "high", "rationale": "No vitals/labs found."}],
+                "recent_events": [],
+                "generated_at_utc": "2024-01-30T00:00:00Z",
+            })
         return FakeResponse(payload={})
 
     async def post(self, *args, **kwargs):
@@ -106,3 +113,17 @@ def test_api_contracts_route_renders_markdown(monkeypatch):
     resp = client.get("/api-contracts")
     assert resp.status_code == 200
     assert "API Contracts (MVP)" in resp.text
+
+
+def test_patient_summary_route_renders(monkeypatch):
+    async def fake_me(_):
+        return {"username": "admin", "roles": ["admin"]}
+
+    monkeypatch.setattr(main, "_me", fake_me)
+    monkeypatch.setattr(main.httpx, "AsyncClient", FakeAsyncClient)
+
+    client = TestClient(main.app)
+    _set_auth_cookie(client)
+    resp = client.get("/patients/abc-1/summary")
+    assert resp.status_code == 200
+    assert "Patient Summary Snapshot" in resp.text

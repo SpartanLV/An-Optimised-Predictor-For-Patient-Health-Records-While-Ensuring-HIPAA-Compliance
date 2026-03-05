@@ -96,3 +96,51 @@ Returns:
 - `predictions`: predicted condition codes w/ probabilities and recommendations
 - `threshold` used
 - optional `debug`
+
+---
+
+## New interoperability + clinical workflow endpoints
+
+### Patient Store additions (`http://patient-store:8002`)
+
+- `GET /v1/patients/{patient_id}/fhir-bundle`
+  - Exports a FHIR R4 Bundle (collection) containing Patient + mapped Observation/Condition/MedicationStatement/Procedure + DocumentReference resources.
+
+- `POST /v1/fhir-bundle/import`
+  - Imports a minimal FHIR Bundle and creates one patient + mapped events.
+
+- `GET /v1/patients/{patient_id}/care-gaps`
+  - Returns rule-based care gaps with severity and rationale.
+
+- `GET /v1/patients/{patient_id}/summary`
+  - Returns a snapshot payload with masked patient profile, recent events/documents, and care gaps.
+
+- `POST /v1/cohorts`
+  - Create saved cohort definition (`name`, `filters`).
+
+- `GET /v1/cohorts`
+  - List saved cohorts.
+
+- `GET /v1/cohorts/{cohort_id}/patients`
+  - Expands cohort to matched patients based on filter rules.
+
+### Inference additions (`http://inference:8003`)
+
+- `POST /v1/predict`
+  - Now also returns:
+    - `predictions[].explanation`: concise top contributing clinical factors (surrogate explainability)
+    - `timeline` (when `patient_id` is used): longitudinal risk points + trend label
+
+- `GET /v1/inference/metrics`
+  - Telemetry summary (request counts + avg top probability over last 24h)
+
+- `GET /v1/inference/drift`
+  - Drift monitor based on 7-day vs prior 23-day score distribution deltas.
+
+- `GET /v1/patients/{patient_id}/risk-timeline`
+  - Patient-specific longitudinal risk timeline.
+
+### RBAC + PHI masking
+
+- Patient Store enforces role checks for JWT-backed user calls.
+- PHI masking is applied on patient outputs unless caller has one of `PHI_UNMASK_ROLES` (default: `admin,clinician`).
