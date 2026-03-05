@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-heading">Audit Log</h1>
+<p class="text-muted mb-2">Recent access and data events captured by the patient store service.</p>
+
+{% if message %}
+<div class="alert alert--error">{{ message }}</div>
+{% endif %}
+
+<div class="card">
+  <div class="card__header">
+    <div>
+      <h2 class="card__title">Recent Events</h2>
+      <p class="card__subtitle">{{ logs|length }} entries</p>
+    </div>
+  </div>
+
+  {% if logs and logs|length > 0 %}
+  <table>
+    <thead>
+      <tr>
+        <th>Time (UTC)</th>
+        <th>Actor</th>
+        <th>Action</th>
+        <th>Route</th>
+        <th>Patient</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for log in logs %}
+      <tr>
+        <td class="td-muted text-sm">{{ log.created_at_utc }}</td>
+        <td class="fw-600">{{ log.actor or "unknown" }}</td>
+        <td><span class="pill pill--neutral">{{ log.action }}</span></td>
+        <td class="td-muted text-sm">{{ log.method }} {{ log.route }}</td>
+        <td class="td-muted text-sm">{{ log.patient_id or "—" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="text-muted">No audit events available.</p>
+  {% endif %}
+</div>
+{% endblock %}

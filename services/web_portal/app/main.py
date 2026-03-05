@@ -2,7 +2,9 @@ import os
 import json
 import time
 import uuid
-from datetime import datetime, timezone
+import asyncio
+from pathlib import Path
+from datetime import datetime, timezone, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
 import httpx
@@ -52,6 +54,10 @@ def _gateway_verify():
 
 def _client_kwargs(timeout_seconds: float) -> dict:
     return {"timeout": timeout_seconds, "verify": _gateway_verify()}
+
+
+class ServiceCallError(RuntimeError):
+    pass
 
 COOKIE_NAME = os.getenv("AUTH_COOKIE_NAME", "access_token").strip()
 COOKIE_SECURE = os.getenv("COOKIE_SECURE", "true").strip().lower() in ("1", "true", "yes")
@@ -108,6 +114,50 @@ def _auth_headers(token: str, request: Request | None = None) -> Dict[str, str]:
     return h
 
 
+def _parse_iso_utc(value: str | None) -> Optional[datetime]:
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed
+    except ValueError:
+        return None
+
+
+def _filter_patients(patients: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]]:
+    q = query.strip().lower()
+    if not q:
+        return patients
+    return [
+        p for p in patients
+        if q in (p.get("id", "").lower())
+        or q in (p.get("mrn", "").lower())
+        or q in ((p.get("first_name") or "").lower())
+        or q in ((p.get("last_name") or "").lower())
+    ]
+
+
+def _patient_stats(patients: List[Dict[str, Any]], *, now: datetime | None = None) -> Dict[str, int]:
+    now = now or _utcnow()
+    recent_cutoff = now - timedelta(days=7)
+    with_mrn = 0
+    created_recent = 0
+    for p in patients:
+        if p.get("mrn"):
+            with_mrn += 1
+        created_dt = _parse_iso_utc(p.get("created_at_utc"))
+        if created_dt and created_dt >= recent_cutoff:
+            created_recent += 1
+
+    return {
+        "total": len(patients),
+        "with_mrn": with_mrn,
+        "created_recent": created_recent,
+    }
+
+
 async def _me(token: str) -> Optional[Dict[str, Any]]:
     if not token:
         return None
@@ -117,8 +167,25 @@ async def _me(token: str) -> Optional[Dict[str, Any]]:
             if r.status_code != 200:
                 return None
             return r.json()
-    except Exception:
+    except (httpx.HTTPError, ValueError):
         return None
+
+
+async def _get_json_or_raise(
+    client: httpx.AsyncClient,
+    url: str,
+    *,
+    headers: Optional[Dict[str, str]] = None,
+    params: Optional[Dict[str, Any]] = None,
+) -> Any:
+    try:
+        resp = await client.get(url, headers=headers, params=params)
+        resp.raise_for_status()
+        return resp.json()
+    except httpx.HTTPError as exc:
+        raise ServiceCallError(str(exc)) from exc
+    except ValueError as exc:
+        raise ServiceCallError("Invalid JSON response") from exc
 
 
 
@@ -177,11 +244,125 @@ async def patients(request: Request):
         return RedirectResponse(url="/login", status_code=303)
     user = await _me(token)
 
+    try:
+        async with httpx.AsyncClient(**_client_kwargs(30.0)) as client:
+            pts = await _get_json_or_raise(
+                client,
+                f"{PATIENT_STORE_URL.rstrip('/')}/v1/patients",
+                headers=_auth_headers(token, request),
+                params={"limit": 50},
+            )
+    except ServiceCallError as exc:
+        return templates.TemplateResponse(
+            "patients.html",
+            {
+                "request": request,
+                "patients": [],
+                "user": user,
+                "query": request.query_params.get("q", ""),
+                "stats": {"total": 0, "with_mrn": 0, "created_recent": 0},
+                "filtered_count": 0,
+                "message": f"Unable to load patients: {exc}",
+            },
+        )
+
+    query = request.query_params.get("q", "")
+    filtered_pts = _filter_patients(pts, query)
+    stats = _patient_stats(pts)
+
+    return templates.TemplateResponse(
+        "patients.html",
+        {
+            "request": request,
+            "patients": filtered_pts,
+            "user": user,
+            "query": query,
+            "stats": stats,
+            "filtered_count": len(filtered_pts),
+        },
+    )
+
+
+@app.get("/audit", response_class=HTMLResponse)
+async def audit_log(request: Request):
+    token = request.cookies.get(COOKIE_NAME, "")
+    if not token:
+        return RedirectResponse(url="/login", status_code=303)
+    user = await _me(token)
+
+    logs = []
+    message = None
     async with httpx.AsyncClient(**_client_kwargs(30.0)) as client:
-        r = await client.get(f"{PATIENT_STORE_URL.rstrip('/')}/v1/patients", headers=_auth_headers(token, request), params={"limit": 50})
-        r.raise_for_status()
-        pts = r.json()
-    return templates.TemplateResponse("patients.html", {"request": request, "patients": pts, "user": user})
+        try:
+            logs = await _get_json_or_raise(
+                client,
+                f"{PATIENT_STORE_URL.rstrip('/')}/v1/audit",
+                headers=_auth_headers(token, request),
+                params={"limit": 100},
+            )
+        except ServiceCallError as e:
+            message = f"Unable to load audit logs: {e}"
+
+    return templates.TemplateResponse(
+        "audit.html",
+        {"request": request, "user": user, "logs": logs, "message": message},
+    )
+
+
+@app.get("/system-health", response_class=HTMLResponse)
+async def system_health(request: Request):
+    token = request.cookies.get(COOKIE_NAME, "")
+    if not token:
+        return RedirectResponse(url="/login", status_code=303)
+    user = await _me(token)
+
+    checks = [
+        ("Auth Service", f"{AUTH_URL.rstrip('/')}/health", False),
+        ("Preprocess Service", f"{PREPROCESS_URL.rstrip('/')}/health", True),
+        ("Patient Store Service", f"{PATIENT_STORE_URL.rstrip('/')}/health", True),
+        ("Inference Service", f"{INFERENCE_URL.rstrip('/')}/health", True),
+    ]
+    async with httpx.AsyncClient(**_client_kwargs(20.0)) as client:
+        async def _check(name: str, url: str, needs_auth: bool) -> Dict[str, Any]:
+            started = time.time()
+            try:
+                headers = _auth_headers(token, request) if needs_auth else {}
+                resp = await client.get(url, headers=headers)
+                latency_ms = int((time.time() - started) * 1000)
+                if resp.status_code == 200:
+                    payload = resp.json()
+                    return {"name": name, "url": url, "status": "ok", "latency_ms": latency_ms, "details": payload}
+                return {"name": name, "url": url, "status": "error", "latency_ms": latency_ms, "details": {"status_code": resp.status_code}}
+            except (httpx.HTTPError, ValueError) as e:
+                latency_ms = int((time.time() - started) * 1000)
+                return {"name": name, "url": url, "status": "error", "latency_ms": latency_ms, "details": {"error": str(e)}}
+
+        statuses = await asyncio.gather(*[_check(*c) for c in checks])
+
+    return templates.TemplateResponse(
+        "system_health.html",
+        {"request": request, "user": user, "statuses": statuses},
+    )
+
+
+@app.get("/api-contracts", response_class=HTMLResponse)
+async def api_contracts(request: Request):
+    token = request.cookies.get(COOKIE_NAME, "")
+    if not token:
+        return RedirectResponse(url="/login", status_code=303)
+    user = await _me(token)
+
+    contracts_path = Path(__file__).resolve().parents[3] / "docs" / "API_CONTRACTS.md"
+    content = "API contracts file not found."
+    try:
+        content = contracts_path.read_text(encoding="utf-8")
+    except OSError:
+        pass
+
+    return templates.TemplateResponse(
+        "api_contracts.html",
+        {"request": request, "user": user, "contracts": content},
+    )
 
 
 @app.post("/patients")

@@ -1,5 +1,5 @@
 import os
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 from fastapi import Header, HTTPException, status
 
@@ -61,3 +61,9 @@ def actor_from_headers(
         except Exception:
             pass
     return x_user_id.strip() or "unknown"
+
+
+def require_roles(claims: Dict[str, Any], allowed: List[str]) -> None:
+    roles = claims.get("roles") or []
+    if not any(role in roles for role in allowed):
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Insufficient role.")
